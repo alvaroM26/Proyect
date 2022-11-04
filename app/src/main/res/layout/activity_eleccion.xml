@@ -18,14 +18,10 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </LinearLayout>
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:background="@color/black"
         android:layout_weight="1">
 
         <LinearLayout
@@ -56,6 +52,7 @@
                     android:layout_height="wrap_content"
                     android:text="Biceps"
                     android:textSize="28sp"
+                    android:textColor="@color/white"
                     android:gravity="center">
                 </TextView>
 
@@ -86,6 +83,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/white"
                     android:text="Espalda"
                     android:textSize="28sp"
                     android:gravity="center">
@@ -119,6 +117,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/white"
                     android:text="Hombro"
                     android:textSize="28sp"
                     android:gravity="center">
@@ -150,6 +149,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/white"
                         android:text="Pecho"
                         android:textSize="28sp"
                         android:gravity="center">
@@ -183,6 +183,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/white"
                         android:text="Pierna"
                         android:textSize="28sp"
                         android:gravity="center">
@@ -215,6 +216,7 @@
 
                     <TextView
                         android:layout_width="match_parent"
+                        android:textColor="@color/white"
                         android:layout_height="wrap_content"
                         android:text="Triceps"
                         android:textSize="28sp"
@@ -237,6 +239,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
+        android:background="@color/black"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -260,6 +263,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:text="Home"
+                android:textColor="@color/white"
                 android:textSize="14sp"
                 android:gravity="center">
 
@@ -272,7 +276,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_weight="1"
-            android:id="@+id/pieSuplementos">
+            android:id="@+id/pieEtapas">
 
             <ImageView
                 android:layout_width="match_parent"
@@ -288,6 +292,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:text="Etapas"
+                android:textColor="@color/white"
                 android:textSize="14sp"
                 android:gravity="center">
             </TextView>
@@ -299,7 +304,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_weight="1"
-            android:id="@+id/pieIngredientes">
+            android:id="@+id/pieSuplementos">
 
             <ImageView
                 android:layout_width="match_parent"
@@ -314,6 +319,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
+                android:textColor="@color/white"
                 android:text="Suplementos"
                 android:textSize="14sp"
                 android:gravity="center">
@@ -327,7 +333,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_weight="1"
-            android:id="@+id/pieGusto">
+            android:id="@+id/pieApp">
 
             <ImageView
                 android:layout_width="match_parent"
@@ -342,36 +348,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
+                android:textColor="@color/white"
                 android:textSize="14sp"
                 android:text="Apps"
-                android:gravity="center">
-
-            </TextView>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_weight="1"
-            android:id="@+id/pieUsuario"
-            android:visibility="gone">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="40dp" />
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="5dp">
-            </Space>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:text="Sorpresa"
-                android:textSize="14sp"
                 android:gravity="center">
 
             </TextView>
@@ -400,6 +379,7 @@
                 android:layout_height="20dp"
                 android:textSize="14sp"
                 android:text="Info"
+                android:textColor="@color/white"
                 android:gravity="center">
 
             </TextView>
@@ -426,6 +406,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
+                android:textColor="@color/white"
                 android:textSize="14sp"
                 android:text="Ejercicios"
                 android:gravity="center">

@@ -16,15 +16,39 @@ class BicepsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_musculobiceps)
 
         val video1: VideoView = findViewById(R.id.video1)
+        val video2: VideoView = findViewById(R.id.video2)
+        val video3: VideoView = findViewById(R.id.video3)
+        val video4: VideoView = findViewById(R.id.video4)
 
         val mediaController = MediaController(this)
         mediaController.setAnchorView(video1)
+        mediaController.setAnchorView(video2)
+        mediaController.setAnchorView(video3)
+        mediaController.setAnchorView(video4)
 
-        val onlineUri1: Uri = Uri.parse("https://firebasestorage.googleapis.com/v0/b/proyect-2022.appspot.com/o/abductor.mp4?alt=media&token=1de86632-5c1c-4fab-92b6-c37c10965465")
+        val onlineUri1: Uri = Uri.parse("https://firebasestorage.googleapis.com/v0/b/proyect-2022.appspot.com/o/curldebicepsconmancuernas.mp4?alt=media&token=c35a777f-caa2-4deb-93fc-5b4e13070325")
+        val onlineUri2: Uri = Uri.parse("https://firebasestorage.googleapis.com/v0/b/proyect-2022.appspot.com/o/curldebicepsbancoscott.mp4?alt=media&token=9f5ca52a-ead0-430e-9049-95cc88cff943")
+        val onlineUri3: Uri = Uri.parse("https://firebasestorage.googleapis.com/v0/b/proyect-2022.appspot.com/o/curldebicepsmaquina.mp4?alt=media&token=39e8a398-96f4-480f-8d8c-310699e40b84")
+        val onlineUri4: Uri = Uri.parse("https://firebasestorage.googleapis.com/v0/b/proyect-2022.appspot.com/o/curldebicepsbarra.mp4?alt=media&token=b19a558e-2476-47d2-ac14-277d8e94c321")
 
         video1.setMediaController(mediaController)
         video1.setVideoURI(onlineUri1)
         video1.requestFocus()
         video1.start()
+
+        video2.setMediaController(mediaController)
+        video2.setVideoURI(onlineUri2)
+        video2.requestFocus()
+        video2.start()
+
+        video3.setMediaController(mediaController)
+        video3.setVideoURI(onlineUri3)
+        video3.requestFocus()
+        video3.start()
+
+        video4.setMediaController(mediaController)
+        video4.setVideoURI(onlineUri4)
+        video4.requestFocus()
+        video4.start()
     }
 }
