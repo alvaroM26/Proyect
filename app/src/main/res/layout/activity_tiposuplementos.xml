@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/logo_small"
+            android:id="@+id/logo"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="• Tipos de suplementos deportivos">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingStart="10dp"
+        android:layout_height="wrap_content"
+        android:text="Existen muchos tipos de complementos deportivos, por ello es importante saber elegir cual es mejor tomar según el objetivo deportivo que te hayas marcado. Cada uno puede utilizarse para mejorar uno u otro factor relacionado con la práctica de actividad deportiva">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingStart="10dp"
+        android:layout_height="wrap_content"
+        android:text=" Si los elegimos bien obtendremos algunos beneficios realmente buenos como por ejemplo:">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingStart="10dp"
+        android:layout_height="wrap_content"
+        android:text="• Complementar nuestra dieta\n• Mejorar nuestra recuperación muscular\n• Aumentar la resistencia\n• Mejorar el rendimiento físico\n• Una recuperación más rápida\n• Disminuye el cansancio y la fatiga muscular\n• Mejores resultados en los entrenamientos\n• Prevenir enfermedades">
+    </TextView>
+
+</LinearLayout>

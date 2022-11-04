@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,16 +15,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Proyect"
         tools:targetApi="31">
+
         <activity
-            android:name=".SplashActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".MainActivity"
-            android:theme="@style/SplashTheme"
+            android:name=".RegistroActivity"
+            android:theme="@style/SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,6 +30,62 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".TricepsActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".SuplementosActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".PechoActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".AppsActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".PiernaActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".InformacionActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".HombroActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".EspaldaActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".EtapasActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".UsuarioActivity"
+            android:exported="true">
+        </activity>
+
     </application>
 
 </manifest>

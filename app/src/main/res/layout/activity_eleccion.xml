@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -19,8 +18,12 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+
     <ScrollView
-        android:background="@color/black"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
@@ -35,71 +38,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:id="@+id/suplementos">
+                android:id="@+id/imgBiceps">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:src="@drawable/suple2"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Suplementos"
-                    android:textColor="@color/white"
-                    android:textSize="28sp"
-                    android:gravity="center">
-                </TextView>
-
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="15dp">
-                </Space>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:id="@+id/etapas">
-
-                <ImageView
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/etapa"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Etapas"
-                    android:textSize="28sp"
-                    android:textColor="@color/white"
-                    android:gravity="center">
-                </TextView>
-
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="15dp">
-                </Space>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:id="@+id/apps">
-
-                <ImageView
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    android:layout_gravity="center"
-                    android:onClick="iraA"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/apps" />
+                    android:src="@drawable/biceps"/>
 
                 <Space
                     android:layout_width="wrap_content"
@@ -109,9 +54,73 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Aplicaciones"
+                    android:text="Biceps"
                     android:textSize="28sp"
-                    android:textColor="@color/white"
+                    android:gravity="center">
+                </TextView>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp">
+                </Space>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/imgEspalda">
+
+                <ImageView
+                    android:layout_width="682dp"
+                    android:layout_height="500dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/espalda"/>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="5dp">
+                </Space>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Espalda"
+                    android:textSize="28sp"
+                    android:gravity="center">
+                </TextView>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp">
+                </Space>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/imgHombro">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/hombro"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"/>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="5dp">
+                </Space>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hombro"
+                    android:textSize="28sp"
                     android:gravity="center">
                 </TextView>
 
@@ -124,12 +133,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:id="@+id/info">
+                    android:id="@+id/imgPecho">
 
                     <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
-                        android:src="@drawable/info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/pecho"
                         android:layout_gravity="center"
                         android:scaleType="centerCrop"/>
 
@@ -141,8 +150,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Informacion"
-                        android:textColor="@color/white"
+                        android:text="Pecho"
                         android:textSize="28sp"
                         android:gravity="center">
                     </TextView>
@@ -152,9 +160,75 @@
                         android:layout_height="20dp">
                     </Space>
 
-            </LinearLayout>
+                </LinearLayout>
 
-        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/imgPierna">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/pierna"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"/>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="5dp">
+                    </Space>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pierna"
+                        android:textSize="28sp"
+                        android:gravity="center">
+                    </TextView>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp">
+                    </Space>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/imgTriceps">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/triceps"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"/>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="5dp">
+                    </Space>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Triceps"
+                        android:textSize="28sp"
+                        android:gravity="center">
+                    </TextView>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp">
+                    </Space>
+
+                </LinearLayout>
+
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -163,7 +237,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:background="@color/black"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -186,39 +259,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:textColor="@color/white"
                 android:text="Home"
                 android:textSize="14sp"
                 android:gravity="center">
 
-            </TextView>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_weight="1"
-            android:id="@+id/pieEtapas">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:src="@drawable/cronograma"/>
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="5dp">
-            </Space>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:textColor="@color/white"
-                android:text="Etapas"
-                android:textSize="14sp"
-                android:gravity="center">
             </TextView>
 
         </LinearLayout>
@@ -233,6 +277,33 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:src="@drawable/cronograma"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp">
+            </Space>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Etapas"
+                android:textSize="14sp"
+                android:gravity="center">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:id="@+id/pieIngredientes">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
                 android:src="@drawable/suplementaria"/>
 
             <Space
@@ -243,7 +314,6 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:textColor="@color/white"
                 android:text="Suplementos"
                 android:textSize="14sp"
                 android:gravity="center">
@@ -257,7 +327,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_weight="1"
-            android:id="@+id/pieApps">
+            android:id="@+id/pieGusto">
 
             <ImageView
                 android:layout_width="match_parent"
@@ -272,9 +342,36 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:textColor="@color/white"
                 android:textSize="14sp"
                 android:text="Apps"
+                android:gravity="center">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:id="@+id/pieUsuario"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp">
+            </Space>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Sorpresa"
+                android:textSize="14sp"
                 android:gravity="center">
 
             </TextView>
@@ -301,7 +398,6 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:textColor="@color/white"
                 android:textSize="14sp"
                 android:text="Info"
                 android:gravity="center">
@@ -331,7 +427,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:textSize="14sp"
-                android:textColor="@color/white"
                 android:text="Ejercicios"
                 android:gravity="center">
 

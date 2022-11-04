@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/logo_small">
+        </ImageView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_marginTop="2dp">
+        </View>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="@string/curl_de_martillo_cruzado_con_mancuernas">
+            </TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_marginTop="2dp">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elegantTextHeight="true"
+                android:paddingStart="10dp"
+                android:text="@string/_1_manteniendo_las_palmas_hacia_adentro_levante_una_de_las_mancuernas_hacia_el_hombro_opuesto_hasta_sentir_la_presi_n_sobre_el_b_ceps_recuerde_tener_la_espalda_recta_y_la_mirada_hacia_adelante_n2_contin_e_el_movimiento_hasta_que_la_mancuerna_toque_el_hombro_y_espere_unos_segundos_n3_repita_el_mismo_movimiento_con_el_brazo_contrario_y_realice_el_ejercicio_hasta_completar_las_repeticiones_que_desee"
+                tools:ignore="ExtraText,RtlSymmetry">
+
+            </TextView>
+
+            <VideoView
+                android:id="@+id/video1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </VideoView>
+
+            ////////////////////////
+
+            <TextView
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="@string/curl_de_b_ceps_en_banco_scott">
+            </TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_marginTop="2dp">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elegantTextHeight="true"
+                android:text="@string/_1_la_t_cnica_de_ejecuci_n_consiste_en_que_el_individuo_debe_estar_sentado_sobre_la_m_quina_con_los_brazos_completamente_apoyados_sobre_el_pupitre_que_compone_el_banco_scott_n2_agarra_la_barra_z_o_recta_o_en_su_defecto_dos_mancuernas_con_ambas_manos_o_incluso_a_mancuerna_alternada_n3_durante_la_ejecuci_n_del_b_ceps_en_banco_scott_las_palmas_deben_mirar_hacia_arriba_sin_movilizar_los_brazos_y_teniendo_ambos_estirados_mientras_se_sostiene_la_carga_y_se_inicia_el_movimiento_n4_inspira_profundamente_y_se_comienza_con_la_flexi_n_de_los_codos_para_poder_llevar_el_peso_hacia_el_nivel_del_pecho_con_ambas_manos_mant_n_ah_2_segundos"
+               android:paddingStart="10dp"
+                tools:ignore="RtlSymmetry">
+            </TextView>
+
+            <VideoView
+                android:id="@+id/video2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </VideoView>
+
+            ////////////////////////
+
+            <TextView
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="@string/curl_concentrado_en_m_quina">
+            </TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_marginTop="2dp">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elegantTextHeight="true"
+                android:text="@string/_1_realice_la_posici_n_inicial_n2_mantenga_el_agarre_firme_en_todo_momento_suba_hasta_la_altura_de_los_hombros_y_hasta_que_ambos_brazos_queden_flexionados_exhale_y_contraiga_los_b_ceps_n3_luego_baje_lentamente_buscando_que_sus_brazos_se_encuentren_totalmente_extendidos"
+                android:paddingStart="10dp"
+                tools:ignore="RtlSymmetry">
+            </TextView>
+
+            <VideoView
+                android:id="@+id/video3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </VideoView>
+
+            ////////////////////////
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:text="@string/curl_en_polea_baja_con_barra_recta"
+                android:textStyle="bold">
+            </TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_marginTop="2dp">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elegantTextHeight="true"
+                android:text="@string/_1_toma_la_barra_con_un_agarre_cercano_y_lentamente_mientras_exhala_lleva_la_barra_hacia_los_hombros_n2_mant_n_aislado_el_b_ceps_y_espera_hasta_un_par_de_segundos_para_regresar_n3_regresa_lentamente_a_la_posici_n_inicial_extendiendo_los_brazos_completamente_n4_realiza_el_movimiento_de_acuerdo_a_la_cantidad_de_repeticiones_que_desea_realizar"
+                android:paddingStart="10dp"
+                tools:ignore="RtlSymmetry">
+            </TextView>
+
+            <VideoView
+                android:id="@+id/video4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </VideoView>
+
+            ////////////////////////
+
+            <TextView
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="@string/curl_martillo_con_mancuernas">
+            </TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_marginTop="2dp">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elegantTextHeight="true"
+                android:text="@string/_1_la_espalda_debe_mantenerse_recta_e_intentar_que_el_brazo_y_el_codo_queden_inmovilizados_posteriormente_inspiramos_y_realizamos_la_flexi_n_del_codo_en_cada_uno_de_los_brazos_conservando_completamente_la_posici_n_de_las_manos_n2_el_curl_martillo_puede_ser_realizado_de_forma_alterna_o_puede_ser_de_forma_simult_nea_mediante_los_dos_lados_del_cuerpo_n3_las_palmas_de_nuestras_manos_deben_estar_orientadas_hacia_el_cuerpo_durante_la_ejecuci_n_del_ejercicio_para_permitirnos_simular_que_el_martillo_sube_y_baja_tan_solo_con_la_flexi_n_del_codo_n4_posteriormente_espiramos_al_final_del_movimiento_general_se_procede_a_descender_de_forma_controlada_todo_el_peso_para_poder_llevar_a_cabo_la_flexi_n_del_codo_con_el_brazo"
+               android:paddingStart="10dp"
+                tools:ignore="RtlSymmetry">
+            </TextView>
+
+            <VideoView
+                android:id="@+id/video5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </VideoView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

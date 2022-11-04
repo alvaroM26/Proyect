@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/logo_small"
+            android:id="@+id/logo"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="ActivityTracker"
+                android:textSize="18sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:text="Para qué sirve:">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:text="Se hace camino al andar y esta app supone una sencilla forma de llevar el recuento de tus pasos. No necesita tener activado el GPS, pesa poco más de 7 mg y gasta poca batería. Ideal para empezar a controlar tu movimiento día a día.">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:paddingStart="10dp"
+                android:text="Dato curioso: ">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingStart="10dp"
+                android:text="Puedes ajustarlo a tu peso y altura para que el muestro de kilocalorías perdidas sea más fiable.">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:paddingTop="10dp"
+                android:paddingStart="10dp"
+                android:text="Disponibilidad: iOS y Google Play.">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/pieApple">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="50dp"
+                        android:src="@drawable/androidstore">
+                    </ImageView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/pieAndroid">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="50dp"
+                        android:src="@drawable/applestore">
+                    </ImageView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="50dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="Myfitnesspal"
+                android:textSize="18sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:paddingStart="10dp"
+                android:text="Para qué sirve:">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textColor="@color/white"
+                android:paddingStart="10dp"
+                android:text="Una guía para empezar a controlar nutrición, entrenamiento, calorías quemadas y progreso en los objetivos. Registrarás lo que comes, medirás macros, e incluso puedes sincronizarlo con tu ejercicio.">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:paddingStart="10dp"
+                android:text="Dato curioso: ">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textColor="@color/white"
+                android:paddingStart="10dp"
+                android:text="Puedes incluso adjuntar fotos de tu progreso y asociarlas con tu peso o estado físico, al cabo de un año alucinarás con todo lo que has cambiado.">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textColor="@color/white"
+                android:paddingStart="10dp"
+                android:text="Disponibilidad: iOS y Google Play.">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/pieApple2">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="50dp"
+                        android:src="@drawable/androidstore">
+                    </ImageView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/pieAndroid2">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="50dp"
+                        android:src="@drawable/applestore">
+                    </ImageView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="50dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="Wefitter"
+                android:textSize="18sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:paddingStart="10dp"
+                android:text="Para qué sirve:">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textColor="@color/white"
+                android:paddingStart="10dp"
+                android:text="Tu entrenamiento tiene recompensa. Obtendrás mejores descuentos y ofertas para canjear en centros deportivos y tiendas online.">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:paddingStart="10dp"
+                android:text="Dato curioso: ">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textColor="@color/white"
+                android:paddingStart="10dp"
+                android:text="puedes conseguir descuentos en tu propio gimnasio y ganar meses gratis. ¡Sólo por entrenar bien!">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textColor="@color/white"
+                android:paddingStart="10dp"
+                android:text="Disponibilidad: iOS y Google Play.">
+            </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/pieApple3">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:paddingTop="10dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="50dp"
+                    android:src="@drawable/androidstore">
+                </ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/pieAndroid3">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:paddingTop="10dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="50dp"
+                    android:src="@drawable/applestore">
+                </ImageView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/logo_small">
+        </ImageView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_marginTop="2dp">
+        </View>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="@string/dominadas">
+            </TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_marginTop="2dp">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elegantTextHeight="true"
+                android:paddingStart="10dp"
+                android:text="@string/_1_col_cate_debajo_de_la_barra_de_dominadas_salta_y_ag_rrala_por_encima_colocando_las_manos_un_poco_m_s_abiertas_que_la_anchura_de_los_hombros_n2_para_empezar_cu_lgate_con_brazos_y_piernas_extendidas_n3_coloca_los_om_platos_hacia_abajo_y_hacia_atr_s_al_tiempo_que_activas_la_espalda_el_torso_y_los_gl_teos_n_4_el_vate_hasta_llevar_la_barbilla_por_encima_de_la_barra_durante_el_movimiento_piensa_en_llevar_la_barra_hacia_el_pecho_n5_mant_n_los_codos_cerca_del_torso_y_no_arquees_las_lumbares_m_s_de_lo_natural_n6_baja_el_cuerpo_lentamente_para_volver_a_empezar_eso_ser_a_una_repetici_n"
+                tools:ignore="ExtraText,RtlSymmetry">
+
+            </TextView>
+
+            <VideoView
+                android:id="@+id/video1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </VideoView>
+
+            ////////////////////////
+
+            <TextView
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="@string/remo_gironda">
+            </TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_marginTop="2dp">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elegantTextHeight="true"
+                android:text="@string/_1_si_ntate_derecho_en_el_banco_y_coloca_los_pies_en_el_suelo_o_en_las_almohadillas_para_los_pies_con_las_rodillas_dobladas_n2_extiende_los_brazos_y_sost_n_el_asa_o_el_cable_n3_mueve_los_hombros_hacia_atr_s_y_hacia_abajo_n4_aprieta_el_abdomen_n5_exhala_y_dobla_los_codos_para_tirar_del_asa_o_del_cable_manteniendo_los_codos_metidos_hacia_dentro_y_la_espalda_neutra"
+                android:paddingStart="10dp"
+                tools:ignore="RtlSymmetry">
+            </TextView>
+
+            <VideoView
+                android:id="@+id/video2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </VideoView>
+
+            ////////////////////////
+
+            <TextView
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="@string/remo_sentado">
+            </TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_marginTop="2dp">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elegantTextHeight="true"
+                android:text="@string/_1_si_ntate_en_la_m_quina_de_remo_en_polea_baja_y_apoya_los_pies_en_los_soportes_con_las_rodillas_flexionadas_n2_incl_nate_hacia_delante_y_sujeta_el_agarre_en_v_con_las_dos_manos_retrae_los_om_platos_y_mant_n_la_contracci_n_abdominal_asegur_ndote_de_que_la_espalda_est_recta_durante_el_ejercicio_n3_desde_esa_posici_n_posici_n_inicial_tira_del_agarre_hacia_tu_cuerpo_hacia_la_zona_del_pectoral_inferior_flexionando_los_codos_n4_contrae_los_m_sculos_dorsales_y_los_om_platos_mientras_acercas_el_agarre_a_tu_cuerpo_haciendo_una_parada_de_un_segundo_cuando_el_agarre_est_casi_pegado_a_tu_cuerpo_n5_extiende_los_brazos_de_forma_lenta_y_controlada_hasta_que_est_n_estirados_por_completo_y_mant_n_la_espalda_recta_en_todo_momento_repite_las_veces_indicadas"
+                android:paddingStart="10dp"
+                tools:ignore="RtlSymmetry">
+            </TextView>
+
+            <VideoView
+                android:id="@+id/video3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </VideoView>
+
+            ////////////////////////
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:text="@string/remo_con_barra_en_banco_inclinado"
+                android:textStyle="bold">
+            </TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_marginTop="2dp">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elegantTextHeight="true"
+                android:text="@string/_1_antes_de_iniciar_con_el_remo_con_barra_en_banco_inclinado_debemos_ajustar_un_banco_y_dejarlo_en_una_inclinaci_n_ptima_de_30_a_45_grados_n2_una_vez_que_comencemos_col_cate_sobre_tu_espalda_y_coge_la_barra_de_forma_firme_una_vez_hecho_esto_ll_valas_sobre_tus_hombros_con_los_brazos_extendidos_casi_en_su_totalidad_n3_una_vez_hecho_esto_el_siguiente_paso_consiste_en_juntar_los_om_platos_y_sacar_un_poco_el_pecho_n4_luego_vamos_a_bajar_la_barra_flexionando_los_codos_a_la_altura_de_los_dorsales_haremos_una_peque_a_pausa_y_posteriormente_iniciamos_a_la_posici_n_inicial_n5_como_con_todos_y_cada_uno_de_los_movimientos_de_tracci_n_que_se_llevan_a_cabo_con_el_fin_de_trabajar_los_grupos_m_sculares_de_la_espalda_siempre_tenemos_la_opci_n_de_potenciar_al_m_ximo_la_tensi_n_de_los_m_sculos_n6_si_nos_cuesta_demasiado_trabajo_el_realizar_el_ejercicio_entonces_podemos_tirar_s_lo_a_la_mitad_de_lo_que_corresponde_a_la_extensi_n_total_del_ejercicio"
+                android:paddingStart="10dp"
+                tools:ignore="RtlSymmetry">
+            </TextView>
+
+            <VideoView
+                android:id="@+id/video4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </VideoView>
+
+            ////////////////////////
+
+            <TextView
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="@string/remo_con_barra_recta_de_pie">
+            </TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_marginTop="2dp">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elegantTextHeight="true"
+                android:text="@string/_1_sosteniendo_una_barra_con_un_agarre_prono_es_decir_donde_coloquemos_las_palmas_hacia_abajo_iniciaremos_doblando_ligeramente_las_rodillas_y_despu_s_llevaremos_el_torso_hacia_adelante_doblando_la_cintura_manteniendo_la_espalda_de_forma_recta_hasta_que_se_encuentre_de_forma_paralelo_al_suelo_n2_ahora_mientras_mantiene_el_torso_inm_vil_exhale_y_levante_la_barra_hacia_usted_mantenga_los_codos_cerca_del_cuerpo_y_s_lo_use_los_antebrazos_para_mantener_el_peso_n3_en_la_posici_n_de_contracci_n_superior_reverenciar_los_m_sculos_de_la_espalda_y_mantener_una_breve_pausa_n4_luego_inhale_y_lentamente_baje_la_barra_de_nuevo_a_la_posici_n_inicial_repetir_la_cantidad_recomendada_en_tu_plan_personalizado_de_entrenamiento"
+                android:paddingStart="10dp"
+                tools:ignore="RtlSymmetry">
+            </TextView>
+
+            <VideoView
+                android:id="@+id/video5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </VideoView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

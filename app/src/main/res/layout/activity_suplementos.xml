@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/logo_small"
+            android:id="@+id/logo"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:paddingStart="10dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="• ¿Qué son los suplementos deportivos?">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingStart="10dp"
+                android:layout_height="wrap_content"
+                android:text="Los suplementos deportivos son productos que se usan para mejorar el rendimiento deportivo. Incluye un amplio abanico de productos, que además tienen distintas calidades.">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingStart="10dp"
+                android:layout_height="wrap_content"
+                android:text="Tomar suplementos deportivos no es una buena idea si crees que, solo tomándolos, sin esfuerzo y trabajo vas a lograr resultados rápidos y eficaces. Es importante tener en cuenta que los suplementos o complementos deportivos no pueden sustituir a los alimentos.">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingStart="10dp"
+                android:layout_height="wrap_content"
+                android:text="El consumo de esta clase de sustancias debe ser como complemento alimenticio, sin dejar de lado una alimentación saludable y completa que cubra las necesidades diarias.">
+            </TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/infosuple">
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="• ¿Por qué es bueno tomar suplementos deportivos?">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingStart="10dp"
+                android:text="Los suplementos alimenticios tienen un millón de beneficios, siempre y cuando sigamos las recomendaciones y los tomemos como se debe. Como siempre te recordamos, tus esfuerzos serán en vano si no haces ejercicios, no te alimentas bien o no descansas lo suficiente.">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="•	Mitos sobre los suplementos deportivos">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingStart="10dp"
+                android:layout_height="wrap_content"
+                android:text="1. Es dañino consumir suplementos con los remedios o medicamentos crónicos o habituales.\n2.	Los suplementos alimenticios están hechos solo para los deportistas\n3.	Mientras más suplemento consuma, será mejor para mi cuerpo y entrenamiento.\n4.	Si tengo una dieta balanceada no necesito un suplemento">
+            </TextView>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:src="@drawable/mitos">
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="•	¿Qué puedo hacer para dar lo máximo de mí mismo en lo que al rendimiento deportivo se refiere sin tomar suplementos deportivos?">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingStart="10dp"
+                android:layout_height="wrap_content"
+                android:text="•  Lleva una dieta saludable.\n•	Entrena de forma inteligente.\n•	Duerme mucho.\n•	Evita el alcohol y el tabaco.">
+            </TextView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

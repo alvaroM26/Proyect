@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/logo_small">
+        </ImageView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_marginTop="2dp">
+        </View>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="@string/press_hombro">
+            </TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_marginTop="2dp">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elegantTextHeight="true"
+                android:paddingStart="10dp"
+                android:text="@string/_1_realice_la_posici_n_inicial_n2_deber_alzar_la_barra_lo_m_s_alto_que_pueda_y_lograr_entonces_que_los_brazos_queden_totalmente_extendidos_n3_luego_deber_bajarla_lentamente_y_volver_a_la_posici_n_inicial_n4_repita_el_ejercicio_cuantas_veces_indique_su_plan_de_entrenamiento"
+               tools:ignore="ExtraText,RtlSymmetry">
+
+            </TextView>
+
+            <VideoView
+                android:id="@+id/video1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </VideoView>
+
+            ////////////////////////
+
+            <TextView
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="@string/pajaros">
+            </TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_marginTop="2dp">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elegantTextHeight="true"
+                android:text="@string/_1_nos_colocamos_de_pie_con_las_piernas_separadas_del_ancho_de_los_hombros_aproximadamente_con_las_rodillas_ligeramente_flexionadas_n2_cogemos_las_mancuernas_en_semipronaci_n_mir_ndose_las_palmas_entre_si_n3_inclinamos_el_tronco_hacia_delante_manteniendo_la_espalda_recta_n4_los_brazos_deben_de_estar_colgando_con_los_codos_ligeramente_flexionados_n5_inspiramos_y_elevamos_los_brazos_de_manera_lateral_hasta_que_queden_paralelos_al_suelo_quedando_como_un_p_jaro_con_las_alas_extendidas_n6_mantenemos_1_segundo_y_descendemos_lentamente_mientras_espiramos_el_aire_hasta_llegar_a_nuestra_posici_n_inicial"
+                android:paddingStart="10dp"
+                tools:ignore="RtlSymmetry">
+            </TextView>
+
+            <VideoView
+                android:id="@+id/video2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </VideoView>
+
+            ////////////////////////
+
+            <TextView
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="@string/elevacion_lateral">
+            </TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_marginTop="2dp">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elegantTextHeight="true"
+                android:text="@string/_1_col_cate_de_pie_con_los_pies_separados_a_la_anchura_de_los_hombros_y_coge_dos_mancuernas_con_las_palmas_de_las_manos_mirando_cara_ti_y_los_brazos_estirados_n2_mant_n_las_rodillas_tenuemente_dobladas_n3_levanta_los_brazos_hacia_los_laterales_hasta_el_momento_en_que_est_n_paralelos_al_suelo_n_4_haz_una_pausa_con_los_brazos_en_su_punto_m_s_alto_y_vuelve_a_la_situaci_n_inicial"
+                android:paddingStart="10dp"
+                tools:ignore="RtlSymmetry">
+            </TextView>
+
+            <VideoView
+                android:id="@+id/video3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </VideoView>
+
+            ////////////////////////
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:text="@string/remo_a_la_cara_con_cuerda_en_polea_alta"
+                android:textStyle="bold">
+            </TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_marginTop="2dp">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elegantTextHeight="true"
+                android:paddingStart="10dp"
+                android:text="@string/_1_agarra_las_dos_asas_que_tiene_la_cuerda_y_tira_de_ella_hacia_la_mitad_del_pecho_mientras_abres_los_codos_hacia_los_lados_n2_posteriormente_tira_de_las_manijas_hacia_afuera_para_estimular_los_m_sculos_exhala_durante_esta_parte_n3_estira_los_brazos_extendi_ndolos_de_forma_lenta_hacia_adelante_e_inhala"
+                tools:ignore="RtlSymmetry">
+            </TextView>
+
+            <VideoView
+                android:id="@+id/video4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </VideoView>
+
+            ////////////////////////
+
+            <TextView
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="@string/press_cubano">
+            </TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_marginTop="2dp">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elegantTextHeight="true"
+                android:text="@string/_1_desde_una_posici_n_en_la_que_nos_encontremos_sentados_o_bien_de_pie_vamos_a_tomar_una_mancuerna_con_los_hombros_colocados_hacia_adelante_n2_los_brazos_permanecer_n_extendidos_en_este_momento_y_bajaremos_al_realizar_una_sentadilla_con_los_muslos_esta_va_a_ser_la_que_tomaremos_como_posici_n_inicial_n3_el_segundo_paso_va_a_consistir_en_subir_los_codos_tal_y_como_si_hici_ramos_un_ejercicio_de_remo_vertical_con_mancuernas_esto_hasta_el_momento_en_que_nuestros_codos_se_encuentren_a_la_altura_de_los_hombros_n4_posteriormente_vamos_a_girar_externamente_las_mancuernas_para_colocarlas_en_posici_n_cara_arriba_sosteniendo_las_partes_superiores_de_los_brazos_de_preferencia_en_el_mismo_nivel_e_iniciaremos_con_el_ciclo_de_respiraci_n_de_forma_normal_n5_continuaremos_con_este_movimiento_hasta_el_punto_en_que_los_antebrazos_los_tengamos_de_forma_perpendicular_al_suelo_y_las_caras_de_las_manos_se_encuentren_apuntando_hacia_arriba_n6_en_este_punto_presiona_las_pesas_sobre_la_cabeza_tal_y_como_si_estuvieses_realizando_un_ejercicio_de_press_de_hombros"
+               android:paddingStart="10dp"
+                tools:ignore="RtlSymmetry">
+            </TextView>
+
+            <VideoView
+                android:id="@+id/video5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </VideoView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
