@@ -6,6 +6,8 @@ import android.view.Window
 import android.widget.MediaController
 import android.widget.VideoView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.proyect.databinding.ActivityAppBinding
+import com.example.proyect.databinding.ActivityMusculobicepsBinding
 
 class BicepsActivity : AppCompatActivity() {
 

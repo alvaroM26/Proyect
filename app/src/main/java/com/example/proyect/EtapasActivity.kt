@@ -10,7 +10,7 @@ class EtapasActivity : AppCompatActivity(){
 
         super.onCreate(savedInstanceState)
         supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.activity_registro)
+        setContentView(R.layout.activity_etapas)
 
     }
 }
