@@ -85,16 +85,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-   //      binding.apps.setOnClickListener {
+       binding.apps.setOnClickListener {
 
-   //     }
+           val intent = Intent(this, AppsActivity::class.java)
+           startActivity(intent)
 
-    }
-
-    fun iraA(view: View) {
-
-        val intent = Intent(this, AppsActivity::class.java)
-        startActivity(intent)
+      }
 
     }
 

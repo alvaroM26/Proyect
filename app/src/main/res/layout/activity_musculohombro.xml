@@ -66,8 +66,9 @@
 
             <VideoView
                 android:id="@+id/video1"
+                android:layout_gravity="center"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="300dp">
             </VideoView>
 
             ////////////////////////
@@ -99,8 +100,9 @@
 
             <VideoView
                 android:id="@+id/video2"
+                android:layout_gravity="center"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="300dp">
             </VideoView>
 
             ////////////////////////
@@ -132,8 +134,9 @@
 
             <VideoView
                 android:id="@+id/video3"
+                android:layout_gravity="center"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="300dp">
             </VideoView>
 
             ////////////////////////
@@ -165,8 +168,9 @@
 
             <VideoView
                 android:id="@+id/video4"
+                android:layout_gravity="center"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="300dp">
             </VideoView>
 
             ////////////////////////
@@ -198,8 +202,9 @@
 
             <VideoView
                 android:id="@+id/video5"
+                android:layout_gravity="center"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="300dp">
             </VideoView>
 
         </LinearLayout>
