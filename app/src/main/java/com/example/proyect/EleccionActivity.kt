@@ -5,8 +5,8 @@ import android.os.Bundle
 import android.view.Window
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
-import com.example.proyect.databinding.ActivityAppBinding
 import com.example.proyect.databinding.ActivityEleccionBinding
+
 
 class EleccionActivity : AppCompatActivity() {
 

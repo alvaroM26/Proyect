@@ -3,432 +3,608 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="top"
-        android:orientation="horizontal">
+        android:gravity="center"
+        android:layout_height="wrap_content">
 
         <ImageView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:src="@drawable/logo_small">
-        </ImageView>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/black"
-            android:layout_marginTop="2dp">
-        </View>
+            android:layout_margin="10dp"
+            android:src="@drawable/logo_small"
+            android:id="@+id/logo"/>
 
     </LinearLayout>
 
     <ScrollView
-        android:layout_width="match_parent"
         android:background="@color/black"
-        android:layout_height="match_parent">
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
         <LinearLayout
-            android:paddingTop="10dp"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_height="match_parent">
+            android:layout_margin="20dp">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:paddingStart="10dp"
-                android:textColor="@color/white"
-                android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:text="• Consejos para crear un hábito de entrenamiento"
-                tools:ignore="RtlSymmetry">
-            </TextView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:paddingTop="10dp"
-                android:textColor="@color/white"
-                android:paddingStart="10dp"
-                android:layout_height="wrap_content"
-                android:text="1º Empezar suave: No se puede comenzar algo a tope, hay que ir poco a poco, cogiendo ritmo semana tras semana. Estás acostumbrado al sendentarismo así que comienza realizando 3 días semanales del ejercicio por el que has optado, y con una duración no superior a los 30 minutos al día. Semana tras semana debes ir aumentando el tiempo hasta llegar a los 40 minutos los tres días."
-                tools:ignore="RtlSymmetry">
-            </TextView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:paddingTop="10dp"
-                android:textColor="@color/white"
-                android:paddingStart="10dp"
-                android:layout_height="wrap_content"
-                android:text="2. Saber elegir: Elige la actividad deportiva que más te agrade y que te motive realizar, así será más díficil que los dejes de lado al de poco tiempo. Si tienes dudas por cual optar, lo mejor es que pruebes todas las que creas que te pueden motivar, y que te quedes con la que más te gusta, o con varias si así lo crees conveniente."
-                tools:ignore="RtlSymmetry">
-            </TextView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:paddingTop="10dp"
-                android:textColor="@color/white"
-                android:paddingStart="10dp"
-                android:layout_height="wrap_content"
-                android:text="3. Innovación: cada cierto tiempo tienes que cambiar algo en la rutina de entrenamiento, hacer siempre lo mismo puede que te canses y acabes dejando de lado el deporte que has elegido, aunque te encante realizarlo. Esto quiere decir que es bueno cambiar algo, bien sea subir el nivel de dificultad, cambiar la rutina de entrenamiento, el recorrido o el sitio donde lo realices, la compañía si la hay o incluirla si no la hay, en definitiva, cualquier cosa que meta una innovación en la actividad deportiva que vas a realizar."
-                tools:ignore="RtlSymmetry">
-            </TextView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:paddingTop="10dp"
-                android:textColor="@color/white"
-                android:paddingStart="10dp"
-                android:layout_height="wrap_content"
-                android:text="4.	Tener paciencia: si quieres resultados a la larga los tendrás, pero no quieras resultados a corto plazo. Es bueno tener buenas expectativas sean pequeñas, medias o grandes, pero no a corto plazo, siempre hay que mirar a varios meses vista. Cualquier objetivo debe fijarse a medio o , a largo plazo, para que así sea más fácil observar y sobre todo valorar los resultados."
-                tools:ignore="RtlSymmetry">
-            </TextView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:paddingTop="10dp"
-                android:textColor="@color/white"
-                android:paddingStart="10dp"
-                android:layout_height="wrap_content"
-                android:text="5. No obsesionarse: por muy claro que tengas que en tu vida tiene que haber una actividad deportiva, sea por el motivo que sea no debe ser una obligación, nunca debe obsesionarte el tener que realizar sí o sí la actividad. Si te obsesionas con ello puede ser malo para el resto de tu vida, la cual gira a una costumbre que te ha hecho estar donde estás. Si quieres cambiar algo debes realizarlo sin que te sientas obligado a ello, tiene que ir fluyendo poco a poco, y aunque no debes buscar excusas para saltarte el tiempo de entrenamiento, tampoco debe ser una obligación inamovible."
-                tools:ignore="RtlSymmetry">
-            </TextView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:paddingTop="10dp"
-                android:textColor="@color/white"
-                android:paddingStart="10dp"
-                android:layout_height="wrap_content"
-                android:text="6. Habituarse a la rutina: ten en cuenta que al principio te va a costar, es normal, debes habituarte a la nueva rutina, durante años has sido sedentario o no has realizado actividad alguna y ahora meter alguno nuevo en tu vida te va a costar, sobre todo cuando pase la novedad y las ganas de cambiar, cuando sea rutinario deberás de habituarte simplemente a la actividad."
-                tools:ignore="RtlSymmetry">
-            </TextView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:paddingTop="20dp"
-                android:textColor="@color/white"
-                android:paddingStart="10dp"
-                android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:text="•	Cómo organizar tu plan de entrenamiento semanal"
-                tools:ignore="RtlSymmetry">
-            </TextView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:paddingTop="10dp"
-                android:paddingStart="10dp"
-                android:layout_height="wrap_content"
-                android:textColor="@color/white"
-                android:text="Tu plan de entrenamiento semanal dependerá de varios factores:"
-                tools:ignore="RtlSymmetry">
-            </TextView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:paddingTop="10dp"
-                android:textColor="@color/white"
-                android:paddingStart="10dp"
-                android:layout_height="wrap_content"
-                android:text="•	Tu condición física, edad, constitución y sexo.\n•	Tu nivel de entrenamiento.\n•	Tu objetivo, ya sea perder peso, tonificar, aumentar la potencia.\n•	Tus circunstancias personales, horarios, ritmo de vida."
-                tools:ignore="RtlSymmetry">
-            </TextView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:paddingTop="10dp"
-                android:textColor="@color/white"
-                android:paddingStart="10dp"
-                android:layout_height="wrap_content"
-                android:text="Según estas condiciones, deberás planificar un tiempo para los ejercicios de cardio y otro para el entrenamiento de fuerza, manteniendo periodos de descanso entre sesiones."
-                tools:ignore="RtlSymmetry">
-            </TextView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:textColor="@color/white"
-                android:layout_height="wrap_content"
-                android:paddingStart="10dp"
-                android:paddingTop="10dp"
-                android:text="•	Cinco días de entrenamiento a la semana, para que tu cuerpo pueda descansar.\n•	Tipos de entrenamiento organizados en días alternos para permitir el descanso de cada grupo de músculos.\n•	Entrenamiento sin pesos para aprender las posturas correctas y los movimientos específicos de cada ejercicio."
-                tools:ignore="RtlSymmetry">
-            </TextView>
-
-            <ImageView
-                android:paddingTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:layout_gravity="center"
-                android:src="@drawable/calendario">
-            </ImageView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:paddingTop="10dp"
-                android:paddingStart="10dp"
-                android:textColor="@color/white"
-                android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:text="•	¿A qué intensidad debo entrenar?"
-                tools:ignore="RtlSymmetry">
-            </TextView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:paddingTop="10dp"
-                android:paddingStart="10dp"
-                android:textColor="@color/white"
-                android:layout_height="wrap_content"
-                android:text="En nuestro plan de entrenamiento semanal no utilizaremos pesos más allá del de nuestro cuerpo, por lo que la intensidad de los ejercicios dependerá del número de repeticiones."
-                tools:ignore="RtlSymmetry">
-            </TextView>
-
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingStart="10dp"
-                android:textColor="@color/white"
-                android:paddingTop="10dp"
-                android:text="Lo ideal para conseguir un beneficio visible es realizar un número de repeticiones que, al finalizar, sintamos que solo podríamos haber hecho una o dos más. De este modo nos acercamos al límite de nuestra resistencia, sin sobrepasarlo"
-                tools:ignore="RtlSymmetry">
-            </TextView>
+                android:orientation="vertical"
+                tools:ignore="ExtraText">
 
-            <ImageView
-                android:paddingTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_gravity="center"
-                android:textColor="@color/white"
-                android:layout_height="250dp"
-                android:src="@drawable/intensidad">
-            </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="• Consejos para crear un hábito de entrenamiento"
+                    tools:ignore="RtlSymmetry">
+                </TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:paddingTop="10dp"
-                android:textColor="@color/white"
-                android:paddingStart="10dp"
-                android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:text="•	El descanso entre ejercicios"
-                tools:ignore="RtlSymmetry">
-            </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/white"
+                    android:paddingStart="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="1º Empezar suave: No se puede comenzar algo a tope, hay que ir poco a poco, cogiendo ritmo semana tras semana. Estás acostumbrado al sendentarismo así que comienza realizando 3 días semanales del ejercicio por el que has optado, y con una duración no superior a los 30 minutos al día. Semana tras semana debes ir aumentando el tiempo hasta llegar a los 40 minutos los tres días."
+                    tools:ignore="RtlSymmetry">
+                </TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:paddingTop="10dp"
-                android:paddingStart="10dp"
-                android:layout_height="wrap_content"
-                android:textColor="@color/white"
-                android:text="Lo ideal es tomar un descanso de dos minutos cuando hagamos pocas repeticiones, y de un minuto cuando hagamos muchas."
-                tools:ignore="RtlSymmetry">
-            </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/white"
+                    android:paddingStart="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="2. Saber elegir: Elige la actividad deportiva que más te agrade y que te motive realizar, así será más díficil que los dejes de lado al de poco tiempo. Si tienes dudas por cual optar, lo mejor es que pruebes todas las que creas que te pueden motivar, y que te quedes con la que más te gusta, o con varias si así lo crees conveniente."
+                    tools:ignore="RtlSymmetry">
+                </TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="10dp"
-                android:paddingTop="10dp"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                android:text="•	Calentamiento y estiramientos"
-                tools:ignore="RtlSymmetry">
-            </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/white"
+                    android:paddingStart="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="3. Innovación: cada cierto tiempo tienes que cambiar algo en la rutina de entrenamiento, hacer siempre lo mismo puede que te canses y acabes dejando de lado el deporte que has elegido, aunque te encante realizarlo. Esto quiere decir que es bueno cambiar algo, bien sea subir el nivel de dificultad, cambiar la rutina de entrenamiento, el recorrido o el sitio donde lo realices, la compañía si la hay o incluirla si no la hay, en definitiva, cualquier cosa que meta una innovación en la actividad deportiva que vas a realizar."
+                    tools:ignore="RtlSymmetry">
+                </TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:textColor="@color/white"
-                android:layout_height="wrap_content"
-                android:paddingStart="10dp"
-                android:paddingTop="10dp"
-                android:text="Para activar nuestros músculos antes de ponerlos en movimiento, debemos realizar unos ejercicios de calentamiento previo."
-                tools:ignore="RtlSymmetry">
-            </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/white"
+                    android:paddingStart="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="4.	Tener paciencia: si quieres resultados a la larga los tendrás, pero no quieras resultados a corto plazo. Es bueno tener buenas expectativas sean pequeñas, medias o grandes, pero no a corto plazo, siempre hay que mirar a varios meses vista. Cualquier objetivo debe fijarse a medio o , a largo plazo, para que así sea más fácil observar y sobre todo valorar los resultados."
+                    tools:ignore="RtlSymmetry">
+                </TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/white"
-                android:paddingStart="10dp"
-                android:paddingTop="10dp"
-                android:textStyle="bold"
-                android:text="•	Como empezar en el gimnasio"
-                tools:ignore="RtlSymmetry">
-            </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/white"
+                    android:paddingStart="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="5. No obsesionarse: por muy claro que tengas que en tu vida tiene que haber una actividad deportiva, sea por el motivo que sea no debe ser una obligación, nunca debe obsesionarte el tener que realizar sí o sí la actividad. Si te obsesionas con ello puede ser malo para el resto de tu vida, la cual gira a una costumbre que te ha hecho estar donde estás. Si quieres cambiar algo debes realizarlo sin que te sientas obligado a ello, tiene que ir fluyendo poco a poco, y aunque no debes buscar excusas para saltarte el tiempo de entrenamiento, tampoco debe ser una obligación inamovible."
+                    tools:ignore="RtlSymmetry">
+                </TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="25dp"
-                android:paddingTop="10dp"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                android:text="1º No te obsesiones con tus objetivos"
-                tools:ignore="RtlSymmetry">
-            </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/white"
+                    android:paddingStart="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="6. Habituarse a la rutina: ten en cuenta que al principio te va a costar, es normal, debes habituarte a la nueva rutina, durante años has sido sedentario o no has realizado actividad alguna y ahora meter alguno nuevo en tu vida te va a costar, sobre todo cuando pase la novedad y las ganas de cambiar, cuando sea rutinario deberás de habituarte simplemente a la actividad."
+                    tools:ignore="RtlSymmetry">
+                </TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="25dp"
-                android:textColor="@color/white"
-                android:paddingTop="5dp"
-                android:text="Perder peso, ganar masa muscular, tonificar… Las razones objetivas para ir al gimnasio y conseguir mejorar tu cuerpo pueden ser muchas y muy variadas.
+                <TextView
+                    android:layout_width="match_parent"
+                    android:paddingTop="20dp"
+                    android:textColor="@color/white"
+                    android:paddingStart="10dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="•	Cómo organizar tu plan de entrenamiento semanal"
+                    tools:ignore="RtlSymmetry">
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:paddingTop="10dp"
+                    android:paddingStart="10dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Tu plan de entrenamiento semanal dependerá de varios factores:"
+                    tools:ignore="RtlSymmetry">
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/white"
+                    android:paddingStart="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="•	Tu condición física, edad, constitución y sexo.\n•	Tu nivel de entrenamiento.\n•	Tu objetivo, ya sea perder peso, tonificar, aumentar la potencia.\n•	Tus circunstancias personales, horarios, ritmo de vida."
+                    tools:ignore="RtlSymmetry">
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/white"
+                    android:paddingStart="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="Según estas condiciones, deberás planificar un tiempo para los ejercicios de cardio y otro para el entrenamiento de fuerza, manteniendo periodos de descanso entre sesiones."
+                    tools:ignore="RtlSymmetry">
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:text="•	Cinco días de entrenamiento a la semana, para que tu cuerpo pueda descansar.\n•	Tipos de entrenamiento organizados en días alternos para permitir el descanso de cada grupo de músculos.\n•	Entrenamiento sin pesos para aprender las posturas correctas y los movimientos específicos de cada ejercicio."
+                    tools:ignore="RtlSymmetry">
+                </TextView>
+
+                <ImageView
+                    android:paddingTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/calendario">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:paddingTop="10dp"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="•	¿A qué intensidad debo entrenar?"
+                    tools:ignore="RtlSymmetry">
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:paddingTop="10dp"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="En nuestro plan de entrenamiento semanal no utilizaremos pesos más allá del de nuestro cuerpo, por lo que la intensidad de los ejercicios dependerá del número de repeticiones."
+                    tools:ignore="RtlSymmetry">
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/white"
+                    android:paddingTop="10dp"
+                    android:text="Lo ideal para conseguir un beneficio visible es realizar un número de repeticiones que, al finalizar, sintamos que solo podríamos haber hecho una o dos más. De este modo nos acercamos al límite de nuestra resistencia, sin sobrepasarlo"
+                    tools:ignore="RtlSymmetry">
+                </TextView>
+
+                <ImageView
+                    android:paddingTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_height="250dp"
+                    android:src="@drawable/intensidad">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/white"
+                    android:paddingStart="10dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="•	El descanso entre ejercicios"
+                    tools:ignore="RtlSymmetry">
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:paddingTop="10dp"
+                    android:paddingStart="10dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Lo ideal es tomar un descanso de dos minutos cuando hagamos pocas repeticiones, y de un minuto cuando hagamos muchas."
+                    tools:ignore="RtlSymmetry">
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="•	Calentamiento y estiramientos"
+                    tools:ignore="RtlSymmetry">
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Para activar nuestros músculos antes de ponerlos en movimiento, debemos realizar unos ejercicios de calentamiento previo."
+                    tools:ignore="RtlSymmetry">
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold"
+                    android:text="•	Como empezar en el gimnasio"
+                    tools:ignore="RtlSymmetry">
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="25dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="1º No te obsesiones con tus objetivos"
+                    tools:ignore="RtlSymmetry">
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="25dp"
+                    android:textColor="@color/white"
+                    android:paddingTop="5dp"
+                    android:text="Perder peso, ganar masa muscular, tonificar… Las razones objetivas para ir al gimnasio y conseguir mejorar tu cuerpo pueden ser muchas y muy variadas.
 No obstante, aunque es bueno marcarse unas metas e intentar conseguirlas no debes obsesionarte con ellas."
-                tools:ignore="RtlSymmetry">
-            </TextView>
+                    tools:ignore="RtlSymmetry">
+                </TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="25dp"
-                android:textColor="@color/white"
-                android:paddingTop="10dp"
-                android:textStyle="bold"
-                android:text="2º Marcate un calendario y un horario fijo"
-                tools:ignore="RtlSymmetry">
-            </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="25dp"
+                    android:textColor="@color/white"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold"
+                    android:text="2º Marcate un calendario y un horario fijo"
+                    tools:ignore="RtlSymmetry">
+                </TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="25dp"
-                android:textColor="@color/white"
-                android:paddingTop="5dp"
-                android:text="Antes de apuntarte a un gimnasio es importante que decidas los días y las horas a las que irás. Aunque parezca una tontería, esta falta de planificación es lo que provoca que mucha gente deje su práctica deportiva al cabo de poco tiempo."
-                tools:ignore="RtlSymmetry">
-            </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="25dp"
+                    android:textColor="@color/white"
+                    android:paddingTop="5dp"
+                    android:text="Antes de apuntarte a un gimnasio es importante que decidas los días y las horas a las que irás. Aunque parezca una tontería, esta falta de planificación es lo que provoca que mucha gente deje su práctica deportiva al cabo de poco tiempo."
+                    tools:ignore="RtlSymmetry">
+                </TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/white"
-                android:paddingStart="25dp"
-                android:paddingTop="10dp"
-                android:textStyle="bold"
-                android:text="3º Evita lesiones y sobrecargas"
-                tools:ignore="RtlSymmetry">
-            </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:paddingStart="25dp"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold"
+                    android:text="3º Evita lesiones y sobrecargas"
+                    tools:ignore="RtlSymmetry">
+                </TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="25dp"
-                android:textColor="@color/white"
-                android:paddingTop="5dp"
-                android:text="Mantente constantemente hidratado. Calienta antes y después de cada ejercicio. Unos minutos de calentamiento para poner los músculos a tono pueden ser la diferencia entre lesionarse o no. Durante las primeras semanas, intenta focalizar los ejercicios en músculos concretos y no en grupos musculares. De este modo, evitarás entrenar doblemente algún músculo y provocar alguna sobrecarga.Evita un exceso de entrenamiento"
-                tools:ignore="RtlSymmetry">
-            </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="25dp"
+                    android:textColor="@color/white"
+                    android:paddingTop="5dp"
+                    android:text="Mantente constantemente hidratado. Calienta antes y después de cada ejercicio. Unos minutos de calentamiento para poner los músculos a tono pueden ser la diferencia entre lesionarse o no. Durante las primeras semanas, intenta focalizar los ejercicios en músculos concretos y no en grupos musculares. De este modo, evitarás entrenar doblemente algún músculo y provocar alguna sobrecarga.Evita un exceso de entrenamiento"
+                    tools:ignore="RtlSymmetry">
+                </TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="10dp"
-                android:textColor="@color/white"
-                android:paddingTop="10dp"
-                android:textStyle="bold"
-                android:text="•	¿Cuáles son las 4 fases del entrenamiento deportivo?"
-                tools:ignore="RtlSymmetry">
-            </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/white"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold"
+                    android:text="•	¿Cuáles son las 4 fases del entrenamiento deportivo?"
+                    tools:ignore="RtlSymmetry">
+                </TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="25dp"
-                android:textColor="@color/white"
-                android:paddingTop="10dp"
-                android:textStyle="bold"
-                android:text="1º Fases del entrenamiento: el calentamiento:"
-                tools:ignore="RtlSymmetry">
-            </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="25dp"
+                    android:textColor="@color/white"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold"
+                    android:text="1º Fases del entrenamiento: el calentamiento:"
+                    tools:ignore="RtlSymmetry">
+                </TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/white"
-                android:paddingStart="25dp"
-                android:paddingTop="5dp"
-                android:text="Es importante que empieces despacio. En esta fase lo que se busca es preparar el cuerpo para realizar ejercicio físico. El calentamiento tiene que ser total y debe afectar a todo tu cuerpo"
-                tools:ignore="RtlSymmetry">
-            </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:paddingStart="25dp"
+                    android:paddingTop="5dp"
+                    android:text="Es importante que empieces despacio. En esta fase lo que se busca es preparar el cuerpo para realizar ejercicio físico. El calentamiento tiene que ser total y debe afectar a todo tu cuerpo"
+                    tools:ignore="RtlSymmetry">
+                </TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="25dp"
-                android:textColor="@color/white"
-                android:paddingTop="10dp"
-                android:textStyle="bold"
-                android:text="2º Etapas del entrenamiento: fase principal:"
-                tools:ignore="RtlSymmetry">
-            </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="25dp"
+                    android:textColor="@color/white"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold"
+                    android:text="2º Etapas del entrenamiento: fase principal:"
+                    tools:ignore="RtlSymmetry">
+                </TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="25dp"
-                android:textColor="@color/white"
-                android:paddingTop="5dp"
-                android:text="De todas las etapas del entrenamiento, esta es la que consiste en hacer el entrenamiento en sí, es decir, los ejercicios propuestos orientados a tus metas y objetivos finales"
-                tools:ignore="RtlSymmetry">
-            </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="25dp"
+                    android:textColor="@color/white"
+                    android:paddingTop="5dp"
+                    android:text="De todas las etapas del entrenamiento, esta es la que consiste en hacer el entrenamiento en sí, es decir, los ejercicios propuestos orientados a tus metas y objetivos finales"
+                    tools:ignore="RtlSymmetry">
+                </TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="25dp"
-                android:paddingTop="10dp"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                android:text="3º Fases del entrenamiento deportivo: la vuelta a la calma:"
-                tools:ignore="RtlSymmetry">
-            </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="25dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="3º Fases del entrenamiento deportivo: la vuelta a la calma:"
+                    tools:ignore="RtlSymmetry">
+                </TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="25dp"
-                android:textColor="@color/white"
-                android:paddingTop="5dp"
-                android:text="Una vez hayas terminado la fase principal, es importante bajar las pulsaciones
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="25dp"
+                    android:textColor="@color/white"
+                    android:paddingTop="5dp"
+                    android:text="Una vez hayas terminado la fase principal, es importante bajar las pulsaciones
 El llamado ejercicio ligero es importante en la fase final del entrenamiento para ayudar al cuerpo a liberar toxinas y volver a su estado habitual."
-                tools:ignore="RtlSymmetry">
-            </TextView>
+                    tools:ignore="RtlSymmetry">
+                </TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="25dp"
-                android:textColor="@color/white"
-                android:paddingTop="10dp"
-                android:textStyle="bold"
-                android:text="4º Etapas del entrenamiento: los estiramientos:"
-                tools:ignore="RtlSymmetry">
-            </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="25dp"
+                    android:textColor="@color/white"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold"
+                    android:text="4º Etapas del entrenamiento: los estiramientos:"
+                    tools:ignore="RtlSymmetry">
+                </TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/white"
-                android:paddingStart="25dp"
-                android:paddingTop="5dp"
-                android:text="La fase de los estiramientos sirve para prevenir el dolor muscular y las posibles agujetas que puedas tener. Te recomendamos que al final del programa de ejercicios o clase dirigida dediques otros cinco minutos a estirar de forma global. Esto permitirá a tu musculatura recuperarse del esfuerzo realizado."
-                tools:ignore="RtlSymmetry">
-            </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:paddingStart="25dp"
+                    android:paddingTop="5dp"
+                    android:text="La fase de los estiramientos sirve para prevenir el dolor muscular y las posibles agujetas que puedas tener. Te recomendamos que al final del programa de ejercicios o clase dirigida dediques otros cinco minutos a estirar de forma global. Esto permitirá a tu musculatura recuperarse del esfuerzo realizado."
+                    tools:ignore="RtlSymmetry">
+                </TextView>
+
+
+            </LinearLayout>
 
         </LinearLayout>
 
     </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:id="@+id/pieHome">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/comienzo"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp">
+            </Space>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textColor="@color/white"
+                android:text="Home"
+                android:textSize="14sp"
+                android:gravity="center">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:id="@+id/pieEtapas">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/cronograma"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp">
+            </Space>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textColor="@color/white"
+                android:text="Etapas"
+                android:textSize="14sp"
+                android:gravity="center">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:id="@+id/pieSuplementos">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/suplementaria"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp">
+            </Space>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textColor="@color/white"
+                android:text="Suplementos"
+                android:textSize="14sp"
+                android:gravity="center">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:id="@+id/pieApps">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/aplicaciones"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp">
+            </Space>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:text="Apps"
+                android:gravity="center">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:id="@+id/pieInfo">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/informacion"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp">
+            </Space>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:text="Info"
+                android:gravity="center">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:id="@+id/pieEntreno">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/entrenamiento"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp">
+            </Space>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:text="Ejercicios"
+                android:gravity="center">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </LinearLayout>

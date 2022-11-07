@@ -63,5 +63,35 @@ class AppsActivity : AppCompatActivity(){
             startActivity(webIntent)
         }
 
+        binding.pieHome.setOnClickListener{
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.pieInfo.setOnClickListener {
+            val intent = Intent(this, InformacionActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.pieEntreno.setOnClickListener {
+            val intent = Intent(this, EleccionActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.pieSuplementos.setOnClickListener {
+            val intent = Intent(this, SuplementosActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.pieEtapas.setOnClickListener {
+            val intent = Intent(this, EtapasActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.pieApps.setOnClickListener {
+            val intent = Intent(this, AppsActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }
