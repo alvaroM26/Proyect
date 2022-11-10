@@ -6,49 +6,45 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:gravity="center"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:gravity="center">
 
         <ImageView
+            android:id="@+id/logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:src="@drawable/logo_small"
-            android:id="@+id/logo"/>
+            android:src="@drawable/logo_small" />
 
     </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:paddingStart="10dp"
         android:paddingTop="10dp"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:text="• Tipos de suplementos deportivos">
-    </TextView>
+        android:text="• Tipos de suplementos deportivos"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
-        android:paddingTop="10dp"
-        android:paddingStart="10dp"
         android:layout_height="wrap_content"
-        android:text="Existen muchos tipos de complementos deportivos, por ello es importante saber elegir cual es mejor tomar según el objetivo deportivo que te hayas marcado. Cada uno puede utilizarse para mejorar uno u otro factor relacionado con la práctica de actividad deportiva">
-    </TextView>
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:text="Existen muchos tipos de complementos deportivos, por ello es importante saber elegir cual es mejor tomar según el objetivo deportivo que te hayas marcado. Cada uno puede utilizarse para mejorar uno u otro factor relacionado con la práctica de actividad deportiva" />
 
     <TextView
         android:layout_width="wrap_content"
-        android:paddingTop="10dp"
-        android:paddingStart="10dp"
         android:layout_height="wrap_content"
-        android:text=" Si los elegimos bien obtendremos algunos beneficios realmente buenos como por ejemplo:">
-    </TextView>
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:text=" Si los elegimos bien obtendremos algunos beneficios realmente buenos como por ejemplo:" />
 
     <TextView
         android:layout_width="wrap_content"
-        android:paddingTop="10dp"
-        android:paddingStart="10dp"
         android:layout_height="wrap_content"
-        android:text="• Complementar nuestra dieta\n• Mejorar nuestra recuperación muscular\n• Aumentar la resistencia\n• Mejorar el rendimiento físico\n• Una recuperación más rápida\n• Disminuye el cansancio y la fatiga muscular\n• Mejores resultados en los entrenamientos\n• Prevenir enfermedades">
-    </TextView>
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:text="• Complementar nuestra dieta\n• Mejorar nuestra recuperación muscular\n• Aumentar la resistencia\n• Mejorar el rendimiento físico\n• Una recuperación más rápida\n• Disminuye el cansancio y la fatiga muscular\n• Mejores resultados en los entrenamientos\n• Prevenir enfermedades" />
 
 </LinearLayout>

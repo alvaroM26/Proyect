@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.proyect.databinding.ActivityUsuarioBinding
 import com.google.firebase.auth.FirebaseAuth
 
-class UsuarioActivity : AppCompatActivity(){
+class UsuarioActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityUsuarioBinding
 
@@ -21,21 +21,25 @@ class UsuarioActivity : AppCompatActivity(){
         binding = ActivityUsuarioBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val bundle:Bundle?=intent.extras
-        val email:String?=bundle?.getString("email")
+        val bundle: Bundle? = intent.extras
+        val email: String? = bundle?.getString("email")
 
-        Toast.makeText(this@UsuarioActivity, "Bienvenido a la aplicacion de informacion y entrenamientos", Toast.LENGTH_SHORT).show()
+        Toast.makeText(
+            this@UsuarioActivity,
+            "Bienvenido a la aplicacion de informacion y entrenamientos",
+            Toast.LENGTH_SHORT
+        ).show()
 
-        setup(email?:"")
+        setup(email ?: "")
 
-        binding.inicio.setOnClickListener{
-            val intent = Intent(this,MainActivity::class.java)
+        binding.inicio.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
     }
 
-    fun setup (email :String){
+    fun setup(email: String) {
         binding.usuario.text = email
         binding.cerrarBoton.setOnClickListener {
             FirebaseAuth.getInstance().signOut()

@@ -23,7 +23,7 @@ class InformacionActivity : AppCompatActivity() {
         pulsar()
     }
 
-    private fun pulsar(){
+    private fun pulsar() {
         binding.pieHome.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)

@@ -8,171 +8,332 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="top"
-        android:orientation="vertical">
+        android:gravity="center">
 
         <ImageView
-            android:layout_width="match_parent"
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:src="@drawable/logo_small"
-            android:contentDescription="@string/todo">
-        </ImageView>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/black"
-            android:layout_marginTop="2dp">
-        </View>
+            android:layout_margin="10dp"
+            android:src="@drawable/logo_small" />
 
     </LinearLayout>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingTop="20dp"
-        tools:ignore="UselessParent">
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/black">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            tools:ignore="ExtraText">
+            android:layout_margin="20dp"
+            android:orientation="vertical">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:text="@string/prensa_de_pecho">
-            </TextView>
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="ExtraText">
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/black"
-                android:layout_marginTop="2dp">
-            </View>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/prensa_de_pecho"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"></TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:elegantTextHeight="true"
-                android:paddingStart="10dp"
-                android:text="@string/_1_t_mbate_en_un_banco_plano_en_el_bench_press_los_hombros_se_echan_hacia_atr_s_n_2_la_cabeza_queda_apoyada_sobre_el_banco_y_los_ojos_se_fijan_en_la_barra_mientras_que_las_piernas_se_colocan_firmes_en_el_suelo_formando_un_ngulo_de_90_n_3_para_un_agarre_correcto_en_el_press_de_banca_sujeta_la_barra_a_la_altura_de_los_hombros_4_las_mu_ecas_se_mantienen_rectas_y_las_manos_tienen_que_rodear_la_barra_para_un_agarre_firme_n_5_despu_s_se_inicia_el_movimiento_toma_aire_profundamente_y_contrae_al_mismo_tiempo_la_espalda_los_gl_teos_y_los_om_platos_fijos"
-                tools:ignore="ExtraText,RtlSymmetry">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/white"></View>
 
-            </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elegantTextHeight="true"
+                    android:paddingStart="10dp"
+                    android:text="@string/_1_t_mbate_en_un_banco_plano_en_el_bench_press_los_hombros_se_echan_hacia_atr_s_n_2_la_cabeza_queda_apoyada_sobre_el_banco_y_los_ojos_se_fijan_en_la_barra_mientras_que_las_piernas_se_colocan_firmes_en_el_suelo_formando_un_ngulo_de_90_n_3_para_un_agarre_correcto_en_el_press_de_banca_sujeta_la_barra_a_la_altura_de_los_hombros_4_las_mu_ecas_se_mantienen_rectas_y_las_manos_tienen_que_rodear_la_barra_para_un_agarre_firme_n_5_despu_s_se_inicia_el_movimiento_toma_aire_profundamente_y_contrae_al_mismo_tiempo_la_espalda_los_gl_teos_y_los_om_platos_fijos"
+                    android:textColor="@color/white"
+                    tools:ignore="ExtraText,RtlSymmetry"></TextView>
 
-            <VideoView
-                android:id="@+id/video1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-            </VideoView>
+                <VideoView
+                    android:id="@+id/video1"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"></VideoView>
 
-            ////////////////////////
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:text="@string/fondos_asistidos"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"></TextView>
 
-            <TextView
-                android:paddingTop="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:text="@string/fondos_asistidos">
-            </TextView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/white"></View>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/black"
-                android:layout_marginTop="2dp">
-            </View>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elegantTextHeight="true"
+                    android:paddingStart="10dp"
+                    android:text="@string/_1_si_mantienes_tu_torso_erecto_hacia_arriba_y_hacia_abajo_la_tensi_n_se_desplaza_a_tus_tr_ceps_inclinarte_hacia_delante_har_que_los_m_sculos_del_pecho_trabajen_m_s_n_2_mant_n_tus_codos_lo_m_s_cerca_posible_de_sus_costados_mientras_los_doblas_para_bajar_tu_cuerpo_hacia_abajo_hasta_que_tus_brazos_est_n_casi_paralelos_al_piso_n_3_al_abrir_los_codos_los_m_sculos_del_pecho_pueden_ayudar_en_los_fondos_asistidos_en_m_quina_n_4_presiona_tus_manos_con_fuerza_contra_las_barras_para_extender_tus_brazos_y_levantar_tu_cuerpo_hacia_arriba_n_5_para_aislar_el_tr_ceps_braquial_mant_n_el_movimiento_de_los_hombros_al_m_nimo_el_movimiento_debe_ocurrir_principalmente_en_los_codos"
+                    android:textColor="@color/white"
+                    tools:ignore="RtlSymmetry"></TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:elegantTextHeight="true"
-                android:text="@string/_1_si_mantienes_tu_torso_erecto_hacia_arriba_y_hacia_abajo_la_tensi_n_se_desplaza_a_tus_tr_ceps_inclinarte_hacia_delante_har_que_los_m_sculos_del_pecho_trabajen_m_s_n_2_mant_n_tus_codos_lo_m_s_cerca_posible_de_sus_costados_mientras_los_doblas_para_bajar_tu_cuerpo_hacia_abajo_hasta_que_tus_brazos_est_n_casi_paralelos_al_piso_n_3_al_abrir_los_codos_los_m_sculos_del_pecho_pueden_ayudar_en_los_fondos_asistidos_en_m_quina_n_4_presiona_tus_manos_con_fuerza_contra_las_barras_para_extender_tus_brazos_y_levantar_tu_cuerpo_hacia_arriba_n_5_para_aislar_el_tr_ceps_braquial_mant_n_el_movimiento_de_los_hombros_al_m_nimo_el_movimiento_debe_ocurrir_principalmente_en_los_codos"
-               android:paddingStart="10dp"
-                tools:ignore="RtlSymmetry">
-            </TextView>
+                <VideoView
+                    android:id="@+id/video2"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"></VideoView>
 
-            <VideoView
-                android:id="@+id/video2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-            </VideoView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:text="@string/cierre_de_polea"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"></TextView>
 
-            ////////////////////////
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/white"></View>
 
-            <TextView
-                android:paddingTop="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:text="@string/cierre_de_polea">
-            </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elegantTextHeight="true"
+                    android:paddingStart="10dp"
+                    android:text="@string/_1_selecciona_el_peso_de_acuerdo_a_tu_objetivo_y_col_cate_entre_ambos_mangos_n_2_sujeta_los_mangos_con_las_palmas_mirando_hacia_afuera_luego_lleva_los_mangos_hasta_la_altura_de_tus_hombros_procura_no_flexionar_por_completo_los_brazos_solo_se_necesita_una_ligera_flexi_n_en_el_codo_para_evitar_lesiones_n_3_para_evitar_perder_el_equilibrio_debes_tener_la_espalda_erguida_y_estar_inclinado_levemente_hacia_delante_de_esta_manera_podr_s_realizar_cruces_en_polea_baja_de_forma_c_moda_sin_inconvenientes"
+                    android:textColor="@color/white"
+                    tools:ignore="RtlSymmetry"></TextView>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/black"
-                android:layout_marginTop="2dp">
-            </View>
+                <VideoView
+                    android:id="@+id/video3"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"></VideoView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:elegantTextHeight="true"
-                android:text="@string/_1_selecciona_el_peso_de_acuerdo_a_tu_objetivo_y_col_cate_entre_ambos_mangos_n_2_sujeta_los_mangos_con_las_palmas_mirando_hacia_afuera_luego_lleva_los_mangos_hasta_la_altura_de_tus_hombros_procura_no_flexionar_por_completo_los_brazos_solo_se_necesita_una_ligera_flexi_n_en_el_codo_para_evitar_lesiones_n_3_para_evitar_perder_el_equilibrio_debes_tener_la_espalda_erguida_y_estar_inclinado_levemente_hacia_delante_de_esta_manera_podr_s_realizar_cruces_en_polea_baja_de_forma_c_moda_sin_inconvenientes"
-                android:paddingStart="10dp"
-                tools:ignore="RtlSymmetry">
-            </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:text="@string/contractor_pec_fly"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"></TextView>
 
-            <VideoView
-                android:id="@+id/video3"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-            </VideoView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/white"></View>
 
-            ////////////////////////
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elegantTextHeight="true"
+                    android:paddingStart="10dp"
+                    android:text="@string/_1_el_primer_paso_consiste_en_sentarnos_en_la_m_quina_una_vez_hecho_esto_llevaremos_los_brazos_a_una_situaci_n_horizontal_para_tomar_los_brazos_de_la_m_quina_vamos_a_flexionar_los_codos_dejando_las_mu_ecas_y_los_antebrazos_relajados_n_2_para_completar_el_ejercicio_jalaremos_con_fuerza_tensando_un_poco_las_mu_ecas_y_un_algo_m_s_los_antebrazos_aunque_no_debe_buscarse_llevar_los_pu_os_hasta_el_pecho_si_es_que_se_siente_demasiada_tensi_n_en_los_grupos_musculares_sobre_todo_si_esto_ocurre_en_los_brazos_n_3_finalmente_regrese_a_la_situaci_n_inicial_repita_el_movimiento_de_acuerdo_a_su_rutina_de_entrenamiento"
+                    android:textColor="@color/white"
+                    tools:ignore="RtlSymmetry"></TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:paddingTop="20dp"
-                android:text="@string/contractor_pec_fly"
-                android:textStyle="bold">
-            </TextView>
+                <VideoView
+                    android:id="@+id/video4"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"></VideoView>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/black"
-                android:layout_marginTop="2dp">
-            </View>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:elegantTextHeight="true"
-                android:text="@string/_1_el_primer_paso_consiste_en_sentarnos_en_la_m_quina_una_vez_hecho_esto_llevaremos_los_brazos_a_una_situaci_n_horizontal_para_tomar_los_brazos_de_la_m_quina_vamos_a_flexionar_los_codos_dejando_las_mu_ecas_y_los_antebrazos_relajados_n_2_para_completar_el_ejercicio_jalaremos_con_fuerza_tensando_un_poco_las_mu_ecas_y_un_algo_m_s_los_antebrazos_aunque_no_debe_buscarse_llevar_los_pu_os_hasta_el_pecho_si_es_que_se_siente_demasiada_tensi_n_en_los_grupos_musculares_sobre_todo_si_esto_ocurre_en_los_brazos_n_3_finalmente_regrese_a_la_situaci_n_inicial_repita_el_movimiento_de_acuerdo_a_su_rutina_de_entrenamiento"
-                android:paddingStart="10dp"
-                tools:ignore="RtlSymmetry">
-            </TextView>
-
-            <VideoView
-                android:id="@+id/video4"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-            </VideoView>
-
+            </LinearLayout>
 
         </LinearLayout>
 
     </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/pieHome"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/comienzo" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"></Space>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="Home"
+                android:textColor="@color/white"
+                android:textSize="14sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pieEtapas"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/cronograma" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"></Space>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="Etapas"
+                android:textColor="@color/white"
+                android:textSize="14sp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pieSuplementos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/suplementaria" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"></Space>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="Suplementos"
+                android:textColor="@color/white"
+                android:textSize="14sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pieApps"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/aplicaciones" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"></Space>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="Apps"
+                android:textColor="@color/white"
+                android:textSize="14sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pieInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/informacion" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"></Space>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="Info"
+                android:textColor="@color/white"
+                android:textSize="14sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pieEntreno"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/entrenamiento" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"></Space>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="Ejercicios"
+                android:textColor="@color/white"
+                android:textSize="14sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </LinearLayout>

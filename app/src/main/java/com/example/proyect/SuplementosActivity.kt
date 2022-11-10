@@ -1,10 +1,15 @@
 package com.example.proyect
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Window
 import androidx.appcompat.app.AppCompatActivity
+import com.example.proyect.databinding.ActivityMusculopiernaBinding
+import com.example.proyect.databinding.ActivitySuplementosBinding
 
 class SuplementosActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivitySuplementosBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -12,5 +17,42 @@ class SuplementosActivity : AppCompatActivity() {
         supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_suplementos)
 
+        binding = ActivitySuplementosBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        pulsar()
+
+    }
+
+    private fun pulsar() {
+        binding.pieHome.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.pieInfo.setOnClickListener {
+            val intent = Intent(this, InformacionActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.pieEntreno.setOnClickListener {
+            val intent = Intent(this, EleccionActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.pieSuplementos.setOnClickListener {
+            val intent = Intent(this, SuplementosActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.pieEtapas.setOnClickListener {
+            val intent = Intent(this, EtapasActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.pieApps.setOnClickListener {
+            val intent = Intent(this, AppsActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

@@ -7,29 +7,29 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:gravity="center"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:gravity="center">
 
         <ImageView
+            android:id="@+id/logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:src="@drawable/logo_small"
-            android:id="@+id/logo"/>
+            android:src="@drawable/logo_small" />
 
     </LinearLayout>
 
     <ScrollView
-        android:background="@color/black"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:background="@color/black">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="20dp">
+            android:layout_margin="20dp"
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -40,135 +40,120 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:textStyle="bold"
-                    android:textColor="@color/white"
                     android:gravity="center"
-                    android:text="@string/curl_de_martillo_cruzado_con_mancuernas">
-                </TextView>
+                    android:text="@string/curl_de_martillo_cruzado_con_mancuernas"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"></TextView>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@color/white"
-                    android:layout_marginTop="2dp">
-                </View>
+                    android:layout_marginTop="2dp"
+                    android:background="@color/white"></View>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:elegantTextHeight="true"
-                    android:textColor="@color/white"
                     android:paddingStart="10dp"
                     android:text="@string/_1_manteniendo_las_palmas_hacia_adentro_levante_una_de_las_mancuernas_hacia_el_hombro_opuesto_hasta_sentir_la_presi_n_sobre_el_b_ceps_recuerde_tener_la_espalda_recta_y_la_mirada_hacia_adelante_n2_contin_e_el_movimiento_hasta_que_la_mancuerna_toque_el_hombro_y_espere_unos_segundos_n3_repita_el_mismo_movimiento_con_el_brazo_contrario_y_realice_el_ejercicio_hasta_completar_las_repeticiones_que_desee"
+                    android:textColor="@color/white"
                     tools:ignore="ExtraText,RtlSymmetry">
 
                 </TextView>
 
                 <VideoView
                     android:id="@+id/video1"
-                    android:layout_gravity="center"
                     android:layout_width="match_parent"
-                    android:layout_height="300dp">
-                </VideoView>
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"></VideoView>
 
                 <TextView
-                    android:paddingTop="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:textStyle="bold"
-                    android:textColor="@color/white"
                     android:gravity="center"
-                    android:text="@string/curl_de_b_ceps_en_banco_scott">
-                </TextView>
+                    android:paddingTop="20dp"
+                    android:text="@string/curl_de_b_ceps_en_banco_scott"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"></TextView>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@color/white"
-                    android:layout_marginTop="2dp">
-                </View>
+                    android:layout_marginTop="2dp"
+                    android:background="@color/white"></View>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:elegantTextHeight="true"
-                    android:textColor="@color/white"
-                    android:text="@string/_1_la_t_cnica_de_ejecuci_n_consiste_en_que_el_individuo_debe_estar_sentado_sobre_la_m_quina_con_los_brazos_completamente_apoyados_sobre_el_pupitre_que_compone_el_banco_scott_n2_agarra_la_barra_z_o_recta_o_en_su_defecto_dos_mancuernas_con_ambas_manos_o_incluso_a_mancuerna_alternada_n3_durante_la_ejecuci_n_del_b_ceps_en_banco_scott_las_palmas_deben_mirar_hacia_arriba_sin_movilizar_los_brazos_y_teniendo_ambos_estirados_mientras_se_sostiene_la_carga_y_se_inicia_el_movimiento_n4_inspira_profundamente_y_se_comienza_con_la_flexi_n_de_los_codos_para_poder_llevar_el_peso_hacia_el_nivel_del_pecho_con_ambas_manos_mant_n_ah_2_segundos"
                     android:paddingStart="10dp"
-                    tools:ignore="RtlSymmetry">
-                </TextView>
+                    android:text="@string/_1_la_t_cnica_de_ejecuci_n_consiste_en_que_el_individuo_debe_estar_sentado_sobre_la_m_quina_con_los_brazos_completamente_apoyados_sobre_el_pupitre_que_compone_el_banco_scott_n2_agarra_la_barra_z_o_recta_o_en_su_defecto_dos_mancuernas_con_ambas_manos_o_incluso_a_mancuerna_alternada_n3_durante_la_ejecuci_n_del_b_ceps_en_banco_scott_las_palmas_deben_mirar_hacia_arriba_sin_movilizar_los_brazos_y_teniendo_ambos_estirados_mientras_se_sostiene_la_carga_y_se_inicia_el_movimiento_n4_inspira_profundamente_y_se_comienza_con_la_flexi_n_de_los_codos_para_poder_llevar_el_peso_hacia_el_nivel_del_pecho_con_ambas_manos_mant_n_ah_2_segundos"
+                    android:textColor="@color/white"
+                    tools:ignore="RtlSymmetry"></TextView>
 
                 <VideoView
                     android:id="@+id/video2"
                     android:layout_width="match_parent"
-                    android:layout_height="300dp">
-                </VideoView>
+                    android:layout_height="300dp"></VideoView>
 
                 <TextView
-                    android:paddingTop="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:textColor="@color/white"
-                    android:textStyle="bold"
                     android:gravity="center"
-                    android:text="@string/curl_concentrado_en_m_quina">
-                </TextView>
+                    android:paddingTop="20dp"
+                    android:text="@string/curl_concentrado_en_m_quina"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"></TextView>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@color/white"
-                    android:layout_marginTop="2dp">
-                </View>
+                    android:layout_marginTop="2dp"
+                    android:background="@color/white"></View>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:elegantTextHeight="true"
-                    android:textColor="@color/white"
-                    android:text="@string/_1_realice_la_posici_n_inicial_n2_mantenga_el_agarre_firme_en_todo_momento_suba_hasta_la_altura_de_los_hombros_y_hasta_que_ambos_brazos_queden_flexionados_exhale_y_contraiga_los_b_ceps_n3_luego_baje_lentamente_buscando_que_sus_brazos_se_encuentren_totalmente_extendidos"
                     android:paddingStart="10dp"
-                    tools:ignore="RtlSymmetry">
-                </TextView>
+                    android:text="@string/_1_realice_la_posici_n_inicial_n2_mantenga_el_agarre_firme_en_todo_momento_suba_hasta_la_altura_de_los_hombros_y_hasta_que_ambos_brazos_queden_flexionados_exhale_y_contraiga_los_b_ceps_n3_luego_baje_lentamente_buscando_que_sus_brazos_se_encuentren_totalmente_extendidos"
+                    android:textColor="@color/white"
+                    tools:ignore="RtlSymmetry"></TextView>
 
                 <VideoView
                     android:id="@+id/video3"
                     android:layout_width="match_parent"
-                    android:layout_height="300dp">
-                </VideoView>
+                    android:layout_height="300dp"></VideoView>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:textColor="@color/white"
                     android:paddingTop="20dp"
                     android:text="@string/curl_en_polea_baja_con_barra_recta"
-                    android:textStyle="bold">
-                </TextView>
+                    android:textColor="@color/white"
+                    android:textStyle="bold"></TextView>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@color/white"
-                    android:layout_marginTop="2dp">
-                </View>
+                    android:layout_marginTop="2dp"
+                    android:background="@color/white"></View>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:elegantTextHeight="true"
-                    android:textColor="@color/white"
-                    android:text="@string/_1_toma_la_barra_con_un_agarre_cercano_y_lentamente_mientras_exhala_lleva_la_barra_hacia_los_hombros_n2_mant_n_aislado_el_b_ceps_y_espera_hasta_un_par_de_segundos_para_regresar_n3_regresa_lentamente_a_la_posici_n_inicial_extendiendo_los_brazos_completamente_n4_realiza_el_movimiento_de_acuerdo_a_la_cantidad_de_repeticiones_que_desea_realizar"
                     android:paddingStart="10dp"
-                    tools:ignore="RtlSymmetry">
-                </TextView>
+                    android:text="@string/_1_toma_la_barra_con_un_agarre_cercano_y_lentamente_mientras_exhala_lleva_la_barra_hacia_los_hombros_n2_mant_n_aislado_el_b_ceps_y_espera_hasta_un_par_de_segundos_para_regresar_n3_regresa_lentamente_a_la_posici_n_inicial_extendiendo_los_brazos_completamente_n4_realiza_el_movimiento_de_acuerdo_a_la_cantidad_de_repeticiones_que_desea_realizar"
+                    android:textColor="@color/white"
+                    tools:ignore="RtlSymmetry"></TextView>
 
                 <VideoView
                     android:id="@+id/video4"
                     android:layout_width="match_parent"
-                    android:layout_height="300dp">
-                </VideoView>
+                    android:layout_height="300dp"></VideoView>
 
             </LinearLayout>
 
@@ -183,173 +168,166 @@
         android:orientation="horizontal">
 
         <LinearLayout
+            android:id="@+id/pieHome"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:layout_weight="1"
-            android:id="@+id/pieHome">
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:src="@drawable/comienzo"/>
+                android:src="@drawable/comienzo" />
 
             <Space
                 android:layout_width="wrap_content"
-                android:layout_height="5dp">
-            </Space>
+                android:layout_height="5dp"></Space>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:textColor="@color/white"
+                android:gravity="center"
                 android:text="Home"
-                android:textSize="14sp"
-                android:gravity="center">
+                android:textColor="@color/white"
+                android:textSize="14sp">
 
             </TextView>
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/pieEtapas"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:layout_weight="1"
-            android:id="@+id/pieEtapas">
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:src="@drawable/cronograma"/>
+                android:src="@drawable/cronograma" />
 
             <Space
                 android:layout_width="wrap_content"
-                android:layout_height="5dp">
-            </Space>
+                android:layout_height="5dp"></Space>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:textColor="@color/white"
+                android:gravity="center"
                 android:text="Etapas"
-                android:textSize="14sp"
-                android:gravity="center">
-            </TextView>
+                android:textColor="@color/white"
+                android:textSize="14sp"></TextView>
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/pieSuplementos"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:layout_weight="1"
-            android:id="@+id/pieSuplementos">
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:src="@drawable/suplementaria"/>
+                android:src="@drawable/suplementaria" />
 
             <Space
                 android:layout_width="wrap_content"
-                android:layout_height="5dp">
-            </Space>
+                android:layout_height="5dp"></Space>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:textColor="@color/white"
+                android:gravity="center"
                 android:text="Suplementos"
-                android:textSize="14sp"
-                android:gravity="center">
+                android:textColor="@color/white"
+                android:textSize="14sp">
 
             </TextView>
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/pieApps"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:layout_weight="1"
-            android:id="@+id/pieApps">
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:src="@drawable/aplicaciones"/>
+                android:src="@drawable/aplicaciones" />
 
             <Space
                 android:layout_width="wrap_content"
-                android:layout_height="5dp">
-            </Space>
+                android:layout_height="5dp"></Space>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:textColor="@color/white"
-                android:textSize="14sp"
+                android:gravity="center"
                 android:text="Apps"
-                android:gravity="center">
+                android:textColor="@color/white"
+                android:textSize="14sp">
 
             </TextView>
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/pieInfo"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:layout_weight="1"
-            android:id="@+id/pieInfo">
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:src="@drawable/informacion"/>
+                android:src="@drawable/informacion" />
 
             <Space
                 android:layout_width="wrap_content"
-                android:layout_height="5dp">
-            </Space>
+                android:layout_height="5dp"></Space>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:textColor="@color/white"
-                android:textSize="14sp"
+                android:gravity="center"
                 android:text="Info"
-                android:gravity="center">
+                android:textColor="@color/white"
+                android:textSize="14sp">
 
             </TextView>
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/pieEntreno"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:layout_weight="1"
-            android:id="@+id/pieEntreno">
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:src="@drawable/entrenamiento"/>
+                android:src="@drawable/entrenamiento" />
 
             <Space
                 android:layout_width="wrap_content"
-                android:layout_height="5dp">
-            </Space>
+                android:layout_height="5dp"></Space>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:textSize="14sp"
-                android:textColor="@color/white"
+                android:gravity="center"
                 android:text="Ejercicios"
-                android:gravity="center">
+                android:textColor="@color/white"
+                android:textSize="14sp">
 
             </TextView>
 

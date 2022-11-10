@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.view.Window
 import androidx.appcompat.app.AppCompatActivity
 
-class TipoSuplementosActivity : AppCompatActivity(){
+class TipoSuplementosActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
 

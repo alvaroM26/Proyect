@@ -31,16 +31,16 @@ class MainActivity : AppCompatActivity() {
         firebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_ITEM) {
             val bundle = Bundle()
             bundle.putString("message", "Integracion de Proyect a Firebase completada")
-            firebaseAnalytics.logEvent("InicitScreen",bundle)
+            firebaseAnalytics.logEvent("InicitScreen", bundle)
         }
 
         conectar()
 
     }
 
-     private fun conectar(){
+    private fun conectar() {
 
-        binding.pieHome.setOnClickListener{
+        binding.pieHome.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-         binding.suplementos.setOnClickListener {
+        binding.suplementos.setOnClickListener {
             val intent = Intent(this, SuplementosActivity::class.java)
             startActivity(intent)
         }
@@ -75,22 +75,22 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-         binding.etapas.setOnClickListener {
+        binding.etapas.setOnClickListener {
             val intent = Intent(this, EtapasActivity::class.java)
             startActivity(intent)
         }
 
-         binding.pieApps.setOnClickListener {
+        binding.pieApps.setOnClickListener {
             val intent = Intent(this, AppsActivity::class.java)
             startActivity(intent)
         }
 
-       binding.apps.setOnClickListener {
+        binding.apps.setOnClickListener {
 
-           val intent = Intent(this, AppsActivity::class.java)
-           startActivity(intent)
+            val intent = Intent(this, AppsActivity::class.java)
+            startActivity(intent)
 
-      }
+        }
 
     }
 
