@@ -1,11 +1,17 @@
-package com.example.proyect
+package com.example.proyect.app
 
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.view.Window
 import androidx.appcompat.app.AppCompatActivity
+import com.example.proyect.etapa.EtapasActivity
+import com.example.proyect.informacion.InformacionActivity
+import com.example.proyect.R
 import com.example.proyect.databinding.ActivityAppBinding
+import com.example.proyect.eleccion.EleccionActivity
+import com.example.proyect.inicio.MainActivity
+import com.example.proyect.suplementos.SuplementosActivity
 
 class AppsActivity : AppCompatActivity(){
 

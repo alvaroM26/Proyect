@@ -28,7 +28,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
             android:orientation="vertical">
 
             <LinearLayout
@@ -36,6 +35,10 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 tools:ignore="ExtraText">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"></Space>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -73,6 +76,10 @@
                     android:layout_gravity="center"
                     android:src="@drawable/infosuple"></ImageView>
 
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"></Space>
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -89,6 +96,10 @@
                     android:paddingTop="10dp"
                     android:text="Los suplementos alimenticios tienen un millón de beneficios, siempre y cuando sigamos las recomendaciones y los tomemos como se debe. Como siempre te recordamos, tus esfuerzos serán en vano si no haces ejercicios, no te alimentas bien o no descansas lo suficiente."
                     android:textColor="@color/white"></TextView>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"></Space>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -113,6 +124,10 @@
                     android:layout_gravity="center"
                     android:src="@drawable/mitos"></ImageView>
 
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"></Space>
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -129,6 +144,10 @@
                     android:paddingTop="10dp"
                     android:text="•  Lleva una dieta saludable.\n•	Entrena de forma inteligente.\n•	Duerme mucho.\n•	Evita el alcohol y el tabaco."
                     android:textColor="@color/white"></TextView>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"></Space>
 
             </LinearLayout>
 

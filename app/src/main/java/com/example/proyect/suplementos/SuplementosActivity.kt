@@ -1,26 +1,32 @@
-package com.example.proyect
+package com.example.proyect.suplementos
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.Window
 import androidx.appcompat.app.AppCompatActivity
-import com.example.proyect.databinding.ActivityInformacionBinding
-import com.example.proyect.databinding.ActivityMusculohombroBinding
+import com.example.proyect.app.AppsActivity
+import com.example.proyect.etapa.EtapasActivity
+import com.example.proyect.informacion.InformacionActivity
+import com.example.proyect.R
+import com.example.proyect.databinding.ActivitySuplementosBinding
+import com.example.proyect.eleccion.EleccionActivity
+import com.example.proyect.inicio.MainActivity
 
-class InformacionActivity : AppCompatActivity() {
+class SuplementosActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityInformacionBinding
+    private lateinit var binding: ActivitySuplementosBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.activity_informacion)
+        setContentView(R.layout.activity_suplementos)
 
-        binding = ActivityInformacionBinding.inflate(layoutInflater)
+        binding = ActivitySuplementosBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         pulsar()
+
     }
 
     private fun pulsar() {

@@ -1,4 +1,4 @@
-package com.example.proyect
+package com.example.proyect.eleccion
 
 import android.content.Intent
 import android.net.Uri
@@ -7,20 +7,25 @@ import android.view.Window
 import android.widget.MediaController
 import android.widget.VideoView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.proyect.databinding.ActivityMusculobicepsBinding
-import com.example.proyect.databinding.ActivityMusculoespaldaBinding
+import com.example.proyect.*
+import com.example.proyect.app.AppsActivity
+import com.example.proyect.databinding.ActivityMusculopechoBinding
+import com.example.proyect.etapa.EtapasActivity
+import com.example.proyect.informacion.InformacionActivity
+import com.example.proyect.inicio.MainActivity
+import com.example.proyect.suplementos.SuplementosActivity
 
-class BicepsActivity : AppCompatActivity() {
+class PechoActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMusculobicepsBinding
+    private lateinit var binding: ActivityMusculopechoBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.activity_musculobiceps)
+        setContentView(R.layout.activity_musculopecho)
 
-        binding = ActivityMusculobicepsBinding.inflate(layoutInflater)
+        binding = ActivityMusculopechoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val video1: VideoView = findViewById(R.id.video1)
@@ -34,10 +39,14 @@ class BicepsActivity : AppCompatActivity() {
         mediaController.setAnchorView(video3)
         mediaController.setAnchorView(video4)
 
-        val onlineUri1: Uri = Uri.parse("https://firebasestorage.googleapis.com/v0/b/proyect-2022.appspot.com/o/curldebicepsconmancuernas.mp4?alt=media&token=c35a777f-caa2-4deb-93fc-5b4e13070325")
-        val onlineUri2: Uri = Uri.parse("https://firebasestorage.googleapis.com/v0/b/proyect-2022.appspot.com/o/curldebicepsbancoscott.mp4?alt=media&token=9f5ca52a-ead0-430e-9049-95cc88cff943")
-        val onlineUri3: Uri = Uri.parse("https://firebasestorage.googleapis.com/v0/b/proyect-2022.appspot.com/o/curldebicepsmaquina.mp4?alt=media&token=39e8a398-96f4-480f-8d8c-310699e40b84")
-        val onlineUri4: Uri = Uri.parse("https://firebasestorage.googleapis.com/v0/b/proyect-2022.appspot.com/o/curldebicepsbarra.mp4?alt=media&token=b19a558e-2476-47d2-ac14-277d8e94c321")
+        val onlineUri1: Uri =
+            Uri.parse("https://firebasestorage.googleapis.com/v0/b/proyect-2022.appspot.com/o/prensadepecho.mp4?alt=media&token=a8ffa973-79ba-4dc7-bf2a-939af8318487")
+        val onlineUri2: Uri =
+            Uri.parse("https://firebasestorage.googleapis.com/v0/b/proyect-2022.appspot.com/o/fondosasistidos.mp4?alt=media&token=6ebd845b-b2bb-484e-984e-d96a8a229c46")
+        val onlineUri3: Uri =
+            Uri.parse("https://firebasestorage.googleapis.com/v0/b/proyect-2022.appspot.com/o/cierredepolea.mp4?alt=media&token=797bae3e-78b7-4314-b164-fc1b9056a5a6")
+        val onlineUri4: Uri =
+            Uri.parse("https://firebasestorage.googleapis.com/v0/b/proyect-2022.appspot.com/o/contractorpeckfly.mp4?alt=media&token=ed30074b-af9a-4595-8d4e-56f0e9b33aed")
 
         video1.setMediaController(mediaController)
         video1.setVideoURI(onlineUri1)
@@ -60,9 +69,10 @@ class BicepsActivity : AppCompatActivity() {
         video4.start()
 
         pulsar()
+
     }
 
-    private fun pulsar(){
+    private fun pulsar() {
         binding.pieHome.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
@@ -93,4 +103,5 @@ class BicepsActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
 }

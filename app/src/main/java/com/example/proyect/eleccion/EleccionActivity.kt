@@ -1,11 +1,16 @@
-package com.example.proyect
+package com.example.proyect.eleccion
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.Window
-import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
+import com.example.proyect.*
+import com.example.proyect.app.AppsActivity
 import com.example.proyect.databinding.ActivityEleccionBinding
+import com.example.proyect.etapa.EtapasActivity
+import com.example.proyect.informacion.InformacionActivity
+import com.example.proyect.inicio.MainActivity
+import com.example.proyect.suplementos.SuplementosActivity
 
 
 class EleccionActivity : AppCompatActivity() {

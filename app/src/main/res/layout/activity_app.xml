@@ -8,29 +8,28 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:gravity="center"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:gravity="center">
 
         <ImageView
+            android:id="@+id/logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:src="@drawable/logo_small"
-            android:id="@+id/logo"/>
+            android:src="@drawable/logo_small" />
 
     </LinearLayout>
 
     <ScrollView
-        android:background="@color/black"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:background="@color/black">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="20dp">
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -40,62 +39,56 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="10dp"
                     android:layout_gravity="center"
-                    android:textStyle="bold"
-                    android:textColor="@color/white"
+                    android:paddingTop="10dp"
                     android:text="ActivityTracker"
-                    android:textSize="18sp">
-                </TextView>
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"></TextView>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="10dp"
-                    android:textStyle="bold"
                     android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Para qué sirve:"
                     android:textColor="@color/white"
-                    android:text="Para qué sirve:">
-                </TextView>
+                    android:textStyle="bold"></TextView>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="10dp"
                     android:paddingStart="10dp"
-                    android:textColor="@color/white"
-                    android:text="Se hace camino al andar y esta app supone una sencilla forma de llevar el recuento de tus pasos. No necesita tener activado el GPS, pesa poco más de 7 mg y gasta poca batería. Ideal para empezar a controlar tu movimiento día a día.">
-                </TextView>
+                    android:paddingTop="10dp"
+                    android:text="Se hace camino al andar y esta app supone una sencilla forma de llevar el recuento de tus pasos. No necesita tener activado el GPS, pesa poco más de 7 mg y gasta poca batería. Ideal para empezar a controlar tu movimiento día a día."
+                    android:textColor="@color/white"></TextView>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="10dp"
-                    android:textStyle="bold"
-                    android:textColor="@color/white"
                     android:paddingStart="10dp"
-                    android:text="Dato curioso: ">
-                </TextView>
+                    android:paddingTop="10dp"
+                    android:text="Dato curioso: "
+                    android:textColor="@color/white"
+                    android:textStyle="bold"></TextView>
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:textColor="@color/white"
                     android:layout_height="wrap_content"
-                    android:paddingTop="10dp"
                     android:paddingStart="10dp"
+                    android:paddingTop="10dp"
                     android:text="Puedes ajustarlo a tu peso y altura para que el muestro de kilocalorías perdidas sea más fiable."
-                    tools:ignore="RtlSymmetry">
-                </TextView>
+                    android:textColor="@color/white"
+                    tools:ignore="RtlSymmetry"></TextView>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:paddingTop="10dp"
                     android:paddingStart="10dp"
+                    android:paddingTop="10dp"
                     android:text="Disponibilidad: iOS y Google Play."
-                    tools:ignore="RtlSymmetry">
-                </TextView>
+                    android:textColor="@color/white"
+                    tools:ignore="RtlSymmetry"></TextView>
 
             </LinearLayout>
 
@@ -106,24 +99,22 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="50dp"
-                    android:paddingTop="10dp"
                     android:id="@+id/pieApple"
-                    android:layout_weight="1"
+                    android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginEnd="50dp"
-                    android:src="@drawable/androidstore">
-                </ImageView>
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/androidstore"></ImageView>
 
                 <ImageView
-                    android:layout_width="50dp"
-                    android:paddingTop="10dp"
-                    android:layout_weight="1"
                     android:id="@+id/pieAndroid"
+                    android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginRight="50dp"
-                    android:src="@drawable/applestore">
-                </ImageView>
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/applestore"></ImageView>
 
             </LinearLayout>
 
@@ -135,63 +126,57 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="50dp"
-                    android:textColor="@color/white"
                     android:layout_gravity="center"
-                    android:textStyle="bold"
+                    android:paddingTop="50dp"
                     android:text="Myfitnesspal"
-                    android:textSize="18sp">
-                </TextView>
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"></TextView>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="10dp"
-                    android:textStyle="bold"
-                    android:textColor="@color/white"
                     android:paddingStart="10dp"
+                    android:paddingTop="10dp"
                     android:text="Para qué sirve:"
-                    tools:ignore="RtlSymmetry">
-                </TextView>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="10dp"
                     android:textColor="@color/white"
-                    android:paddingStart="10dp"
-                    android:text="Una guía para empezar a controlar nutrición, entrenamiento, calorías quemadas y progreso en los objetivos. Registrarás lo que comes, medirás macros, e incluso puedes sincronizarlo con tu ejercicio."
-                    tools:ignore="RtlSymmetry">
-                </TextView>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="10dp"
                     android:textStyle="bold"
-                    android:textColor="@color/white"
+                    tools:ignore="RtlSymmetry"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Una guía para empezar a controlar nutrición, entrenamiento, calorías quemadas y progreso en los objetivos. Registrarás lo que comes, medirás macros, e incluso puedes sincronizarlo con tu ejercicio."
+                    android:textColor="@color/white"
+                    tools:ignore="RtlSymmetry"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
                     android:text="Dato curioso: "
-                    tools:ignore="RtlSymmetry">
-                </TextView>
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry"></TextView>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="10dp"
-                    android:textColor="@color/white"
                     android:paddingStart="10dp"
-                    android:text="Puedes incluso adjuntar fotos de tu progreso y asociarlas con tu peso o estado físico, al cabo de un año alucinarás con todo lo que has cambiado.">
-                </TextView>
+                    android:paddingTop="10dp"
+                    android:text="Puedes incluso adjuntar fotos de tu progreso y asociarlas con tu peso o estado físico, al cabo de un año alucinarás con todo lo que has cambiado."
+                    android:textColor="@color/white"></TextView>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="10dp"
-                    android:textColor="@color/white"
                     android:paddingStart="10dp"
-                    android:text="Disponibilidad: iOS y Google Play.">
-                </TextView>
+                    android:paddingTop="10dp"
+                    android:text="Disponibilidad: iOS y Google Play."
+                    android:textColor="@color/white"></TextView>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -200,22 +185,20 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="50dp"
-                        android:paddingTop="10dp"
-                        android:layout_height="50dp"
                         android:id="@+id/pieApple2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
                         android:layout_marginRight="50dp"
-                        android:src="@drawable/androidstore">
-                    </ImageView>
+                        android:paddingTop="10dp"
+                        android:src="@drawable/androidstore"></ImageView>
 
                     <ImageView
-                        android:layout_width="50dp"
-                        android:paddingTop="10dp"
-                        android:layout_height="50dp"
                         android:id="@+id/pieAndroid2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
                         android:layout_marginRight="50dp"
-                        android:src="@drawable/applestore">
-                    </ImageView>
+                        android:paddingTop="10dp"
+                        android:src="@drawable/applestore"></ImageView>
 
                 </LinearLayout>
 
@@ -227,60 +210,54 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingTop="50dp"
-                        android:textColor="@color/white"
                         android:layout_gravity="center"
-                        android:textStyle="bold"
+                        android:paddingTop="50dp"
                         android:text="Wefitter"
-                        android:textSize="18sp">
-                    </TextView>
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"></TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingTop="10dp"
-                        android:textStyle="bold"
-                        android:textColor="@color/white"
                         android:paddingStart="10dp"
-                        android:text="Para qué sirve:">
-                    </TextView>
+                        android:paddingTop="10dp"
+                        android:text="Para qué sirve:"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"></TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingTop="10dp"
-                        android:textColor="@color/white"
                         android:paddingStart="10dp"
-                        android:text="Tu entrenamiento tiene recompensa. Obtendrás mejores descuentos y ofertas para canjear en centros deportivos y tiendas online.">
-                    </TextView>
+                        android:paddingTop="10dp"
+                        android:text="Tu entrenamiento tiene recompensa. Obtendrás mejores descuentos y ofertas para canjear en centros deportivos y tiendas online."
+                        android:textColor="@color/white"></TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingTop="10dp"
-                        android:textColor="@color/white"
-                        android:textStyle="bold"
                         android:paddingStart="10dp"
-                        android:text="Dato curioso: ">
-                    </TextView>
+                        android:paddingTop="10dp"
+                        android:text="Dato curioso: "
+                        android:textColor="@color/white"
+                        android:textStyle="bold"></TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingTop="10dp"
-                        android:textColor="@color/white"
                         android:paddingStart="10dp"
-                        android:text="puedes conseguir descuentos en tu propio gimnasio y ganar meses gratis. ¡Sólo por entrenar bien!">
-                    </TextView>
+                        android:paddingTop="10dp"
+                        android:text="puedes conseguir descuentos en tu propio gimnasio y ganar meses gratis. ¡Sólo por entrenar bien!"
+                        android:textColor="@color/white"></TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingTop="10dp"
-                        android:textColor="@color/white"
                         android:paddingStart="10dp"
-                        android:text="Disponibilidad: iOS y Google Play.">
-                    </TextView>
+                        android:paddingTop="10dp"
+                        android:text="Disponibilidad: iOS y Google Play."
+                        android:textColor="@color/white"></TextView>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -289,24 +266,26 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="50dp"
-                            android:paddingTop="10dp"
-                            android:layout_height="50dp"
                             android:id="@+id/pieApple3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
                             android:layout_marginEnd="50dp"
-                            android:src="@drawable/androidstore">
-                        </ImageView>
+                            android:paddingTop="10dp"
+                            android:src="@drawable/androidstore"></ImageView>
 
                         <ImageView
-                            android:layout_width="50dp"
-                            android:paddingTop="10dp"
-                            android:layout_height="50dp"
                             android:id="@+id/pieAndroid3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
                             android:layout_marginRight="50dp"
-                            android:src="@drawable/applestore">
-                        </ImageView>
+                            android:paddingTop="10dp"
+                            android:src="@drawable/applestore"></ImageView>
 
                     </LinearLayout>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"></Space>
 
                 </LinearLayout>
 
@@ -323,173 +302,166 @@
         android:orientation="horizontal">
 
         <LinearLayout
+            android:id="@+id/pieHome"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:layout_weight="1"
-            android:id="@+id/pieHome">
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:src="@drawable/comienzo"/>
+                android:src="@drawable/comienzo" />
 
             <Space
                 android:layout_width="wrap_content"
-                android:layout_height="5dp">
-            </Space>
+                android:layout_height="5dp"></Space>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:textColor="@color/white"
+                android:gravity="center"
                 android:text="Home"
-                android:textSize="14sp"
-                android:gravity="center">
+                android:textColor="@color/white"
+                android:textSize="14sp">
 
             </TextView>
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/pieEtapas"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:layout_weight="1"
-            android:id="@+id/pieEtapas">
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:src="@drawable/cronograma"/>
+                android:src="@drawable/cronograma" />
 
             <Space
                 android:layout_width="wrap_content"
-                android:layout_height="5dp">
-            </Space>
+                android:layout_height="5dp"></Space>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:textColor="@color/white"
+                android:gravity="center"
                 android:text="Etapas"
-                android:textSize="14sp"
-                android:gravity="center">
-            </TextView>
+                android:textColor="@color/white"
+                android:textSize="14sp"></TextView>
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/pieSuplementos"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:layout_weight="1"
-            android:id="@+id/pieSuplementos">
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:src="@drawable/suplementaria"/>
+                android:src="@drawable/suplementaria" />
 
             <Space
                 android:layout_width="wrap_content"
-                android:layout_height="5dp">
-            </Space>
+                android:layout_height="5dp"></Space>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:textColor="@color/white"
+                android:gravity="center"
                 android:text="Suplementos"
-                android:textSize="14sp"
-                android:gravity="center">
+                android:textColor="@color/white"
+                android:textSize="14sp">
 
             </TextView>
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/pieApps"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:layout_weight="1"
-            android:id="@+id/pieApps">
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:src="@drawable/aplicaciones"/>
+                android:src="@drawable/aplicaciones" />
 
             <Space
                 android:layout_width="wrap_content"
-                android:layout_height="5dp">
-            </Space>
+                android:layout_height="5dp"></Space>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:textColor="@color/white"
-                android:textSize="14sp"
+                android:gravity="center"
                 android:text="Apps"
-                android:gravity="center">
+                android:textColor="@color/white"
+                android:textSize="14sp">
 
             </TextView>
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/pieInfo"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:layout_weight="1"
-            android:id="@+id/pieInfo">
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:src="@drawable/informacion"/>
+                android:src="@drawable/informacion" />
 
             <Space
                 android:layout_width="wrap_content"
-                android:layout_height="5dp">
-            </Space>
+                android:layout_height="5dp"></Space>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:textColor="@color/white"
-                android:textSize="14sp"
+                android:gravity="center"
                 android:text="Info"
-                android:gravity="center">
+                android:textColor="@color/white"
+                android:textSize="14sp">
 
             </TextView>
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/pieEntreno"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:layout_weight="1"
-            android:id="@+id/pieEntreno">
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:src="@drawable/entrenamiento"/>
+                android:src="@drawable/entrenamiento" />
 
             <Space
                 android:layout_width="wrap_content"
-                android:layout_height="5dp">
-            </Space>
+                android:layout_height="5dp"></Space>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:textSize="14sp"
-                android:textColor="@color/white"
+                android:gravity="center"
                 android:text="Ejercicios"
-                android:gravity="center">
+                android:textColor="@color/white"
+                android:textSize="14sp">
 
             </TextView>
 

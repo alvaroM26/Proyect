@@ -1,11 +1,16 @@
-package com.example.proyect
+package com.example.proyect.inicio
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.view.Window
 import androidx.appcompat.app.AppCompatActivity
+import com.example.proyect.*
+import com.example.proyect.app.AppsActivity
 import com.example.proyect.databinding.ActivityMainBinding
+import com.example.proyect.eleccion.EleccionActivity
+import com.example.proyect.etapa.EtapasActivity
+import com.example.proyect.informacion.InformacionActivity
+import com.example.proyect.suplementos.SuplementosActivity
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.analytics.ktx.analytics
 import com.google.firebase.analytics.ktx.logEvent

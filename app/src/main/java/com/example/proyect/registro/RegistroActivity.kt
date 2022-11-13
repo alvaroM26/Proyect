@@ -1,4 +1,4 @@
-package com.example.proyect
+package com.example.proyect.registro
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -15,8 +15,8 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
-import com.example.proyect.databinding.ActivityMainBinding
-import com.example.proyect.databinding.ActivityRegistroBinding
+import com.example.proyect.inicio.MainActivity
+import com.example.proyect.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 
@@ -51,11 +51,6 @@ class RegistroActivity : AppCompatActivity() {
                 it.setContentTitle("Registro")
                 it.setContentText("Enhorabuena, su cuenta fue creada con exito !")
                 it.setSmallIcon(R.drawable.ic_message)
-                Toast.makeText(
-                    this@RegistroActivity,
-                    "Bienvenido a la aplicacion de informacion y entrenamientos",
-                    Toast.LENGTH_SHORT
-                ).show()
                 it.priority = NotificationCompat.PRIORITY_HIGH
             }.build()
 
@@ -68,11 +63,16 @@ class RegistroActivity : AppCompatActivity() {
                 ).addOnCompleteListener {
 
                     if (it.isSuccessful) {
-                        println("Registro completado")
 
                         notificacionManager.notify(notificationId, notificacion)
 
                         db.collection("Users").document(textoEmail.text.toString())
+
+                        Toast.makeText(
+                            this@RegistroActivity,
+                            "Bienvenido a la aplicacion de informacion y entrenamientos",
+                            Toast.LENGTH_SHORT
+                        ).show()
 
                         val intent = Intent(this, UsuarioActivity::class.java)
                         startActivity(intent)
@@ -94,7 +94,12 @@ class RegistroActivity : AppCompatActivity() {
                 ).addOnCompleteListener {
 
                     if (it.isSuccessful) {
-                        println("Inicio completado")
+
+                        Toast.makeText(
+                            this@RegistroActivity,
+                            "Bienvenido a la aplicacion de informacion y entrenamientos",
+                            Toast.LENGTH_SHORT
+                        ).show()
 
                         val intent = Intent(this, MainActivity::class.java)
                         startActivity(intent)
@@ -125,7 +130,7 @@ class RegistroActivity : AppCompatActivity() {
 
         val alert = AlertDialog.Builder(this)
         alert.setTitle("Error")
-        alert.setMessage("Se ha producio un error al iniciar sesion al usuario")
+        alert.setMessage("Se ha producio un error al iniciar sesion con estas credenciales")
         alert.setPositiveButton("Aceptar", null)
 
         val dialog: AlertDialog = alert.create()

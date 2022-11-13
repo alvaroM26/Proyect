@@ -8,96 +8,283 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="top"
-        android:orientation="vertical">
+        android:gravity="center">
 
         <ImageView
-            android:layout_width="match_parent"
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:contentDescription="@string/todo"
-            android:src="@drawable/logo_small"></ImageView>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginTop="2dp"
-            android:background="@color/black"></View>
+            android:layout_margin="10dp"
+            android:src="@drawable/logo_small" />
 
     </LinearLayout>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingTop="20dp"
-        tools:ignore="UselessParent">
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/black">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            tools:ignore="ExtraText">
+            android:orientation="vertical">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:text="@string/extension_de_triceps"
-                android:textStyle="bold"
-                tools:ignore="HardcodedText"></TextView>
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="ExtraText">
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="2dp"
-                android:background="@color/black"></View>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="@string/extension_de_triceps"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText">
+                </TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:elegantTextHeight="true"
-                android:paddingStart="10dp"
-                android:text="@string/_1_para_comenzar_este_ejercicio_debemos_posicionarnos_de_pie_frente_al_aparato_de_polea_alta_y_habiendo_seleccionado_el_peso_a_utilizar_debemos_tomar_con_las_manos_el_mago_de_manera_que_las_palmas_miren_hacia_el_suelo_n_2_con_los_brazos_pegados_al_torso_y_los_codos_siempre_alineados_con_el_cuerpo_comenzamos_el_movimiento_n_3_realizamos_una_extensi_n_de_los_codos_llevando_el_mango_de_la_polea_hacia_abajo_sin_despegar_los_codos_de_los_lados_del_cuerpo_y_nicamente_movilizando_el_antebrazo_espiramos_al_final_del_movimiento_y_regresamos_lentamente_a_la_posici_n_inicial_n_4_si_se_utilizan_cargas_pesadas_se_puede_inclinar_un_poco_el_torso_tambi_n_puede_realizarse_este_ejercicio_de_espaldas_a_la_polea_alta_y_adelantando_un_pie_por_sobre_otro_que_permite_inclinar_el_torso_hacia_adelante"
-                tools:ignore="ExtraText,RtlSymmetry">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/white"></View>
 
-            </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elegantTextHeight="true"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/white"
+                    android:text="@string/_1_para_comenzar_este_ejercicio_debemos_posicionarnos_de_pie_frente_al_aparato_de_polea_alta_y_habiendo_seleccionado_el_peso_a_utilizar_debemos_tomar_con_las_manos_el_mago_de_manera_que_las_palmas_miren_hacia_el_suelo_n_2_con_los_brazos_pegados_al_torso_y_los_codos_siempre_alineados_con_el_cuerpo_comenzamos_el_movimiento_n_3_realizamos_una_extensi_n_de_los_codos_llevando_el_mango_de_la_polea_hacia_abajo_sin_despegar_los_codos_de_los_lados_del_cuerpo_y_nicamente_movilizando_el_antebrazo_espiramos_al_final_del_movimiento_y_regresamos_lentamente_a_la_posici_n_inicial_n_4_si_se_utilizan_cargas_pesadas_se_puede_inclinar_un_poco_el_torso_tambi_n_puede_realizarse_este_ejercicio_de_espaldas_a_la_polea_alta_y_adelantando_un_pie_por_sobre_otro_que_permite_inclinar_el_torso_hacia_adelante"
+                    tools:ignore="ExtraText,RtlSymmetry"></TextView>
 
-            <VideoView
-                android:id="@+id/video1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"></VideoView>
+                <VideoView
+                    android:id="@+id/video1"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"></VideoView>
 
-            ////////////////////////
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp">
+                </Space>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:paddingTop="20dp"
-                android:text="@string/prensa_de_triceps"
-                android:textStyle="bold"></TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:paddingTop="20dp"
+                    android:text="@string/prensa_de_triceps"
+                    android:textStyle="bold"></TextView>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="2dp"
-                android:background="@color/black"></View>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/white"></View>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:elegantTextHeight="true"
-                android:paddingStart="10dp"
-                android:text="@string/_1_para_realizar_los_fondos_de_tr_ceps_en_m_quina_nos_deberemos_sentar_de_forma_segura_en_una_m_quina_de_empuje_seleccionando_el_peso_y_sujetando_firmemente_las_asas_n_2_ahora_mantendremos_los_codos_en_a_los_lados_con_el_fin_de_poner_nfasis_en_el_trabajo_en_los_tr_ceps_los_codos_deber_n_estar_doblados_en_un_ngulo_de_90_grados_n_3_posteriormente_deberemos_contraer_el_tr_ceps_extendiendo_los_brazos_hacia_abajo_a_medida_que_exhalamos_n_4_en_la_parte_inferior_del_movimiento_nos_centraremos_en_mantener_una_peque_a_curva_con_nuestros_brazos_para_mantener_la_tensi_n_en_los_m_sculos_del_tr_ceps_n_5_poco_a_poco_vamos_a_llevar_los_brazos_a_la_posici_n_inicial_mientras_inhalamos_repetiremos_el_procedimiento_para_la_cantidad_recomendada_de_repeticiones_en_nuestra_rutina_de_ejercicios"
-                tools:ignore="RtlSymmetry"></TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elegantTextHeight="true"
+                    android:textColor="@color/white"
+                    android:paddingStart="10dp"
+                    android:text="@string/_1_para_realizar_los_fondos_de_tr_ceps_en_m_quina_nos_deberemos_sentar_de_forma_segura_en_una_m_quina_de_empuje_seleccionando_el_peso_y_sujetando_firmemente_las_asas_n_2_ahora_mantendremos_los_codos_en_a_los_lados_con_el_fin_de_poner_nfasis_en_el_trabajo_en_los_tr_ceps_los_codos_deber_n_estar_doblados_en_un_ngulo_de_90_grados_n_3_posteriormente_deberemos_contraer_el_tr_ceps_extendiendo_los_brazos_hacia_abajo_a_medida_que_exhalamos_n_4_en_la_parte_inferior_del_movimiento_nos_centraremos_en_mantener_una_peque_a_curva_con_nuestros_brazos_para_mantener_la_tensi_n_en_los_m_sculos_del_tr_ceps_n_5_poco_a_poco_vamos_a_llevar_los_brazos_a_la_posici_n_inicial_mientras_inhalamos_repetiremos_el_procedimiento_para_la_cantidad_recomendada_de_repeticiones_en_nuestra_rutina_de_ejercicios"
+                    tools:ignore="RtlSymmetry"></TextView>
 
-            <VideoView
-                android:id="@+id/video2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"></VideoView>
+                <VideoView
+                    android:id="@+id/video2"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"></VideoView>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp">
+                </Space>
+
+            </LinearLayout>
 
         </LinearLayout>
 
     </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/pieHome"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/comienzo" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"></Space>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="Home"
+                android:textColor="@color/white"
+                android:textSize="14sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pieEtapas"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/cronograma" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"></Space>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="Etapas"
+                android:textColor="@color/white"
+                android:textSize="14sp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pieSuplementos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/suplementaria" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"></Space>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="Suplementos"
+                android:textColor="@color/white"
+                android:textSize="14sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pieApps"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/aplicaciones" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"></Space>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="Apps"
+                android:textColor="@color/white"
+                android:textSize="14sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pieInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/informacion" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"></Space>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="Info"
+                android:textColor="@color/white"
+                android:textSize="14sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pieEntreno"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/entrenamiento" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"></Space>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="Ejercicios"
+                android:textColor="@color/white"
+                android:textSize="14sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </LinearLayout>

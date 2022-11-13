@@ -1,10 +1,12 @@
-package com.example.proyect
+package com.example.proyect.registro
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.Window
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.proyect.inicio.MainActivity
+import com.example.proyect.R
 import com.example.proyect.databinding.ActivityUsuarioBinding
 import com.google.firebase.auth.FirebaseAuth
 
@@ -23,12 +25,6 @@ class UsuarioActivity : AppCompatActivity() {
 
         val bundle: Bundle? = intent.extras
         val email: String? = bundle?.getString("email")
-
-        Toast.makeText(
-            this@UsuarioActivity,
-            "Bienvenido a la aplicacion de informacion y entrenamientos",
-            Toast.LENGTH_SHORT
-        ).show()
 
         setup(email ?: "")
 

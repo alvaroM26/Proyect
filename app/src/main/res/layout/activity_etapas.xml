@@ -7,29 +7,28 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:gravity="center"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:gravity="center">
 
         <ImageView
+            android:id="@+id/logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:src="@drawable/logo_small"
-            android:id="@+id/logo"/>
+            android:src="@drawable/logo_small" />
 
     </LinearLayout>
 
     <ScrollView
-        android:background="@color/black"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:background="@color/black">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="20dp">
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -37,259 +36,273 @@
                 android:orientation="vertical"
                 tools:ignore="ExtraText">
 
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"></Space>
+
                 <TextView
                     android:layout_width="match_parent"
-                    android:paddingStart="10dp"
                     android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:textColor="@color/white"
+                    android:paddingStart="10dp"
                     android:text="• ¿Cuando empezar cada etapa?"
-                    tools:ignore="RtlSymmetry">
-                </TextView>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:paddingTop="10dp"
                     android:textColor="@color/white"
-                    android:paddingStart="10dp"
-                    android:layout_height="wrap_content"
-                    android:text="La primera etapa en este caso sería una tapa de adaptación, donde aprender ejercicios, técnica, cadencia y frecuencia del entrenamiento. Así como a manejar diferentes intensidades y volúmenes de trabajo. Durante esta etapa, perderemos algo de grasa corporal y entrenaremos en un proceso de ganancia muscular, siempre siguiendo una alimentación saludable y dieta equilibrada.">
-                </TextView>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:paddingTop="10dp"
-                    android:paddingStart="10dp"
-                    android:textColor="@color/white"
-                    android:layout_height="wrap_content"
-                    android:text="Después de este período de adaptación empezaríamos la etapa de volumen">
-                </TextView>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:paddingTop="20dp"
-                    android:textColor="@color/white"
-                    android:paddingStart="10dp"
-                    android:layout_height="wrap_content"
                     android:textStyle="bold"
+                    tools:ignore="RtlSymmetry"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:text="La primera etapa en este caso sería una tapa de adaptación, donde aprender ejercicios, técnica, cadencia y frecuencia del entrenamiento. Así como a manejar diferentes intensidades y volúmenes de trabajo. Durante esta etapa, perderemos algo de grasa corporal y entrenaremos en un proceso de ganancia muscular, siempre siguiendo una alimentación saludable y dieta equilibrada."
+                    android:textColor="@color/white"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Después de este período de adaptación empezaríamos la etapa de volumen"
+                    android:textColor="@color/white"></TextView>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"></Space>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
                     android:text="•	Etapa de volumen y definición "
-                    tools:ignore="RtlSymmetry">
-                </TextView>
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry"></TextView>
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:textColor="@color/white"
-                    android:paddingTop="10dp"
-                    android:paddingStart="10dp"
                     android:layout_height="wrap_content"
-                    android:text="Se llama etapa de volumen al periodo de tiempo en el que nos dedicamos a aumentar nuestra masa muscular, lo que implica un aumento de peso. Por supuesto, este aumento de peso tiene que ser de la forma más saludable posible.">
-                </TextView>
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Se llama etapa de volumen al periodo de tiempo en el que nos dedicamos a aumentar nuestra masa muscular, lo que implica un aumento de peso. Por supuesto, este aumento de peso tiene que ser de la forma más saludable posible."
+                    android:textColor="@color/white"></TextView>
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:paddingTop="10dp"
-                    android:textColor="@color/white"
-                    android:paddingStart="10dp"
                     android:layout_height="wrap_content"
-                    android:text="Por otro lado, llamamos etapa de definición a aquella en la que nuestro objetivo es reducir toda la grasa posible que hayamos acumulado en la etapa de volumen. Para ello se reducen las calorías que consumimos.">
-                </TextView>
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Por otro lado, llamamos etapa de definición a aquella en la que nuestro objetivo es reducir toda la grasa posible que hayamos acumulado en la etapa de volumen. Para ello se reducen las calorías que consumimos."
+                    android:textColor="@color/white"></TextView>
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/volumenydefinicion">
-                </ImageView>
+                    android:src="@drawable/volumenydefinicion"></ImageView>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"></Space>
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:paddingTop="10dp"
-                    android:paddingStart="10dp"
-                    android:textColor="@color/white"
                     android:layout_height="wrap_content"
-                    android:textStyle="bold"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
                     android:text="•	Objetivos en cada etapa"
-                    tools:ignore="RtlSymmetry">
-                </TextView>
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry"></TextView>
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:paddingTop="10dp"
-                    android:textColor="@color/white"
-                    android:paddingStart="10dp"
                     android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
                     android:text="En nuestro plan de entrenamiento semanal no utilizaremos pesos más allá del de nuestro cuerpo, por lo que la intensidad de los ejercicios dependerá del número de repeticiones."
-                    tools:ignore="RtlSymmetry">
-                </TextView>
+                    android:textColor="@color/white"
+                    tools:ignore="RtlSymmetry"></TextView>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingStart="10dp"
-                    android:textColor="@color/white"
                     android:paddingTop="10dp"
-                    android:text="El objetivo en la etapa de volumen es aumentar nuestra masa muscular y para ello nuestro peso. El objetivo de la etapa de volumen consiste en acelerar el desarrollo muscular y la manera más fácil de lograrlo consiste en tener un superávit calórico. En esta etapa queremos realizar una subida óptima pero controlada sin pasarnos de un 20% o 22% de grasa corporal. Esto es importante debido a que si aumentamos mucho nuestra grasa corporal, pasaremos más tiempo en la etapa de definición.">
-                </TextView>
+                    android:text="El objetivo en la etapa de volumen es aumentar nuestra masa muscular y para ello nuestro peso. El objetivo de la etapa de volumen consiste en acelerar el desarrollo muscular y la manera más fácil de lograrlo consiste en tener un superávit calórico. En esta etapa queremos realizar una subida óptima pero controlada sin pasarnos de un 20% o 22% de grasa corporal. Esto es importante debido a que si aumentamos mucho nuestra grasa corporal, pasaremos más tiempo en la etapa de definición."
+                    android:textColor="@color/white"></TextView>
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/volumendefincion">
-                </ImageView>
+                    android:src="@drawable/volumendefincion"></ImageView>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"></Space>
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:paddingTop="10dp"
-                    android:paddingStart="10dp"
-                    android:textColor="@color/white"
                     android:layout_height="wrap_content"
-                    android:textStyle="bold"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
                     android:text="•	¿Cuántas calorías necesitamos para ganar masa muscular?"
-                    tools:ignore="RtlSymmetry">
-                </TextView>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:paddingTop="10dp"
-                    android:textColor="@color/white"
-                    android:paddingStart="10dp"
-                    android:layout_height="wrap_content"
-                    android:text="Lo primero que tenemos que hacer es calcular nuestro TMB (tasa metabólica basal) Esta tasa se puede calcular en base a la edad, peso, estatura y sexo. A partir de la TMB se puede calcular la cantidad de calorías que necesitamos según nuestros objetivos y actividad física.">
-                </TextView>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:paddingTop="10dp"
-                    android:paddingStart="10dp"
-                    android:textColor="@color/white"
-                    android:layout_height="wrap_content"
-                    android:text="En la etapa de volumen necesitamos un superávit calórico para que los músculos consuman las calorías habituales y el exceso de calorías sirva para nutrir las fibras musculares y lograr el desarrollo muscular. En cambio, en la etapa de definición, necesitamos lo contrario, reducir la ingesta de calorías en base a las necesidades de nuestro cuerpo.">
-                </TextView>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingStart="10dp"
-                    android:paddingTop="10dp"
                     android:textColor="@color/white"
                     android:textStyle="bold"
-                    android:text="•	¿Qué significa estar en volumen?"
-                    tools:ignore="RtlSymmetry">
-                </TextView>
+                    tools:ignore="RtlSymmetry"></TextView>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingStart="10dp"
-                    android:textColor="@color/white"
                     android:paddingTop="10dp"
-                    android:text="Un intervalo de tiempo en el que nuestros objetivos irán encaminados a ganar musculo. Una fase de volumen se consigue a través fundamentalmente de una dieta hipercalórica. Una fase de superávit calórico en la que aportaremos más calorías al cuerpo de las que realmente “gastamos”. Es importante seguir una dieta hipocalórica saludable para evitar precisamente esta acumulación excesiva de grasa">
-                </TextView>
+                    android:text="Lo primero que tenemos que hacer es calcular nuestro TMB (tasa metabólica basal) Esta tasa se puede calcular en base a la edad, peso, estatura y sexo. A partir de la TMB se puede calcular la cantidad de calorías que necesitamos según nuestros objetivos y actividad física."
+                    android:textColor="@color/white"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:text="En la etapa de volumen necesitamos un superávit calórico para que los músculos consuman las calorías habituales y el exceso de calorías sirva para nutrir las fibras musculares y lograr el desarrollo muscular. En cambio, en la etapa de definición, necesitamos lo contrario, reducir la ingesta de calorías en base a las necesidades de nuestro cuerpo."
+                    android:textColor="@color/white"></TextView>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"></Space>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:text="•	¿Qué significa estar en volumen?"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Un intervalo de tiempo en el que nuestros objetivos irán encaminados a ganar musculo. Una fase de volumen se consigue a través fundamentalmente de una dieta hipercalórica. Una fase de superávit calórico en la que aportaremos más calorías al cuerpo de las que realmente “gastamos”. Es importante seguir una dieta hipocalórica saludable para evitar precisamente esta acumulación excesiva de grasa"
+                    android:textColor="@color/white"></TextView>
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/etapavolumen">
-                </ImageView>
+                    android:src="@drawable/etapavolumen"></ImageView>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"></Space>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingStart="10dp"
-                    android:textColor="@color/white"
                     android:paddingTop="10dp"
-                    android:textStyle="bold"
                     android:text="•	¿Qué significa estar en definicion?"
-                    tools:ignore="RtlSymmetry">
-                </TextView>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:paddingStart="10dp"
-                    android:paddingTop="10dp"
-                    android:text="En donde buscamos perder grasa corporal y peso">
-                </TextView>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingStart="10dp"
-                    android:paddingTop="10dp"
                     android:textColor="@color/white"
                     android:textStyle="bold"
+                    tools:ignore="RtlSymmetry"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:text="En donde buscamos perder grasa corporal y peso"
+                    android:textColor="@color/white"></TextView>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"></Space>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
                     android:text="•	¿Qué significa estar en recomposición corporal?"
-                    tools:ignore="RtlSymmetry">
-                </TextView>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:textColor="@color/white"
-                    android:paddingStart="10dp"
-                    android:paddingTop="10dp"
-                    android:text="En donde buscamos ganar masa muscular y perder grasa corporal de manera simultánea.">
-                </TextView>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingStart="10dp"
-                    android:textColor="@color/white"
-                    android:paddingTop="10dp"
                     android:textStyle="bold"
+                    tools:ignore="RtlSymmetry"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:text="En donde buscamos ganar masa muscular y perder grasa corporal de manera simultánea."
+                    android:textColor="@color/white"></TextView>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"></Space>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
                     android:text="•	Cuando empezar una Etapa de Volumen."
-                    tools:ignore="RtlSymmetry">
-                </TextView>
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry"></TextView>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingStart="25dp"
-                    android:textColor="@color/white"
                     android:paddingTop="10dp"
                     android:text="La clave es empezar lo suficientemente delgado. Esto prolongará nuestra etapa de volumen, permitiéndonos acercarnos más y más rápido a nuestro límite genético muscular."
-                    tools:ignore="RtlSymmetry">
-                </TextView>
+                    android:textColor="@color/white"
+                    tools:ignore="RtlSymmetry"></TextView>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"></Space>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingStart="10dp"
                     android:paddingTop="10dp"
+                    android:text="•	Diferencia entre volumen limpio vs volumen sucio"
                     android:textColor="@color/white"
                     android:textStyle="bold"
-                    android:text="•	Diferencia entre volumen limpio vs volumen sucio"
-                    tools:ignore="RtlSymmetry">
-                </TextView>
+                    tools:ignore="RtlSymmetry"></TextView>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingStart="25dp"
-                    android:textColor="@color/white"
                     android:paddingTop="10dp"
-                    android:text="Si es más del ideal, es decir un «exceso excesivo «, mucho de ese exceso será utilizado para ganar grasa corporal de manera excesiva, y nos pondremos gordos rápido. (« Volumen sucio «)">
-                </TextView>
+                    android:text="Si es más del ideal, es decir un «exceso excesivo «, mucho de ese exceso será utilizado para ganar grasa corporal de manera excesiva, y nos pondremos gordos rápido. (« Volumen sucio «)"
+                    android:textColor="@color/white"></TextView>
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingStart="25dp"
-                    android:textColor="@color/white"
                     android:paddingTop="10dp"
-                    android:text="Lo que queremos encontrar es tu «exceso apropiado «, lo cual nos permitirá ganar masa muscular y minimizar nuestra ganancia de grasa corporal. (Volumen limpio)">
-                </TextView>
+                    android:text="Lo que queremos encontrar es tu «exceso apropiado «, lo cual nos permitirá ganar masa muscular y minimizar nuestra ganancia de grasa corporal. (Volumen limpio)"
+                    android:textColor="@color/white"></TextView>
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/suciovslimpio">
-                </ImageView>
+                    android:src="@drawable/suciovslimpio"></ImageView>
 
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp">
+                </Space>
 
             </LinearLayout>
 
@@ -304,173 +317,166 @@
         android:orientation="horizontal">
 
         <LinearLayout
+            android:id="@+id/pieHome"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:layout_weight="1"
-            android:id="@+id/pieHome">
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:src="@drawable/comienzo"/>
+                android:src="@drawable/comienzo" />
 
             <Space
                 android:layout_width="wrap_content"
-                android:layout_height="5dp">
-            </Space>
+                android:layout_height="5dp"></Space>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:textColor="@color/white"
+                android:gravity="center"
                 android:text="Home"
-                android:textSize="14sp"
-                android:gravity="center">
+                android:textColor="@color/white"
+                android:textSize="14sp">
 
             </TextView>
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/pieEtapas"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:layout_weight="1"
-            android:id="@+id/pieEtapas">
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:src="@drawable/cronograma"/>
+                android:src="@drawable/cronograma" />
 
             <Space
                 android:layout_width="wrap_content"
-                android:layout_height="5dp">
-            </Space>
+                android:layout_height="5dp"></Space>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:textColor="@color/white"
+                android:gravity="center"
                 android:text="Etapas"
-                android:textSize="14sp"
-                android:gravity="center">
-            </TextView>
+                android:textColor="@color/white"
+                android:textSize="14sp"></TextView>
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/pieSuplementos"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:layout_weight="1"
-            android:id="@+id/pieSuplementos">
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:src="@drawable/suplementaria"/>
+                android:src="@drawable/suplementaria" />
 
             <Space
                 android:layout_width="wrap_content"
-                android:layout_height="5dp">
-            </Space>
+                android:layout_height="5dp"></Space>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:textColor="@color/white"
+                android:gravity="center"
                 android:text="Suplementos"
-                android:textSize="14sp"
-                android:gravity="center">
+                android:textColor="@color/white"
+                android:textSize="14sp">
 
             </TextView>
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/pieApps"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:layout_weight="1"
-            android:id="@+id/pieApps">
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:src="@drawable/aplicaciones"/>
+                android:src="@drawable/aplicaciones" />
 
             <Space
                 android:layout_width="wrap_content"
-                android:layout_height="5dp">
-            </Space>
+                android:layout_height="5dp"></Space>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:textColor="@color/white"
-                android:textSize="14sp"
+                android:gravity="center"
                 android:text="Apps"
-                android:gravity="center">
+                android:textColor="@color/white"
+                android:textSize="14sp">
 
             </TextView>
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/pieInfo"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:layout_weight="1"
-            android:id="@+id/pieInfo">
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:src="@drawable/informacion"/>
+                android:src="@drawable/informacion" />
 
             <Space
                 android:layout_width="wrap_content"
-                android:layout_height="5dp">
-            </Space>
+                android:layout_height="5dp"></Space>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:textColor="@color/white"
-                android:textSize="14sp"
+                android:gravity="center"
                 android:text="Info"
-                android:gravity="center">
+                android:textColor="@color/white"
+                android:textSize="14sp">
 
             </TextView>
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/pieEntreno"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:layout_weight="1"
-            android:id="@+id/pieEntreno">
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:src="@drawable/entrenamiento"/>
+                android:src="@drawable/entrenamiento" />
 
             <Space
                 android:layout_width="wrap_content"
-                android:layout_height="5dp">
-            </Space>
+                android:layout_height="5dp"></Space>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:textSize="14sp"
-                android:textColor="@color/white"
+                android:gravity="center"
                 android:text="Ejercicios"
-                android:gravity="center">
+                android:textColor="@color/white"
+                android:textSize="14sp">
 
             </TextView>
 

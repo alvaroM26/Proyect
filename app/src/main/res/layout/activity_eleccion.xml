@@ -6,227 +6,197 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:gravity="center"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:gravity="center">
 
         <ImageView
+            android:id="@+id/logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:src="@drawable/logo_small"
-            android:id="@+id/logo"/>
+            android:src="@drawable/logo_small" />
 
     </LinearLayout>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@color/black"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:background="@color/black">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="20dp">
+            android:layout_margin="20dp"
+            android:orientation="vertical">
 
             <LinearLayout
+                android:id="@+id/imgBiceps"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:id="@+id/imgBiceps">
+                android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:src="@drawable/biceps"/>
+                    android:src="@drawable/biceps" />
 
                 <Space
                     android:layout_width="wrap_content"
-                    android:layout_height="5dp">
-                </Space>
+                    android:layout_height="5dp"></Space>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="Biceps"
-                    android:textSize="28sp"
                     android:textColor="@color/white"
-                    android:gravity="center">
-                </TextView>
+                    android:textSize="28sp"></TextView>
 
                 <Space
                     android:layout_width="wrap_content"
-                    android:layout_height="15dp">
-                </Space>
+                    android:layout_height="15dp"></Space>
 
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/imgEspalda"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:id="@+id/imgEspalda">
+                android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="682dp"
                     android:layout_height="500dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/espalda"/>
-
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="5dp">
-                </Space>
+                    android:src="@drawable/espalda" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
+                    android:gravity="center"
                     android:text="Espalda"
-                    android:textSize="28sp"
-                    android:gravity="center">
-                </TextView>
+                    android:textColor="@color/white"
+                    android:textSize="28sp"></TextView>
 
                 <Space
                     android:layout_width="wrap_content"
-                    android:layout_height="15dp">
-                </Space>
+                    android:layout_height="15dp"></Space>
 
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/imgHombro"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:id="@+id/imgHombro">
+                android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/hombro"
                     android:layout_gravity="center"
-                    android:scaleType="centerCrop"/>
-
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="5dp">
-                </Space>
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/hombro" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
+                    android:gravity="center"
                     android:text="Hombro"
-                    android:textSize="28sp"
-                    android:gravity="center">
-                </TextView>
+                    android:textColor="@color/white"
+                    android:textSize="28sp"></TextView>
 
                 <Space
                     android:layout_width="wrap_content"
-                    android:layout_height="20dp">
-                </Space>
+                    android:layout_height="20dp"></Space>
 
                 <LinearLayout
+                    android:id="@+id/imgPecho"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:id="@+id/imgPecho">
+                    android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/pecho"
                         android:layout_gravity="center"
-                        android:scaleType="centerCrop"/>
-
-                    <Space
-                        android:layout_width="wrap_content"
-                        android:layout_height="5dp">
-                    </Space>
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pecho" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
+                        android:gravity="center"
                         android:text="Pecho"
-                        android:textSize="28sp"
-                        android:gravity="center">
-                    </TextView>
+                        android:textColor="@color/white"
+                        android:textSize="28sp"></TextView>
 
                     <Space
                         android:layout_width="wrap_content"
-                        android:layout_height="20dp">
-                    </Space>
+                        android:layout_height="20dp"></Space>
 
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/imgPierna"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:id="@+id/imgPierna">
+                    android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/pierna"
                         android:layout_gravity="center"
-                        android:scaleType="centerCrop"/>
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pierna" />
 
                     <Space
                         android:layout_width="wrap_content"
-                        android:layout_height="5dp">
-                    </Space>
+                        android:layout_height="5dp"></Space>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
+                        android:gravity="center"
                         android:text="Pierna"
-                        android:textSize="28sp"
-                        android:gravity="center">
-                    </TextView>
+                        android:textColor="@color/white"
+                        android:textSize="28sp"></TextView>
 
                     <Space
                         android:layout_width="wrap_content"
-                        android:layout_height="20dp">
-                    </Space>
+                        android:layout_height="20dp"></Space>
 
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/imgTriceps"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:id="@+id/imgTriceps">
+                    android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/triceps"
                         android:layout_gravity="center"
-                        android:scaleType="centerCrop"/>
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/triceps" />
 
                     <Space
                         android:layout_width="wrap_content"
-                        android:layout_height="5dp">
-                    </Space>
+                        android:layout_height="5dp"></Space>
 
                     <TextView
                         android:layout_width="match_parent"
-                        android:textColor="@color/white"
                         android:layout_height="wrap_content"
+                        android:gravity="center"
                         android:text="Triceps"
-                        android:textSize="28sp"
-                        android:gravity="center">
-                    </TextView>
+                        android:textColor="@color/white"
+                        android:textSize="28sp"></TextView>
 
                     <Space
                         android:layout_width="wrap_content"
-                        android:layout_height="20dp">
-                    </Space>
+                        android:layout_height="20dp"></Space>
 
                 </LinearLayout>
 
@@ -243,173 +213,166 @@
         android:orientation="horizontal">
 
         <LinearLayout
+            android:id="@+id/pieHome"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:layout_weight="1"
-            android:id="@+id/pieHome">
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:src="@drawable/comienzo"/>
+                android:src="@drawable/comienzo" />
 
             <Space
                 android:layout_width="wrap_content"
-                android:layout_height="5dp">
-            </Space>
+                android:layout_height="5dp"></Space>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
+                android:gravity="center"
                 android:text="Home"
                 android:textColor="@color/white"
-                android:textSize="14sp"
-                android:gravity="center">
+                android:textSize="14sp">
 
             </TextView>
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/pieEtapas"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:layout_weight="1"
-            android:id="@+id/pieEtapas">
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:src="@drawable/cronograma"/>
+                android:src="@drawable/cronograma" />
 
             <Space
                 android:layout_width="wrap_content"
-                android:layout_height="5dp">
-            </Space>
+                android:layout_height="5dp"></Space>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
+                android:gravity="center"
                 android:text="Etapas"
                 android:textColor="@color/white"
-                android:textSize="14sp"
-                android:gravity="center">
-            </TextView>
+                android:textSize="14sp"></TextView>
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/pieSuplementos"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:layout_weight="1"
-            android:id="@+id/pieSuplementos">
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:src="@drawable/suplementaria"/>
+                android:src="@drawable/suplementaria" />
 
             <Space
                 android:layout_width="wrap_content"
-                android:layout_height="5dp">
-            </Space>
+                android:layout_height="5dp"></Space>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:textColor="@color/white"
+                android:gravity="center"
                 android:text="Suplementos"
-                android:textSize="14sp"
-                android:gravity="center">
-
-            </TextView>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_weight="1"
-            android:id="@+id/pieApp">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:src="@drawable/aplicaciones"/>
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="5dp">
-            </Space>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
                 android:textColor="@color/white"
-                android:textSize="14sp"
-                android:text="Apps"
-                android:gravity="center">
+                android:textSize="14sp">
 
             </TextView>
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/pieApp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:layout_weight="1"
-            android:id="@+id/pieInfo">
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:src="@drawable/informacion"/>
+                android:src="@drawable/aplicaciones" />
 
             <Space
                 android:layout_width="wrap_content"
-                android:layout_height="5dp">
-            </Space>
+                android:layout_height="5dp"></Space>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:textSize="14sp"
+                android:gravity="center"
+                android:text="Apps"
+                android:textColor="@color/white"
+                android:textSize="14sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pieInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/informacion" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"></Space>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center"
                 android:text="Info"
                 android:textColor="@color/white"
-                android:gravity="center">
+                android:textSize="14sp">
 
             </TextView>
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/pieEntreno"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:layout_weight="1"
-            android:id="@+id/pieEntreno">
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:src="@drawable/entrenamiento"/>
+                android:src="@drawable/entrenamiento" />
 
             <Space
                 android:layout_width="wrap_content"
-                android:layout_height="5dp">
-            </Space>
+                android:layout_height="5dp"></Space>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:textColor="@color/white"
-                android:textSize="14sp"
+                android:gravity="center"
                 android:text="Ejercicios"
-                android:gravity="center">
+                android:textColor="@color/white"
+                android:textSize="14sp">
 
             </TextView>
 

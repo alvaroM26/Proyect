@@ -28,7 +28,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
             android:orientation="vertical">
 
             <LinearLayout
@@ -43,13 +42,15 @@
                     android:gravity="center"
                     android:text="@string/curl_de_martillo_cruzado_con_mancuernas"
                     android:textColor="@color/white"
-                    android:textStyle="bold"></TextView>
+                    android:textStyle="bold">
+                </TextView>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_marginTop="2dp"
-                    android:background="@color/white"></View>
+                    android:background="@color/white">
+                </View>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -66,7 +67,13 @@
                     android:id="@+id/video1"
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
-                    android:layout_gravity="center"></VideoView>
+                    android:layout_gravity="center">
+                </VideoView>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp">
+                </Space>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -75,13 +82,15 @@
                     android:paddingTop="20dp"
                     android:text="@string/curl_de_b_ceps_en_banco_scott"
                     android:textColor="@color/white"
-                    android:textStyle="bold"></TextView>
+                    android:textStyle="bold">
+                </TextView>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_marginTop="2dp"
-                    android:background="@color/white"></View>
+                    android:background="@color/white">
+                </View>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -90,12 +99,19 @@
                     android:paddingStart="10dp"
                     android:text="@string/_1_la_t_cnica_de_ejecuci_n_consiste_en_que_el_individuo_debe_estar_sentado_sobre_la_m_quina_con_los_brazos_completamente_apoyados_sobre_el_pupitre_que_compone_el_banco_scott_n2_agarra_la_barra_z_o_recta_o_en_su_defecto_dos_mancuernas_con_ambas_manos_o_incluso_a_mancuerna_alternada_n3_durante_la_ejecuci_n_del_b_ceps_en_banco_scott_las_palmas_deben_mirar_hacia_arriba_sin_movilizar_los_brazos_y_teniendo_ambos_estirados_mientras_se_sostiene_la_carga_y_se_inicia_el_movimiento_n4_inspira_profundamente_y_se_comienza_con_la_flexi_n_de_los_codos_para_poder_llevar_el_peso_hacia_el_nivel_del_pecho_con_ambas_manos_mant_n_ah_2_segundos"
                     android:textColor="@color/white"
-                    tools:ignore="RtlSymmetry"></TextView>
+                    tools:ignore="RtlSymmetry">
+                </TextView>
 
                 <VideoView
                     android:id="@+id/video2"
                     android:layout_width="match_parent"
-                    android:layout_height="300dp"></VideoView>
+                    android:layout_height="300dp">
+                </VideoView>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp">
+                </Space>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -104,13 +120,15 @@
                     android:paddingTop="20dp"
                     android:text="@string/curl_concentrado_en_m_quina"
                     android:textColor="@color/white"
-                    android:textStyle="bold"></TextView>
+                    android:textStyle="bold">
+                </TextView>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_marginTop="2dp"
-                    android:background="@color/white"></View>
+                    android:background="@color/white">
+                </View>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -119,12 +137,19 @@
                     android:paddingStart="10dp"
                     android:text="@string/_1_realice_la_posici_n_inicial_n2_mantenga_el_agarre_firme_en_todo_momento_suba_hasta_la_altura_de_los_hombros_y_hasta_que_ambos_brazos_queden_flexionados_exhale_y_contraiga_los_b_ceps_n3_luego_baje_lentamente_buscando_que_sus_brazos_se_encuentren_totalmente_extendidos"
                     android:textColor="@color/white"
-                    tools:ignore="RtlSymmetry"></TextView>
+                    tools:ignore="RtlSymmetry">
+                </TextView>
 
                 <VideoView
                     android:id="@+id/video3"
                     android:layout_width="match_parent"
-                    android:layout_height="300dp"></VideoView>
+                    android:layout_height="300dp">
+                </VideoView>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp">
+                </Space>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -133,13 +158,15 @@
                     android:paddingTop="20dp"
                     android:text="@string/curl_en_polea_baja_con_barra_recta"
                     android:textColor="@color/white"
-                    android:textStyle="bold"></TextView>
+                    android:textStyle="bold">
+                </TextView>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_marginTop="2dp"
-                    android:background="@color/white"></View>
+                    android:background="@color/white">
+                </View>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -148,12 +175,19 @@
                     android:paddingStart="10dp"
                     android:text="@string/_1_toma_la_barra_con_un_agarre_cercano_y_lentamente_mientras_exhala_lleva_la_barra_hacia_los_hombros_n2_mant_n_aislado_el_b_ceps_y_espera_hasta_un_par_de_segundos_para_regresar_n3_regresa_lentamente_a_la_posici_n_inicial_extendiendo_los_brazos_completamente_n4_realiza_el_movimiento_de_acuerdo_a_la_cantidad_de_repeticiones_que_desea_realizar"
                     android:textColor="@color/white"
-                    tools:ignore="RtlSymmetry"></TextView>
+                    tools:ignore="RtlSymmetry">
+                </TextView>
 
                 <VideoView
                     android:id="@+id/video4"
                     android:layout_width="match_parent"
-                    android:layout_height="300dp"></VideoView>
+                    android:layout_height="300dp">
+                </VideoView>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp">
+                </Space>
 
             </LinearLayout>
 
