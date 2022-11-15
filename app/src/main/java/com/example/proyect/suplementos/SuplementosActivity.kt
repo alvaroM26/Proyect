@@ -59,5 +59,10 @@ class SuplementosActivity : AppCompatActivity() {
             val intent = Intent(this, AppsActivity::class.java)
             startActivity(intent)
         }
+
+        binding.btsuplementos.setOnClickListener {
+            val intent = Intent(this, TipoSuplementosActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
