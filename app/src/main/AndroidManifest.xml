@@ -4,9 +4,10 @@
 
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-    <uses-permission android:name = "android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".chat.ChatApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -19,8 +20,8 @@
 
         <activity
             android:name=".registro.RegistroActivity"
-            android:theme="@style/SplashScreen"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -34,58 +35,59 @@
 
         <activity
             android:name=".inicio.MainActivity"
-            android:exported="true">
-        </activity>
-
-        <activity
-            android:name=".eleccion.TricepsActivity"
-            android:exported="true">
-        </activity>
-
-        <activity
-            android:name=".suplementos.SuplementosActivity"
-            android:exported="true">
-        </activity>
-
-        <activity
-            android:name=".eleccion.PechoActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
 
         <activity
             android:name=".app.AppsActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
 
         <activity
-            android:name=".eleccion.PiernaActivity"
-            android:exported="true">
-        </activity>
+            android:name=".eleccion.BicepsActivity"
+            android:exported="true"></activity>
 
         <activity
-            android:name=".informacion.InformacionActivity"
-            android:exported="true">
-        </activity>
-
-        <activity
-            android:name=".eleccion.HombroActivity"
-            android:exported="true">
-        </activity>
+            android:name=".eleccion.EleccionActivity"
+            android:exported="true"></activity>
 
         <activity
             android:name=".eleccion.EspaldaActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
+
+        <activity
+            android:name=".eleccion.HombroActivity"
+            android:exported="true"></activity>
+
+        <activity
+            android:name=".eleccion.PechoActivity"
+            android:exported="true"></activity>
+
+        <activity
+            android:name=".eleccion.PiernaActivity"
+            android:exported="true"></activity>
+
+        <activity
+            android:name=".eleccion.TricepsActivity"
+            android:exported="true"></activity>
 
         <activity
             android:name=".etapa.EtapasActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
+
+        <activity
+            android:name=".informacion.InformacionActivity"
+            android:exported="true"></activity>
 
         <activity
             android:name=".registro.UsuarioActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
+
+        <activity
+            android:name=".suplementos.SuplementosActivity"
+            android:exported="true"></activity>
+
+        <activity
+            android:name=".suplementos.TipoSuplementosActivity"
+            android:exported="true"></activity>
 
     </application>
 

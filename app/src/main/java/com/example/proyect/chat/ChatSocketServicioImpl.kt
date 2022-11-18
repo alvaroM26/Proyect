@@ -1,32 +1,65 @@
 package com.example.proyect.chat
 
-import androidx.compose.ui.semantics.SemanticsProperties.Error
-import io.grpc.internal.SharedResourceHolder.Resource
 import io.ktor.client.*
 import io.ktor.client.features.websocket.*
 import io.ktor.client.request.*
 import io.ktor.http.cio.websocket.*
-import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.isActive
+import kotlinx.serialization.decodeFromString
+import kotlinx.serialization.json.Json
 
 class ChatSocketServicioImpl(private val cliente: HttpClient) : ChatSocketService {
 
     private var socket: WebSocketSession? = null
 
-    override suspend fun iniciarSesion(nombreUsuario: String): Recursos<Unit> {
-        TODO("Not yet implemented")
+    override suspend fun iniciarSesion(nombreUsuario: String): Resource<Unit> {
+
+        return try{
+            socket = cliente.webSocketSession {
+                url("${ChatSocketService.Endpoints.ChatSocket.url}?nombreUsuario=$nombreUsuario")
+            }
+            if (socket?.isActive == true){
+               Resource.Success(Unit)
+            }else Resource.Error("No se ha podido establecer conexion")
+        }catch (e: Exception){
+            e.printStackTrace()
+           Resource.Error(e.localizedMessage ?: "Error desconocido")
+        }
     }
 
     override suspend fun enviarMensajes(mensaje: String) {
-        TODO("Not yet implemented")
+
+        try {
+
+            socket?.send(Frame.Text(mensaje))
+
+        }catch (e:Exception){
+            e.printStackTrace()
+        }
     }
 
     override fun observarMensajes(): Flow<Mensaje> {
-        TODO("Not yet implemented")
+        return try {
+
+            socket?.incoming
+                ?.receiveAsFlow()
+                ?.filter { it is Frame.Text }
+                ?.map {
+                    val json = (it as? Frame.Text)?.readText() ?: ""
+                    val mensajeDto = Json.decodeFromString<MensajesDto>(json)
+                    mensajeDto.toMensaje()
+                } ?: flow {  }
+
+        }catch (e: Exception){
+            e.printStackTrace()
+
+            flow {  }
+        }
     }
 
     override suspend fun cerrarSesion() {
-        TODO("Not yet implemented")
+        socket?.close()
     }
 
     companion object {
