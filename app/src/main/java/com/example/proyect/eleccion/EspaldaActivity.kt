@@ -51,27 +51,22 @@ class EspaldaActivity : AppCompatActivity() {
         video1.setMediaController(mediaController)
         video1.setVideoURI(onlineUri1)
         video1.requestFocus()
-        video1.start()
 
         video2.setMediaController(mediaController)
         video2.setVideoURI(onlineUri2)
         video2.requestFocus()
-        video2.start()
 
         video3.setMediaController(mediaController)
         video3.setVideoURI(onlineUri3)
         video3.requestFocus()
-        video3.start()
 
         video4.setMediaController(mediaController)
         video4.setVideoURI(onlineUri4)
         video4.requestFocus()
-        video4.start()
 
         video5.setMediaController(mediaController)
         video5.setVideoURI(onlineUri5)
         video5.requestFocus()
-        video5.start()
 
         pulsar()
     }

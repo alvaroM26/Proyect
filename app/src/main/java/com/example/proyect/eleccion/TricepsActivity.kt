@@ -44,12 +44,10 @@ class TricepsActivity : AppCompatActivity() {
         video1.setMediaController(mediaController)
         video1.setVideoURI(onlineUri1)
         video1.requestFocus()
-        video1.start()
 
         video2.setMediaController(mediaController)
         video2.setVideoURI(onlineUri2)
         video2.requestFocus()
-        video2.start()
 
         pulsar()
 

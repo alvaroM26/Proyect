@@ -38,6 +38,8 @@ class UsuarioActivity : AppCompatActivity() {
     fun setup(email: String) {
         binding.usuario.text = email
         binding.cerrarBoton.setOnClickListener {
+            val intent = Intent(this, RegistroActivity::class.java)
+            startActivity(intent)
             FirebaseAuth.getInstance().signOut()
         }
     }
