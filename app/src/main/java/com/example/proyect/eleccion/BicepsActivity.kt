@@ -47,6 +47,7 @@ class BicepsActivity : AppCompatActivity() {
         video1.setMediaController(mediaController)
         video1.setVideoURI(onlineUri1)
         video1.requestFocus()
+        video1.stopPlayback()
 
         video2.setMediaController(mediaController)
         video2.setVideoURI(onlineUri2)

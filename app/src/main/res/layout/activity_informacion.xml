@@ -107,7 +107,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingStart="10dp"
-                    android:paddingTop="20dp"
                     android:text="•	Cómo organizar tu plan de entrenamiento semanal"
                     android:textColor="@color/white"
                     android:textStyle="bold"
@@ -121,10 +120,6 @@
                     android:text="Tu plan de entrenamiento semanal dependerá de varios factores:"
                     android:textColor="@color/white"
                     tools:ignore="RtlSymmetry"></TextView>
-
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="20dp"></Space>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -143,10 +138,6 @@
                     android:text="Según estas condiciones, deberás planificar un tiempo para los ejercicios de cardio y otro para el entrenamiento de fuerza, manteniendo periodos de descanso entre sesiones."
                     android:textColor="@color/white"
                     tools:ignore="RtlSymmetry"></TextView>
-
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="20dp"></Space>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -198,9 +189,9 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="250dp"
+                    android:layout_height="200dp"
                     android:layout_gravity="center"
-                    android:paddingTop="10dp"
+                    android:paddingTop="15dp"
                     android:src="@drawable/intensidad"
                     android:textColor="@color/white"></ImageView>
 

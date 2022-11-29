@@ -73,7 +73,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingStart="10dp"
-                    android:paddingTop="20dp"
+
                     android:text="•	Etapa de volumen y definición "
                     android:textColor="@color/white"
                     android:textStyle="bold"
@@ -99,6 +99,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
                     android:layout_gravity="center"
+                    android:paddingTop="15dp"
                     android:src="@drawable/volumenydefinicion"></ImageView>
 
                 <Space
@@ -135,6 +136,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
+                    android:paddingTop="15dp"
                     android:layout_gravity="center"
                     android:src="@drawable/volumendefincion"></ImageView>
 
@@ -192,7 +194,8 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
+                    android:layout_height="190dp"
+                    android:paddingTop="15dp"
                     android:layout_gravity="center"
                     android:src="@drawable/etapavolumen"></ImageView>
 
@@ -296,6 +299,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
+                    android:paddingTop="15dp"
                     android:layout_gravity="center"
                     android:src="@drawable/suciovslimpio"></ImageView>
 

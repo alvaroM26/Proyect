@@ -37,6 +37,8 @@ class TipoSuplementosActivity : AppCompatActivity() {
             binding.texto3.visibility = View.GONE
             binding.texto4.visibility = View.GONE
 
+            readAminoacidos()
+
         }
 
     }
