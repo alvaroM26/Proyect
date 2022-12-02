@@ -16,7 +16,6 @@ class EtapasActivity : AppCompatActivity(){
 
     private lateinit var binding: ActivityEtapasBinding
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)

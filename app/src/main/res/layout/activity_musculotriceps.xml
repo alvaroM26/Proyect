@@ -40,6 +40,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
+                    android:id="@+id/nombre1"
                     android:textColor="@color/white"
                     android:text="@string/extension_de_triceps"
                     android:textStyle="bold"
@@ -77,6 +78,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:textColor="@color/white"
+                    android:id="@+id/nombre2"
                     android:paddingTop="20dp"
                     android:text="@string/prensa_de_triceps"
                     android:textStyle="bold"></TextView>

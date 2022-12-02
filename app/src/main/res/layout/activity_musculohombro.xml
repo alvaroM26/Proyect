@@ -40,6 +40,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
+                    android:id="@+id/nombre1"
                     android:text="@string/press_hombro"
                     android:textColor="@color/white"
                     android:textStyle="bold"></TextView>
@@ -75,6 +76,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
+                    android:id="@+id/nombre2"
                     android:paddingTop="20dp"
                     android:text="@string/pajaros"
                     android:textColor="@color/white"
@@ -109,6 +111,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
+                    android:id="@+id/nombre3"
                     android:paddingTop="20dp"
                     android:text="@string/elevacion_lateral"
                     android:textColor="@color/white"
@@ -144,6 +147,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:paddingTop="20dp"
+                    android:id="@+id/nombre4"
                     android:text="@string/remo_a_la_cara_con_cuerda_en_polea_alta"
                     android:textColor="@color/white"
                     android:textStyle="bold"></TextView>
@@ -178,6 +182,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:paddingTop="20dp"
+                    android:id="@+id/nombre5"
                     android:text="@string/press_cubano"
                     android:textColor="@color/white"
                     android:textStyle="bold"></TextView>

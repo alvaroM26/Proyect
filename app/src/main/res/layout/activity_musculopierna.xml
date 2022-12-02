@@ -41,6 +41,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="@string/sentadillas"
+                    android:id="@+id/nombre1"
                     android:textColor="@color/white"
                     android:textStyle="bold">
                 </TextView>
@@ -78,6 +79,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
+                    android:id="@+id/nombre2"
                     android:paddingTop="20dp"
                     android:text="@string/extension_de_cu_driceps"
                     android:textColor="@color/white"
@@ -118,6 +120,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:paddingTop="20dp"
+                    android:id="@+id/nombre3"
                     android:text="@string/extension_de_gemelos_en_maquina"
                     android:textColor="@color/white"
                     android:textStyle="bold">
@@ -157,6 +160,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:paddingTop="20dp"
+                    android:id="@+id/nombre4"
                     android:text="@string/aductores_maquina"
                     android:textColor="@color/white"
                     android:textStyle="bold">
@@ -196,6 +200,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:paddingTop="20dp"
+                    android:id="@+id/nombre5"
                     android:text="@string/abductores_maquina"
                     android:textColor="@color/white"
                     android:textStyle="bold">
@@ -235,6 +240,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:paddingTop="20dp"
+                    android:id="@+id/nombre6"
                     android:text="@string/flexion_de_pierna_tumbado"
                     android:textColor="@color/white"
                     android:textStyle="bold">
@@ -274,6 +280,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:paddingTop="20dp"
+                    android:id="@+id/nombre7"
                     android:text="@string/curl_de_piernas_sentado"
                     android:textColor="@color/white"
                     android:textStyle="bold">

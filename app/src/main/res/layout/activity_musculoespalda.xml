@@ -40,6 +40,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
+                    android:id="@+id/nombre1"
                     android:text="@string/dominadas"
                     android:textColor="@color/white"
                     android:textStyle="bold"></TextView>
@@ -74,6 +75,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:paddingTop="20dp"
+                    android:id="@+id/nombre2"
                     android:text="@string/remo_gironda"
                     android:textColor="@color/white"
                     android:textStyle="bold"></TextView>
@@ -107,6 +109,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
+                    android:id="@+id/nombre3"
                     android:paddingTop="20dp"
                     android:text="@string/remo_sentado"
                     android:textColor="@color/white"
@@ -141,6 +144,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
+                    android:id="@+id/nombre4"
                     android:paddingTop="20dp"
                     android:text="@string/remo_con_barra_en_banco_inclinado"
                     android:textColor="@color/white"
@@ -176,6 +180,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:paddingTop="20dp"
+                    android:id="@+id/nombre5"
                     android:text="@string/remo_con_barra_recta_de_pie"
                     android:textColor="@color/white"
                     android:textStyle="bold"></TextView>

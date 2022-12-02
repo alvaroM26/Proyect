@@ -28,16 +28,35 @@ class PechoActivity : AppCompatActivity() {
         binding = ActivityMusculopechoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val video1: VideoView = findViewById(R.id.video1)
-        val video2: VideoView = findViewById(R.id.video2)
-        val video3: VideoView = findViewById(R.id.video3)
-        val video4: VideoView = findViewById(R.id.video4)
-
         val mediaController = MediaController(this)
-        mediaController.setAnchorView(video1)
-        mediaController.setAnchorView(video2)
-        mediaController.setAnchorView(video3)
-        mediaController.setAnchorView(video4)
+
+        binding.nombre1.setOnClickListener {
+            val video1: VideoView = findViewById(R.id.video1)
+            val uri = Uri.parse("android.resource://" + packageName + "/" + R.raw.prensadepecho)
+            video1.setVideoURI(uri)
+            video1.setMediaController(mediaController)
+        }
+
+        binding.nombre2.setOnClickListener {
+            val video2: VideoView = findViewById(R.id.video2)
+            val uri = Uri.parse("android.resource://" + packageName + "/" + R.raw.fondosasistidos)
+            video2.setVideoURI(uri)
+            video2.setMediaController(mediaController)
+        }
+
+        binding.nombre3.setOnClickListener {
+            val video3: VideoView = findViewById(R.id.video3)
+            val uri = Uri.parse("android.resource://" + packageName + "/" + R.raw.cierredepolea)
+            video3.setVideoURI(uri)
+            video3.setMediaController(mediaController)
+        }
+
+        binding.nombre4.setOnClickListener {
+            val video4: VideoView = findViewById(R.id.video4)
+            val uri = Uri.parse("android.resource://" + packageName + "/" + R.raw.contractorpeckfly)
+            video4.setVideoURI(uri)
+            video4.setMediaController(mediaController)
+        }
 
         val onlineUri1: Uri =
             Uri.parse("https://firebasestorage.googleapis.com/v0/b/proyect-2022.appspot.com/o/prensadepecho.mp4?alt=media&token=a8ffa973-79ba-4dc7-bf2a-939af8318487")
@@ -47,22 +66,6 @@ class PechoActivity : AppCompatActivity() {
             Uri.parse("https://firebasestorage.googleapis.com/v0/b/proyect-2022.appspot.com/o/cierredepolea.mp4?alt=media&token=797bae3e-78b7-4314-b164-fc1b9056a5a6")
         val onlineUri4: Uri =
             Uri.parse("https://firebasestorage.googleapis.com/v0/b/proyect-2022.appspot.com/o/contractorpeckfly.mp4?alt=media&token=ed30074b-af9a-4595-8d4e-56f0e9b33aed")
-
-        video1.setMediaController(mediaController)
-        video1.setVideoURI(onlineUri1)
-        video1.requestFocus()
-
-        video2.setMediaController(mediaController)
-        video2.setVideoURI(onlineUri2)
-        video2.requestFocus()
-
-        video3.setMediaController(mediaController)
-        video3.setVideoURI(onlineUri3)
-        video3.requestFocus()
-
-        video4.setMediaController(mediaController)
-        video4.setVideoURI(onlineUri4)
-        video4.requestFocus()
 
         pulsar()
 

@@ -38,6 +38,7 @@
 
                 <TextView
                     android:layout_width="match_parent"
+                    android:id="@+id/nombre1"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="@string/curl_de_martillo_cruzado_con_mancuernas"
@@ -80,6 +81,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:paddingTop="20dp"
+                    android:id="@+id/nombre2"
                     android:text="@string/curl_de_b_ceps_en_banco_scott"
                     android:textColor="@color/white"
                     android:textStyle="bold">
@@ -118,6 +120,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:paddingTop="20dp"
+                    android:id="@+id/nombre3"
                     android:text="@string/curl_concentrado_en_m_quina"
                     android:textColor="@color/white"
                     android:textStyle="bold">
@@ -155,6 +158,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
+                    android:id="@+id/nombre4"
                     android:paddingTop="20dp"
                     android:text="@string/curl_en_polea_baja_con_barra_recta"
                     android:textColor="@color/white"

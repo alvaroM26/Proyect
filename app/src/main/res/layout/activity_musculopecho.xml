@@ -40,6 +40,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
+                    android:id="@+id/nombre1"
                     android:text="@string/prensa_de_pecho"
                     android:textColor="@color/white"
                     android:textStyle="bold"></TextView>
@@ -75,6 +76,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:paddingTop="20dp"
+                    android:id="@+id/nombre2"
                     android:text="@string/fondos_asistidos"
                     android:textColor="@color/white"
                     android:textStyle="bold"></TextView>
@@ -110,6 +112,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:paddingTop="20dp"
+                    android:id="@+id/nombre3"
                     android:text="@string/cierre_de_polea"
                     android:textColor="@color/white"
                     android:textStyle="bold"></TextView>
@@ -145,6 +148,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:paddingTop="20dp"
+                    android:id="@+id/nombre4"
                     android:text="@string/contractor_pec_fly"
                     android:textColor="@color/white"
                     android:textStyle="bold"></TextView>

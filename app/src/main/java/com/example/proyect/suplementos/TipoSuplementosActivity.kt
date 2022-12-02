@@ -47,21 +47,22 @@ class TipoSuplementosActivity : AppCompatActivity() {
         val database =
             Firebase.database("https://proyect-2022-default-rtdb.firebaseio.com/").reference
         database.child("suplemento").child("Aminoacidos (BCAA)").child("informacion").child("0")
-            .child("nombre")
-            .get().addOnSuccessListener {
-                binding.nombreSuplemento.text = it.value.toString()
-                binding.lineartotal.visibility = View.VISIBLE
-            }
-        database.child("suplemento").child("Aminoacidos (BCAA)").child("informacion").child("0")
             .child("descripcion")
             .get().addOnSuccessListener {
                 binding.descripcionSuple.text = it.value.toString()
-
+                binding.lineartotal.visibility = View.VISIBLE
             }
         database.child("suplemento").child("Aminoacidos (BCAA)").child("informacion").child("0")
             .child("imagen")
             .get().addOnSuccessListener {
                 Glide.with(this).load(it.value.toString()).into(binding.imagensuple)
+                binding.lineartotal.visibility = View.VISIBLE
+            }
+        database.child("suplemento").child("Aminoacidos (BCAA)").child("informacion").child("0")
+            .child("nombre")
+            .get().addOnSuccessListener {
+                binding.nombreSuplemento.text = it.value.toString()
+                binding.lineartotal.visibility = View.VISIBLE
             }
     }
 
@@ -78,11 +79,12 @@ class TipoSuplementosActivity : AppCompatActivity() {
             .child("descripcion")
             .get().addOnSuccessListener {
                 binding.descripcionSuple.text = it.value.toString()
-
+                binding.lineartotal.visibility = View.VISIBLE
             }
         database.child("suplemento").child("Cafeina").child("informacion").child("3")
             .child("imagen")
             .get().addOnSuccessListener {
+                binding.lineartotal.visibility = View.VISIBLE
                 Glide.with(this).load(it.value.toString()).into(binding.imagensuple)
             }
     }
@@ -99,12 +101,14 @@ class TipoSuplementosActivity : AppCompatActivity() {
         database.child("suplemento").child("Glutamina").child("informacion").child("1")
             .child("descripcion")
             .get().addOnSuccessListener {
+                binding.lineartotal.visibility = View.VISIBLE
                 binding.descripcionSuple.text = it.value.toString()
 
             }
         database.child("suplemento").child("Glutamina").child("informacion").child("1")
             .child("imagen")
             .get().addOnSuccessListener {
+                binding.lineartotal.visibility = View.VISIBLE
                 Glide.with(this).load(it.value.toString()).into(binding.imagensuple)
             }
     }
@@ -121,12 +125,14 @@ class TipoSuplementosActivity : AppCompatActivity() {
         database.child("suplemento").child("Proteinas").child("informacion").child("0")
             .child("descripcion")
             .get().addOnSuccessListener {
+                binding.lineartotal.visibility = View.VISIBLE
                 binding.descripcionSuple.text = it.value.toString()
 
             }
         database.child("suplemento").child("Proteinas").child("informacion").child("0")
             .child("imagen")
             .get().addOnSuccessListener {
+                binding.lineartotal.visibility = View.VISIBLE
                 Glide.with(this).load(it.value.toString()).into(binding.imagensuple)
             }
     }

@@ -29,25 +29,21 @@ class TricepsActivity : AppCompatActivity() {
         binding = ActivityMusculotricepsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val video1: VideoView = findViewById(R.id.video1)
-        val video2: VideoView = findViewById(R.id.video2)
-
         val mediaController = MediaController(this)
-        mediaController.setAnchorView(video1)
-        mediaController.setAnchorView(video2)
 
-        val onlineUri1: Uri =
-            Uri.parse("https://firebasestorage.googleapis.com/v0/b/proyect-2022.appspot.com/o/extensiondetriceps.mp4?alt=media&token=397b0877-3b8c-48f2-bee2-906024b4a43a")
-        val onlineUri2: Uri =
-            Uri.parse("https://firebasestorage.googleapis.com/v0/b/proyect-2022.appspot.com/o/presstriceps.mp4?alt=media&token=25af3ff3-fb30-4d4a-8195-aa679d334915")
+        binding.nombre1.setOnClickListener {
+            val video1: VideoView = findViewById(R.id.video1)
+            val uri = Uri.parse("android.resource://" + packageName + "/" + R.raw.extensiondetriceps)
+            video1.setVideoURI(uri)
+            video1.setMediaController(mediaController)
+        }
 
-        video1.setMediaController(mediaController)
-        video1.setVideoURI(onlineUri1)
-        video1.requestFocus()
-
-        video2.setMediaController(mediaController)
-        video2.setVideoURI(onlineUri2)
-        video2.requestFocus()
+        binding.nombre2.setOnClickListener {
+            val video2: VideoView = findViewById(R.id.video2)
+            val uri = Uri.parse("android.resource://" + packageName + "/" + R.raw.presstriceps)
+            video2.setVideoURI(uri)
+            video2.setMediaController(mediaController)
+        }
 
         pulsar()
 
