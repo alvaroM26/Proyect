@@ -19,6 +19,7 @@ import com.google.firebase.ktx.Firebase
 class TipoSuplementosActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityTiposuplementosBinding
+    private var contador = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -32,154 +33,167 @@ class TipoSuplementosActivity : AppCompatActivity() {
         pulsar()
 
         binding.datos.setOnClickListener {
+            contador++
+
             binding.texto1.visibility = View.GONE
             binding.texto2.visibility = View.GONE
             binding.texto3.visibility = View.GONE
             binding.texto4.visibility = View.GONE
 
-            readAminoacidos()
-
+            if (contador == 1) {
+                readProteina()
+            } else if (contador == 2) {
+                readCreatina()
+            } else if (contador == 3) {
+                readGlutamina()
+            } else if (contador == 4) {
+                readPreWork()
+            } else if (contador == 5) {
+                readCafeina()
+                contador = 0
+            }
         }
 
     }
 
-    fun readAminoacidos() {
-        val database =
-            Firebase.database("https://proyect-2022-default-rtdb.firebaseio.com/").reference
-        database.child("suplemento").child("Aminoacidos (BCAA)").child("informacion").child("0")
-            .child("descripcion")
-            .get().addOnSuccessListener {
-                binding.descripcionSuple.text = it.value.toString()
-                binding.lineartotal.visibility = View.VISIBLE
-            }
-        database.child("suplemento").child("Aminoacidos (BCAA)").child("informacion").child("0")
-            .child("imagen")
-            .get().addOnSuccessListener {
-                Glide.with(this).load(it.value.toString()).into(binding.imagensuple)
-                binding.lineartotal.visibility = View.VISIBLE
-            }
-        database.child("suplemento").child("Aminoacidos (BCAA)").child("informacion").child("0")
-            .child("nombre")
-            .get().addOnSuccessListener {
-                binding.nombreSuplemento.text = it.value.toString()
-                binding.lineartotal.visibility = View.VISIBLE
-            }
-    }
+        fun readAminoacidos(){
 
-    fun readCafeina() {
-        val database =
-            Firebase.database("https://proyect-2022-default-rtdb.firebaseio.com/").reference
-        database.child("suplemento").child("Cafeina").child("informacion").child("3")
-            .child("nombre")
-            .get().addOnSuccessListener {
-                binding.nombreSuplemento.text = it.value.toString()
-                binding.lineartotal.visibility = View.VISIBLE
-            }
-        database.child("suplemento").child("Cafeina").child("informacion").child("3")
-            .child("descripcion")
-            .get().addOnSuccessListener {
-                binding.descripcionSuple.text = it.value.toString()
-                binding.lineartotal.visibility = View.VISIBLE
-            }
-        database.child("suplemento").child("Cafeina").child("informacion").child("3")
-            .child("imagen")
-            .get().addOnSuccessListener {
-                binding.lineartotal.visibility = View.VISIBLE
-                Glide.with(this).load(it.value.toString()).into(binding.imagensuple)
-            }
-    }
+            val database =
+                Firebase.database("https://proyect-2022-default-rtdb.firebaseio.com/").reference
+            database.child("suplemento").child("Aminoacidos (BCAA)").child("informacion").child("0")
+                .child("descripcion")
+                .get().addOnSuccessListener {
+                    binding.lineartotal.visibility = View.VISIBLE
+                    binding.descripcionSuple.text = it.value.toString()
+                }
+            database.child("suplemento").child("Aminoacidos (BCAA)").child("informacion").child("0")
+                .child("imagen")
+                .get().addOnSuccessListener {
+                    Glide.with(this).load(it.value.toString()).into(binding.imagensuple)
+                }
+            database.child("suplemento").child("Aminoacidos (BCAA)").child("informacion").child("0")
+                .child("nombre")
+                .get().addOnSuccessListener {
+                    binding.nombreSuplemento.text = it.value.toString()
+                }
+        }
 
-    fun readGlutamina() {
-        val database =
-            Firebase.database("https://proyect-2022-default-rtdb.firebaseio.com/").reference
-        database.child("suplemento").child("Glutamina").child("informacion").child("1")
-            .child("nombre")
-            .get().addOnSuccessListener {
-                binding.nombreSuplemento.text = it.value.toString()
-                binding.lineartotal.visibility = View.VISIBLE
-            }
-        database.child("suplemento").child("Glutamina").child("informacion").child("1")
-            .child("descripcion")
-            .get().addOnSuccessListener {
-                binding.lineartotal.visibility = View.VISIBLE
-                binding.descripcionSuple.text = it.value.toString()
+        fun readCafeina(){
 
-            }
-        database.child("suplemento").child("Glutamina").child("informacion").child("1")
-            .child("imagen")
-            .get().addOnSuccessListener {
-                binding.lineartotal.visibility = View.VISIBLE
-                Glide.with(this).load(it.value.toString()).into(binding.imagensuple)
-            }
-    }
+            val database =
+                Firebase.database("https://proyect-2022-default-rtdb.firebaseio.com/").reference
+            database.child("suplemento").child("Cafeina").child("informacion").child("3")
+                .child("nombre")
+                .get().addOnSuccessListener {
+                    binding.nombreSuplemento.text = it.value.toString()
+                    binding.lineartotal.visibility = View.VISIBLE
+                }
+            database.child("suplemento").child("Cafeina").child("informacion").child("3")
+                .child("descripcion")
+                .get().addOnSuccessListener {
+                    binding.descripcionSuple.text = it.value.toString()
+                    binding.lineartotal.visibility = View.VISIBLE
+                }
+            database.child("suplemento").child("Cafeina").child("informacion").child("3")
+                .child("imagen")
+                .get().addOnSuccessListener {
+                    binding.lineartotal.visibility = View.VISIBLE
+                    Glide.with(this).load(it.value.toString()).into(binding.imagensuple)
+                }
 
-    fun readProteina() {
-        val database =
-            Firebase.database("https://proyect-2022-default-rtdb.firebaseio.com/").reference
-        database.child("suplemento").child("Proteinas").child("informacion").child("0")
-            .child("nombre")
-            .get().addOnSuccessListener {
-                binding.nombreSuplemento.text = it.value.toString()
-                binding.lineartotal.visibility = View.VISIBLE
-            }
-        database.child("suplemento").child("Proteinas").child("informacion").child("0")
-            .child("descripcion")
-            .get().addOnSuccessListener {
-                binding.lineartotal.visibility = View.VISIBLE
-                binding.descripcionSuple.text = it.value.toString()
+        }
 
-            }
-        database.child("suplemento").child("Proteinas").child("informacion").child("0")
-            .child("imagen")
-            .get().addOnSuccessListener {
-                binding.lineartotal.visibility = View.VISIBLE
-                Glide.with(this).load(it.value.toString()).into(binding.imagensuple)
-            }
-    }
+        fun readGlutamina() {
+            val database =
+                Firebase.database("https://proyect-2022-default-rtdb.firebaseio.com/").reference
+            database.child("suplemento").child("Glutamina").child("informacion").child("1")
+                .child("nombre")
+                .get().addOnSuccessListener {
+                    binding.nombreSuplemento.text = it.value.toString()
+                    binding.lineartotal.visibility = View.VISIBLE
+                }
+            database.child("suplemento").child("Glutamina").child("informacion").child("1")
+                .child("descripcion")
+                .get().addOnSuccessListener {
+                    binding.lineartotal.visibility = View.VISIBLE
+                    binding.descripcionSuple.text = it.value.toString()
 
-    fun readPreWork() {
-        val database =
-            Firebase.database("https://proyect-2022-default-rtdb.firebaseio.com/").reference
-        database.child("suplemento").child("Suplemento de pre-entrenos").child("informacion")
-            .child("2").child("nombre")
-            .get().addOnSuccessListener {
-                binding.nombreSuplemento.text = it.value.toString()
-                binding.lineartotal.visibility = View.VISIBLE
-            }
-        database.child("suplemento").child("Suplemento de pre-entrenos").child("informacion")
-            .child("2").child("descripcion")
-            .get().addOnSuccessListener {
-                binding.descripcionSuple.text = it.value.toString()
+                }
+            database.child("suplemento").child("Glutamina").child("informacion").child("1")
+                .child("imagen")
+                .get().addOnSuccessListener {
+                    binding.lineartotal.visibility = View.VISIBLE
+                    Glide.with(this).load(it.value.toString()).into(binding.imagensuple)
+                }
+        }
 
-            }
-        database.child("suplemento").child("Suplemento de pre-entrenos").child("informacion")
-            .child("2").child("imagen")
-            .get().addOnSuccessListener {
-                Glide.with(this).load(it.value.toString()).into(binding.imagensuple)
-            }
-    }
+        fun readProteina() {
+            val database =
+                Firebase.database("https://proyect-2022-default-rtdb.firebaseio.com/").reference
+            database.child("suplemento").child("Proteinas").child("informacion").child("0")
+                .child("nombre")
+                .get().addOnSuccessListener {
+                    binding.nombreSuplemento.text = it.value.toString()
+                    binding.lineartotal.visibility = View.VISIBLE
+                }
+            database.child("suplemento").child("Proteinas").child("informacion").child("0")
+                .child("descripcion")
+                .get().addOnSuccessListener {
+                    binding.lineartotal.visibility = View.VISIBLE
+                    binding.descripcionSuple.text = it.value.toString()
 
-    fun readCreatina() {
-        val database =
-            Firebase.database("https://proyect-2022-default-rtdb.firebaseio.com/").reference
-        database.child("suplemento").child("creatina").child("informacion").child("3")
-            .child("nombre")
-            .get().addOnSuccessListener {
-                binding.nombreSuplemento.text = it.value.toString()
-                binding.lineartotal.visibility = View.VISIBLE
-            }
-        database.child("suplemento").child("creatina").child("informacion").child("3")
-            .child("descripcion")
-            .get().addOnSuccessListener {
-                binding.descripcionSuple.text = it.value.toString()
+                }
+            database.child("suplemento").child("Proteinas").child("informacion").child("0")
+                .child("imagen")
+                .get().addOnSuccessListener {
+                    binding.lineartotal.visibility = View.VISIBLE
+                    Glide.with(this).load(it.value.toString()).into(binding.imagensuple)
+                }
+        }
 
-            }
-        database.child("suplemento").child("creatina").child("informacion").child("3")
-            .child("imagen")
-            .get().addOnSuccessListener {
-                Glide.with(this).load(it.value.toString()).into(binding.imagensuple)
-            }
-    }
+        fun readPreWork() {
+            val database =
+                Firebase.database("https://proyect-2022-default-rtdb.firebaseio.com/").reference
+            database.child("suplemento").child("Suplemento de pre-entrenos").child("informacion")
+                .child("2").child("nombre")
+                .get().addOnSuccessListener {
+                    binding.nombreSuplemento.text = it.value.toString()
+                    binding.lineartotal.visibility = View.VISIBLE
+                }
+            database.child("suplemento").child("Suplemento de pre-entrenos").child("informacion")
+                .child("2").child("descripcion")
+                .get().addOnSuccessListener {
+                    binding.descripcionSuple.text = it.value.toString()
+
+                }
+            database.child("suplemento").child("Suplemento de pre-entrenos").child("informacion")
+                .child("2").child("imagen")
+                .get().addOnSuccessListener {
+                    Glide.with(this).load(it.value.toString()).into(binding.imagensuple)
+                }
+        }
+
+        fun readCreatina() {
+            val database =
+                Firebase.database("https://proyect-2022-default-rtdb.firebaseio.com/").reference
+            database.child("suplemento").child("creatina").child("informacion").child("3")
+                .child("nombre")
+                .get().addOnSuccessListener {
+                    binding.nombreSuplemento.text = it.value.toString()
+                    binding.lineartotal.visibility = View.VISIBLE
+                }
+            database.child("suplemento").child("creatina").child("informacion").child("3")
+                .child("descripcion")
+                .get().addOnSuccessListener {
+                    binding.descripcionSuple.text = it.value.toString()
+
+                }
+            database.child("suplemento").child("creatina").child("informacion").child("3")
+                .child("imagen")
+                .get().addOnSuccessListener {
+                    Glide.with(this).load(it.value.toString()).into(binding.imagensuple)
+                }
+        }
 
     private fun pulsar() {
         binding.pieHome.setOnClickListener {
