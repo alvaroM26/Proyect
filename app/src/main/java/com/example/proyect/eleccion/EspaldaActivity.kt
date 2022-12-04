@@ -7,7 +7,7 @@ import android.view.Window
 import android.widget.MediaController
 import android.widget.VideoView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.proyect.*
+import com.example.proyect.R
 import com.example.proyect.app.AppsActivity
 import com.example.proyect.databinding.ActivityMusculoespaldaBinding
 import com.example.proyect.etapa.EtapasActivity
@@ -54,7 +54,8 @@ class EspaldaActivity : AppCompatActivity() {
 
         binding.nombre4.setOnClickListener {
             val video4: VideoView = findViewById(R.id.video4)
-            val uri = Uri.parse("android.resource://" + packageName + "/" + R.raw.remoconbarrainclinada)
+            val uri =
+                Uri.parse("android.resource://" + packageName + "/" + R.raw.remoconbarrainclinada)
             video4.setVideoURI(uri)
             video4.setMediaController(mediaController)
         }
@@ -69,7 +70,7 @@ class EspaldaActivity : AppCompatActivity() {
         pulsar()
     }
 
-    private fun pulsar(){
+    private fun pulsar() {
         binding.pieHome.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
@@ -95,7 +96,7 @@ class EspaldaActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        binding.pieApps.setOnClickListener {
+        binding.pieApp.setOnClickListener {
             val intent = Intent(this, AppsActivity::class.java)
             startActivity(intent)
         }

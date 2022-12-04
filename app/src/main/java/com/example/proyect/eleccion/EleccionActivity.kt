@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Window
 import androidx.appcompat.app.AppCompatActivity
-import com.example.proyect.*
+import com.example.proyect.R
 import com.example.proyect.app.AppsActivity
 import com.example.proyect.databinding.ActivityEleccionBinding
 import com.example.proyect.etapa.EtapasActivity
@@ -30,7 +30,7 @@ class EleccionActivity : AppCompatActivity() {
 
     }
 
-    private fun pulsador(){
+    private fun pulsador() {
 
         binding.pieHome.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)

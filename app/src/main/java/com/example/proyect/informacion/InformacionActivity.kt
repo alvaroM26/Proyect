@@ -54,7 +54,7 @@ class InformacionActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        binding.pieApps.setOnClickListener {
+        binding.pieApp.setOnClickListener {
             val intent = Intent(this, AppsActivity::class.java)
             startActivity(intent)
         }

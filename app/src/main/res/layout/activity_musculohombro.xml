@@ -37,10 +37,10 @@
                 tools:ignore="ExtraText">
 
                 <TextView
+                    android:id="@+id/nombre1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:id="@+id/nombre1"
                     android:text="@string/press_hombro"
                     android:textColor="@color/white"
                     android:textStyle="bold"></TextView>
@@ -73,10 +73,10 @@
                     android:layout_height="20dp"></Space>
 
                 <TextView
+                    android:id="@+id/nombre2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:id="@+id/nombre2"
                     android:paddingTop="20dp"
                     android:text="@string/pajaros"
                     android:textColor="@color/white"
@@ -108,10 +108,10 @@
                     android:layout_height="20dp"></Space>
 
                 <TextView
+                    android:id="@+id/nombre3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:id="@+id/nombre3"
                     android:paddingTop="20dp"
                     android:text="@string/elevacion_lateral"
                     android:textColor="@color/white"
@@ -143,11 +143,11 @@
                     android:layout_height="20dp"></Space>
 
                 <TextView
+                    android:id="@+id/nombre4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:paddingTop="20dp"
-                    android:id="@+id/nombre4"
                     android:text="@string/remo_a_la_cara_con_cuerda_en_polea_alta"
                     android:textColor="@color/white"
                     android:textStyle="bold"></TextView>
@@ -178,11 +178,11 @@
                     android:layout_height="20dp"></Space>
 
                 <TextView
+                    android:id="@+id/nombre5"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:paddingTop="20dp"
-                    android:id="@+id/nombre5"
                     android:text="@string/press_cubano"
                     android:textColor="@color/white"
                     android:textStyle="bold"></TextView>
@@ -220,9 +220,10 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
         android:background="@color/black"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
 
         <LinearLayout
             android:id="@+id/pieHome"
@@ -233,7 +234,7 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:src="@drawable/comienzo" />
 
             <Space
@@ -246,7 +247,7 @@
                 android:gravity="center"
                 android:text="Home"
                 android:textColor="@color/white"
-                android:textSize="14sp">
+                android:textSize="12sp">
 
             </TextView>
 
@@ -261,7 +262,7 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:src="@drawable/cronograma" />
 
             <Space
@@ -272,9 +273,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:gravity="center"
-                android:text="Etapas"
+                android:text="Stages"
                 android:textColor="@color/white"
-                android:textSize="14sp"></TextView>
+                android:textSize="12sp"></TextView>
 
         </LinearLayout>
 
@@ -287,7 +288,7 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:src="@drawable/suplementaria" />
 
             <Space
@@ -298,16 +299,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:gravity="center"
-                android:text="Suplementos"
+                android:text="Supplement"
                 android:textColor="@color/white"
-                android:textSize="14sp">
+                android:textSize="12sp">
 
             </TextView>
 
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/pieApps"
+            android:id="@+id/pieApp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -315,7 +316,7 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:src="@drawable/aplicaciones" />
 
             <Space
@@ -328,7 +329,7 @@
                 android:gravity="center"
                 android:text="Apps"
                 android:textColor="@color/white"
-                android:textSize="14sp">
+                android:textSize="12sp">
 
             </TextView>
 
@@ -343,7 +344,7 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:src="@drawable/informacion" />
 
             <Space
@@ -356,7 +357,7 @@
                 android:gravity="center"
                 android:text="Info"
                 android:textColor="@color/white"
-                android:textSize="14sp">
+                android:textSize="12sp">
 
             </TextView>
 
@@ -371,7 +372,7 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:src="@drawable/entrenamiento" />
 
             <Space
@@ -382,9 +383,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:gravity="center"
-                android:text="Ejercicios"
+                android:text="Training"
                 android:textColor="@color/white"
-                android:textSize="14sp">
+                android:textSize="12sp">
 
             </TextView>
 

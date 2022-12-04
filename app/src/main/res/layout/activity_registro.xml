@@ -22,7 +22,6 @@
     <EditText
         android:id="@+id/txtemail"
         android:layout_width="match_parent"
-        android:text="alvaro@gmail.com"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="18dp"
@@ -38,7 +37,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="18dp"
-        android:text="26012002"
         android:background="@color/white"
         android:ems="10"
         android:hint="@string/contrase_a"

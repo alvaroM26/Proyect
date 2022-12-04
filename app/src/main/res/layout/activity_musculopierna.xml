@@ -37,21 +37,19 @@
                 tools:ignore="ExtraText">
 
                 <TextView
+                    android:id="@+id/nombre1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="@string/sentadillas"
-                    android:id="@+id/nombre1"
                     android:textColor="@color/white"
-                    android:textStyle="bold">
-                </TextView>
+                    android:textStyle="bold"></TextView>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_marginTop="2dp"
-                    android:background="@color/white">
-                </View>
+                    android:background="@color/white"></View>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -60,38 +58,33 @@
                     android:paddingStart="10dp"
                     android:text="@string/_1_abre_tus_piernas_hasta_el_ancho_de_tus_hombros_n2_junta_tus_manos_o_estira_tus_brazos_en_un_ngulo_de_90_grados_n3_cuando_vayas_a_bajar_mant_n_los_gl_teos_hacia_atr_s_haz_como_si_fueras_a_sentarte_en_una_silla_imaginaria_n4_es_importante_que_las_rodillas_no_sobrepasen_la_punta_de_tus_pies_siempre_deben_quedar_por_detr_s_n5_debes_intentar_mantener_la_espalda_erguida_en_todo_momento_y_evitar_inclinarte_demasiado_hacia_adelante_n6_cuando_bajes_inspira_te_ser_m_s_f_cil_bajar_y_mantener_la_espalda_recta"
                     android:textColor="@color/white"
-                    tools:ignore="ExtraText,RtlSymmetry">
-                </TextView>
+                    tools:ignore="ExtraText,RtlSymmetry"></TextView>
 
                 <VideoView
                     android:id="@+id/video1"
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
-                    android:layout_gravity="center">
-                </VideoView>
+                    android:layout_gravity="center"></VideoView>
 
                 <Space
                     android:layout_width="wrap_content"
-                    android:layout_height="20dp">
-                </Space>
+                    android:layout_height="20dp"></Space>
 
                 <TextView
+                    android:id="@+id/nombre2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:id="@+id/nombre2"
                     android:paddingTop="20dp"
                     android:text="@string/extension_de_cu_driceps"
                     android:textColor="@color/white"
-                    android:textStyle="bold">
-                </TextView>
+                    android:textStyle="bold"></TextView>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_marginTop="2dp"
-                    android:background="@color/white">
-                </View>
+                    android:background="@color/white"></View>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -100,38 +93,33 @@
                     android:paddingStart="10dp"
                     android:text="@string/_1_si_ntate_en_la_m_quina_y_apoya_la_parte_baja_de_las_tibias_en_los_rodillos_inferiores_n_2_suj_tate_de_las_barras_laterales_del_asiento_para_mantener_la_estabilidad_y_la_posici_n_durante_todo_el_ejercicio_y_mant_n_las_puntas_de_los_pies_siempre_mirando_hacia_delante_n_3_mientras_exhalas_extiende_las_piernas_hacia_delante_y_hacia_arriba_utilizando_s_lo_los_cu_driceps_hasta_que_las_piernas_est_n_completamente_extendidas_n_4_aprieta_al_m_ximo_los_cu_driceps_con_las_piernas_extendidas_y_aguanta_la_contracci_n_1_2_segundos_n_5_baja_el_peso_hacia_la_posici_n_inicial_de_forma_controlada_mientras_inhalas_y_repite_las_veces_indicadas"
                     android:textColor="@color/white"
-                    tools:ignore="RtlSymmetry">
-                </TextView>
+                    tools:ignore="RtlSymmetry"></TextView>
 
                 <VideoView
                     android:id="@+id/video2"
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
-                    android:layout_gravity="center">
-                </VideoView>
+                    android:layout_gravity="center"></VideoView>
 
                 <Space
                     android:layout_width="wrap_content"
-                    android:layout_height="20dp">
-                </Space>
+                    android:layout_height="20dp"></Space>
 
                 <TextView
+                    android:id="@+id/nombre3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:paddingTop="20dp"
-                    android:id="@+id/nombre3"
                     android:text="@string/extension_de_gemelos_en_maquina"
                     android:textColor="@color/white"
-                    android:textStyle="bold">
-                </TextView>
+                    android:textStyle="bold"></TextView>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_marginTop="2dp"
-                    android:background="@color/white">
-                </View>
+                    android:background="@color/white"></View>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -140,38 +128,33 @@
                     android:paddingStart="10dp"
                     android:text="@string/_1_seleccione_el_peso_apropiado_en_la_m_quina_si_ntese_en_la_m_quina_y_coloque_la_punta_de_los_pies_en_la_parte_inferior_de_la_plataforma_a_la_anchura_de_los_hombros_n_2_coloque_la_cabeza_sobre_la_almohadilla_agarre_las_asas_laterales_de_la_m_quina_n_3_contraiga_el_suelo_p_lvico_y_el_core_mientras_mantiene_su_pecho_levantado_n_4_empuje_la_plataforma_hasta_que_sus_piernas_est_n_completamente_extendidas_pero_no_bloqueadas_frente_a_usted"
                     android:textColor="@color/white"
-                    tools:ignore="RtlSymmetry">
-                </TextView>
+                    tools:ignore="RtlSymmetry"></TextView>
 
                 <VideoView
                     android:id="@+id/video3"
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
-                    android:layout_gravity="center">
-                </VideoView>
+                    android:layout_gravity="center"></VideoView>
 
                 <Space
                     android:layout_width="wrap_content"
-                    android:layout_height="20dp">
-                </Space>
+                    android:layout_height="20dp"></Space>
 
                 <TextView
+                    android:id="@+id/nombre4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:paddingTop="20dp"
-                    android:id="@+id/nombre4"
                     android:text="@string/aductores_maquina"
                     android:textColor="@color/white"
-                    android:textStyle="bold">
-                </TextView>
+                    android:textStyle="bold"></TextView>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_marginTop="2dp"
-                    android:background="@color/white">
-                </View>
+                    android:background="@color/white"></View>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -180,38 +163,33 @@
                     android:paddingStart="10dp"
                     android:text="@string/_1_si_ntate_y_sujeta_con_ambas_manos_al_asiento_apoyando_la_zona_lumbar_y_colocando_la_regi_n_interna_o_medial_de_las_rodillas_detr_s_de_ambos_cojines_n_2_a_partir_de_all_se_realiza_la_movilizaci_n_del_peso_la_persona_junta_los_muslos_de_forma_que_ambas_rodillas_se_encuentren_delante_del_cuerpo_n_3_sost_n_la_posici_n_por_un_par_de_segundos_y_de_forma_lenta_se_regresa_a_la_posici_n_inicial_evitando_movimientos_bruscos_y_conservando_plenamente_la_espalda_bien_apoyada"
                     android:textColor="@color/white"
-                    tools:ignore="RtlSymmetry">
-                </TextView>
+                    tools:ignore="RtlSymmetry"></TextView>
 
                 <VideoView
                     android:id="@+id/video4"
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
-                    android:layout_gravity="center">
-                </VideoView>
+                    android:layout_gravity="center"></VideoView>
 
                 <Space
                     android:layout_width="wrap_content"
-                    android:layout_height="20dp">
-                </Space>
+                    android:layout_height="20dp"></Space>
 
                 <TextView
+                    android:id="@+id/nombre5"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:paddingTop="20dp"
-                    android:id="@+id/nombre5"
                     android:text="@string/abductores_maquina"
                     android:textColor="@color/white"
-                    android:textStyle="bold">
-                </TextView>
+                    android:textStyle="bold"></TextView>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_marginTop="2dp"
-                    android:background="@color/white">
-                </View>
+                    android:background="@color/white"></View>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -220,38 +198,33 @@
                     android:paddingStart="10dp"
                     android:text="@string/_1_para_comenzar_el_ejercicio_debemos_sentarnos_en_la_m_quina_espec_fica_para_su_realizaci_n_previa_carga_del_peso_a_utilizar_colocamos_las_piernas_juntas_y_flexionadas_y_en_la_cara_externa_de_las_mismas_justo_a_la_altura_de_las_rodillas_deben_quedar_los_cojines_de_la_m_quina_desde_all_se_inicia_el_movimiento_n_2_debemos_separar_las_piernas_al_m_ximo_mientras_empujamos_los_cojines_que_est_n_sobre_la_cara_externa_de_nuestras_piernas_y_despu_s_regresar_lentamente_a_la_posici_n_inicial_hasta_juntar_las_piernas_nuevamente_n_3_la_espalda_debe_estar_recta_y_apoyada_en_el_respaldo_de_la_m_quina_todo_el_tiempo_pues_el_torso_no_debe_movilizarse_al_abrir_y_cerrar_las_piernas_las_manos_deben_estar_colocadas_en_los_agarres_laterales_de_la_m_quina"
                     android:textColor="@color/white"
-                    tools:ignore="RtlSymmetry">
-                </TextView>
+                    tools:ignore="RtlSymmetry"></TextView>
 
                 <VideoView
                     android:id="@+id/video5"
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
-                    android:layout_gravity="center">
-                </VideoView>
+                    android:layout_gravity="center"></VideoView>
 
                 <Space
                     android:layout_width="wrap_content"
-                    android:layout_height="20dp">
-                </Space>
+                    android:layout_height="20dp"></Space>
 
                 <TextView
+                    android:id="@+id/nombre6"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:paddingTop="20dp"
-                    android:id="@+id/nombre6"
                     android:text="@string/flexion_de_pierna_tumbado"
                     android:textColor="@color/white"
-                    android:textStyle="bold">
-                </TextView>
+                    android:textStyle="bold"></TextView>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_marginTop="2dp"
-                    android:background="@color/white">
-                </View>
+                    android:background="@color/white"></View>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -260,38 +233,33 @@
                     android:paddingStart="10dp"
                     android:text="@string/_1_ajusta_el_coj_n_de_los_pies_para_que_quede_a_la_altura_de_tus_tobillos_n_2_t_mbate_en_la_m_quina_y_sujeta_las_asas_con_las_manos_para_mejorar_la_estabilidad_de_la_parte_superior_del_cuerpo_n_3_flexiona_las_rodillas_para_llevar_los_talones_hacia_los_gl_teos_n_4_vuelve_a_bajar_de_forma_lenta_y_controlada_las_piernas_hacia_la_posici_n_inicial_y_repite"
                     android:textColor="@color/white"
-                    tools:ignore="RtlSymmetry">
-                </TextView>
+                    tools:ignore="RtlSymmetry"></TextView>
 
                 <VideoView
                     android:id="@+id/video6"
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
-                    android:layout_gravity="center">
-                </VideoView>
+                    android:layout_gravity="center"></VideoView>
 
                 <Space
                     android:layout_width="wrap_content"
-                    android:layout_height="20dp">
-                </Space>
+                    android:layout_height="20dp"></Space>
 
                 <TextView
+                    android:id="@+id/nombre7"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:paddingTop="20dp"
-                    android:id="@+id/nombre7"
                     android:text="@string/curl_de_piernas_sentado"
                     android:textColor="@color/white"
-                    android:textStyle="bold">
-                </TextView>
+                    android:textStyle="bold"></TextView>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_marginTop="2dp"
-                    android:background="@color/white">
-                </View>
+                    android:background="@color/white"></View>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -300,20 +268,17 @@
                     android:paddingStart="10dp"
                     android:text="@string/_1_si_ntate_y_coloca_el_eje_de_rotaci_n_de_la_m_quina_con_el_eje_de_flexi_n_de_la_rodilla_n_2_sit_a_los_tobillos_sobre_los_cojines_y_coloca_tu_espalda_erguida_en_el_espaldar_de_la_silla_n_3_toma_los_mangos_y_realiza_la_flexi_n_de_las_rodillas_evitando_el_movimiento_del_torso_n_4_una_vez_que_hayas_llegado_al_final_de_la_flexi_n_debes_volver_a_la_posici_n_original_poco_a_poco_con_la_finalidad_de_evitar_lesiones_en_las_articulaciones"
                     android:textColor="@color/white"
-                    tools:ignore="RtlSymmetry">
-                </TextView>
+                    tools:ignore="RtlSymmetry"></TextView>
 
                 <VideoView
                     android:id="@+id/video7"
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
-                    android:layout_gravity="center">
-                </VideoView>
+                    android:layout_gravity="center"></VideoView>
 
                 <Space
                     android:layout_width="wrap_content"
-                    android:layout_height="20dp">
-                </Space>
+                    android:layout_height="20dp"></Space>
 
             </LinearLayout>
 
@@ -323,9 +288,10 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
         android:background="@color/black"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
 
         <LinearLayout
             android:id="@+id/pieHome"
@@ -336,13 +302,12 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:src="@drawable/comienzo" />
 
             <Space
                 android:layout_width="wrap_content"
-                android:layout_height="5dp">
-            </Space>
+                android:layout_height="5dp"></Space>
 
             <TextView
                 android:layout_width="match_parent"
@@ -350,7 +315,7 @@
                 android:gravity="center"
                 android:text="Home"
                 android:textColor="@color/white"
-                android:textSize="14sp">
+                android:textSize="12sp">
 
             </TextView>
 
@@ -365,7 +330,7 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:src="@drawable/cronograma" />
 
             <Space
@@ -376,9 +341,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:gravity="center"
-                android:text="Etapas"
+                android:text="Stages"
                 android:textColor="@color/white"
-                android:textSize="14sp"></TextView>
+                android:textSize="12sp"></TextView>
 
         </LinearLayout>
 
@@ -391,7 +356,7 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:src="@drawable/suplementaria" />
 
             <Space
@@ -402,16 +367,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:gravity="center"
-                android:text="Suplementos"
+                android:text="Supplement"
                 android:textColor="@color/white"
-                android:textSize="14sp">
+                android:textSize="12sp">
 
             </TextView>
 
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/pieApps"
+            android:id="@+id/pieApp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -419,7 +384,7 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:src="@drawable/aplicaciones" />
 
             <Space
@@ -432,7 +397,7 @@
                 android:gravity="center"
                 android:text="Apps"
                 android:textColor="@color/white"
-                android:textSize="14sp">
+                android:textSize="12sp">
 
             </TextView>
 
@@ -447,7 +412,7 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:src="@drawable/informacion" />
 
             <Space
@@ -460,7 +425,7 @@
                 android:gravity="center"
                 android:text="Info"
                 android:textColor="@color/white"
-                android:textSize="14sp">
+                android:textSize="12sp">
 
             </TextView>
 
@@ -475,7 +440,7 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:src="@drawable/entrenamiento" />
 
             <Space
@@ -486,9 +451,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:gravity="center"
-                android:text="Ejercicios"
+                android:text="Training"
                 android:textColor="@color/white"
-                android:textSize="14sp">
+                android:textSize="12sp">
 
             </TextView>
 

@@ -3,13 +3,11 @@ package com.example.proyect.eleccion
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import android.view.Window
 import android.widget.MediaController
-import android.widget.Toast
 import android.widget.VideoView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.proyect.*
+import com.example.proyect.R
 import com.example.proyect.app.AppsActivity
 import com.example.proyect.databinding.ActivityMusculobicepsBinding
 import com.example.proyect.etapa.EtapasActivity
@@ -34,21 +32,24 @@ class BicepsActivity : AppCompatActivity() {
 
         binding.nombre1.setOnClickListener {
             val video1: VideoView = findViewById(R.id.video1)
-            val uri = Uri.parse("android.resource://" + packageName + "/" + R.raw.curldebicepsconmancuernas)
+            val uri =
+                Uri.parse("android.resource://" + packageName + "/" + R.raw.curldebicepsconmancuernas)
             video1.setVideoURI(uri)
             video1.setMediaController(mediaController)
         }
 
         binding.nombre2.setOnClickListener {
             val video2: VideoView = findViewById(R.id.video2)
-            val uri = Uri.parse("android.resource://" + packageName + "/" + R.raw.curldebicepsbancoscott)
+            val uri =
+                Uri.parse("android.resource://" + packageName + "/" + R.raw.curldebicepsbancoscott)
             video2.setVideoURI(uri)
             video2.setMediaController(mediaController)
         }
 
         binding.nombre3.setOnClickListener {
             val video3: VideoView = findViewById(R.id.video3)
-            val uri = Uri.parse("android.resource://" + packageName + "/" + R.raw.curldebicepsmaquina)
+            val uri =
+                Uri.parse("android.resource://" + packageName + "/" + R.raw.curldebicepsmaquina)
             video3.setVideoURI(uri)
             video3.setMediaController(mediaController)
         }
@@ -63,7 +64,7 @@ class BicepsActivity : AppCompatActivity() {
         pulsar()
     }
 
-    private fun pulsar(){
+    private fun pulsar() {
         binding.pieHome.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
@@ -89,7 +90,7 @@ class BicepsActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        binding.pieApps.setOnClickListener {
+        binding.pieApp.setOnClickListener {
             val intent = Intent(this, AppsActivity::class.java)
             startActivity(intent)
         }

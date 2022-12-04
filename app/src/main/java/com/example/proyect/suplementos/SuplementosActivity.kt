@@ -4,12 +4,12 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Window
 import androidx.appcompat.app.AppCompatActivity
-import com.example.proyect.app.AppsActivity
-import com.example.proyect.etapa.EtapasActivity
-import com.example.proyect.informacion.InformacionActivity
 import com.example.proyect.R
+import com.example.proyect.app.AppsActivity
 import com.example.proyect.databinding.ActivitySuplementosBinding
 import com.example.proyect.eleccion.EleccionActivity
+import com.example.proyect.etapa.EtapasActivity
+import com.example.proyect.informacion.InformacionActivity
 import com.example.proyect.inicio.MainActivity
 
 class SuplementosActivity : AppCompatActivity() {
@@ -55,7 +55,7 @@ class SuplementosActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        binding.pieApps.setOnClickListener {
+        binding.pieApp.setOnClickListener {
             val intent = Intent(this, AppsActivity::class.java)
             startActivity(intent)
         }

@@ -155,8 +155,8 @@
                     android:id="@+id/btsuplementos"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/black"
                     android:layout_gravity="center"
+                    android:backgroundTint="@color/black"
                     android:text="Guia suplementos"
                     android:textColor="@color/white" />
 
@@ -168,9 +168,10 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
         android:background="@color/black"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
 
         <LinearLayout
             android:id="@+id/pieHome"
@@ -181,7 +182,7 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:src="@drawable/comienzo" />
 
             <Space
@@ -194,7 +195,7 @@
                 android:gravity="center"
                 android:text="Home"
                 android:textColor="@color/white"
-                android:textSize="14sp">
+                android:textSize="12sp">
 
             </TextView>
 
@@ -209,7 +210,7 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:src="@drawable/cronograma" />
 
             <Space
@@ -220,9 +221,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:gravity="center"
-                android:text="Etapas"
+                android:text="Stages"
                 android:textColor="@color/white"
-                android:textSize="14sp"></TextView>
+                android:textSize="12sp"></TextView>
 
         </LinearLayout>
 
@@ -235,7 +236,7 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:src="@drawable/suplementaria" />
 
             <Space
@@ -246,16 +247,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:gravity="center"
-                android:text="Suplementos"
+                android:text="Supplement"
                 android:textColor="@color/white"
-                android:textSize="14sp">
+                android:textSize="12sp">
 
             </TextView>
 
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/pieApps"
+            android:id="@+id/pieApp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -263,7 +264,7 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:src="@drawable/aplicaciones" />
 
             <Space
@@ -276,7 +277,7 @@
                 android:gravity="center"
                 android:text="Apps"
                 android:textColor="@color/white"
-                android:textSize="14sp">
+                android:textSize="12sp">
 
             </TextView>
 
@@ -291,7 +292,7 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:src="@drawable/informacion" />
 
             <Space
@@ -304,7 +305,7 @@
                 android:gravity="center"
                 android:text="Info"
                 android:textColor="@color/white"
-                android:textSize="14sp">
+                android:textSize="12sp">
 
             </TextView>
 
@@ -319,7 +320,7 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:src="@drawable/entrenamiento" />
 
             <Space
@@ -330,9 +331,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:gravity="center"
-                android:text="Ejercicios"
+                android:text="Training"
                 android:textColor="@color/white"
-                android:textSize="14sp">
+                android:textSize="12sp">
 
             </TextView>
 

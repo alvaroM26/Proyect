@@ -5,15 +5,15 @@ import android.net.Uri
 import android.os.Bundle
 import android.view.Window
 import androidx.appcompat.app.AppCompatActivity
-import com.example.proyect.etapa.EtapasActivity
-import com.example.proyect.informacion.InformacionActivity
 import com.example.proyect.R
 import com.example.proyect.databinding.ActivityAppBinding
 import com.example.proyect.eleccion.EleccionActivity
+import com.example.proyect.etapa.EtapasActivity
+import com.example.proyect.informacion.InformacionActivity
 import com.example.proyect.inicio.MainActivity
 import com.example.proyect.suplementos.SuplementosActivity
 
-class AppsActivity : AppCompatActivity(){
+class AppsActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityAppBinding
 
@@ -35,41 +35,59 @@ class AppsActivity : AppCompatActivity(){
 
         binding.pieApple.setOnClickListener() {
 
-            val webIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://apps.apple.com/us/app/activitytracker-pedometer/id993667592"))
+            val webIntent = Intent(
+                Intent.ACTION_VIEW,
+                Uri.parse("https://apps.apple.com/us/app/activitytracker-pedometer/id993667592")
+            )
             startActivity(webIntent)
         }
 
         binding.pieAndroid.setOnClickListener() {
 
-            val webIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.bitscoffee.ActivityTracker&hl=es&gl=US"))
+            val webIntent = Intent(
+                Intent.ACTION_VIEW,
+                Uri.parse("https://play.google.com/store/apps/details?id=com.bitscoffee.ActivityTracker&hl=es&gl=US")
+            )
             startActivity(webIntent)
         }
 
         binding.pieApple2.setOnClickListener() {
 
-            val webIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://apps.apple.com/es/app/myfitnesspal-recetas-a-diario/id341232718"))
+            val webIntent = Intent(
+                Intent.ACTION_VIEW,
+                Uri.parse("https://apps.apple.com/es/app/myfitnesspal-recetas-a-diario/id341232718")
+            )
             startActivity(webIntent)
         }
 
         binding.pieAndroid2.setOnClickListener() {
 
-            val webIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.myfitnesspal.android&hl=es_419&gl=US"))
+            val webIntent = Intent(
+                Intent.ACTION_VIEW,
+                Uri.parse("https://play.google.com/store/apps/details?id=com.myfitnesspal.android&hl=es_419&gl=US")
+            )
             startActivity(webIntent)
         }
 
         binding.pieApple3.setOnClickListener() {
 
-            val webIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://apps.apple.com/cl/app/wefitter/id1507373654"))
+            val webIntent = Intent(
+                Intent.ACTION_VIEW,
+                Uri.parse("https://apps.apple.com/cl/app/wefitter/id1507373654")
+            )
             startActivity(webIntent)
         }
 
         binding.pieAndroid3.setOnClickListener() {
 
-            val webIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.wefitter.app.prod&hl=es_419&gl=US"))
+            val webIntent = Intent(
+                Intent.ACTION_VIEW,
+                Uri.parse("https://play.google.com/store/apps/details?id=com.wefitter.app.prod&hl=es_419&gl=US")
+            )
             startActivity(webIntent)
         }
 
-        binding.pieHome.setOnClickListener{
+        binding.pieHome.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
@@ -94,7 +112,7 @@ class AppsActivity : AppCompatActivity(){
             startActivity(intent)
         }
 
-        binding.pieApps.setOnClickListener {
+        binding.pieApp.setOnClickListener {
             val intent = Intent(this, AppsActivity::class.java)
             startActivity(intent)
         }

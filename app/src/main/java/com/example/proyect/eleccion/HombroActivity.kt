@@ -7,7 +7,7 @@ import android.view.Window
 import android.widget.MediaController
 import android.widget.VideoView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.proyect.*
+import com.example.proyect.R
 import com.example.proyect.app.AppsActivity
 import com.example.proyect.databinding.ActivityMusculohombroBinding
 import com.example.proyect.etapa.EtapasActivity
@@ -87,7 +87,7 @@ class HombroActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        binding.pieApps.setOnClickListener {
+        binding.pieApp.setOnClickListener {
             val intent = Intent(this, AppsActivity::class.java)
             startActivity(intent)
         }

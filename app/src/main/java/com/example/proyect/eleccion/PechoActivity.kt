@@ -7,7 +7,7 @@ import android.view.Window
 import android.widget.MediaController
 import android.widget.VideoView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.proyect.*
+import com.example.proyect.R
 import com.example.proyect.app.AppsActivity
 import com.example.proyect.databinding.ActivityMusculopechoBinding
 import com.example.proyect.etapa.EtapasActivity
@@ -58,15 +58,6 @@ class PechoActivity : AppCompatActivity() {
             video4.setMediaController(mediaController)
         }
 
-        val onlineUri1: Uri =
-            Uri.parse("https://firebasestorage.googleapis.com/v0/b/proyect-2022.appspot.com/o/prensadepecho.mp4?alt=media&token=a8ffa973-79ba-4dc7-bf2a-939af8318487")
-        val onlineUri2: Uri =
-            Uri.parse("https://firebasestorage.googleapis.com/v0/b/proyect-2022.appspot.com/o/fondosasistidos.mp4?alt=media&token=6ebd845b-b2bb-484e-984e-d96a8a229c46")
-        val onlineUri3: Uri =
-            Uri.parse("https://firebasestorage.googleapis.com/v0/b/proyect-2022.appspot.com/o/cierredepolea.mp4?alt=media&token=797bae3e-78b7-4314-b164-fc1b9056a5a6")
-        val onlineUri4: Uri =
-            Uri.parse("https://firebasestorage.googleapis.com/v0/b/proyect-2022.appspot.com/o/contractorpeckfly.mp4?alt=media&token=ed30074b-af9a-4595-8d4e-56f0e9b33aed")
-
         pulsar()
 
     }
@@ -97,7 +88,7 @@ class PechoActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        binding.pieApps.setOnClickListener {
+        binding.pieApp.setOnClickListener {
             val intent = Intent(this, AppsActivity::class.java)
             startActivity(intent)
         }

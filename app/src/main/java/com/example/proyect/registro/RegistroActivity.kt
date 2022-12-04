@@ -15,8 +15,8 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
-import com.example.proyect.inicio.MainActivity
 import com.example.proyect.R
+import com.example.proyect.inicio.MainActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 

@@ -9,7 +9,6 @@ import android.widget.VideoView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.proyect.R
 import com.example.proyect.app.AppsActivity
-import com.example.proyect.databinding.ActivityMusculopiernaBinding
 import com.example.proyect.databinding.ActivityMusculotricepsBinding
 import com.example.proyect.etapa.EtapasActivity
 import com.example.proyect.informacion.InformacionActivity
@@ -33,7 +32,8 @@ class TricepsActivity : AppCompatActivity() {
 
         binding.nombre1.setOnClickListener {
             val video1: VideoView = findViewById(R.id.video1)
-            val uri = Uri.parse("android.resource://" + packageName + "/" + R.raw.extensiondetriceps)
+            val uri =
+                Uri.parse("android.resource://" + packageName + "/" + R.raw.extensiondetriceps)
             video1.setVideoURI(uri)
             video1.setMediaController(mediaController)
         }
@@ -75,7 +75,7 @@ class TricepsActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        binding.pieApps.setOnClickListener {
+        binding.pieApp.setOnClickListener {
             val intent = Intent(this, AppsActivity::class.java)
             startActivity(intent)
         }

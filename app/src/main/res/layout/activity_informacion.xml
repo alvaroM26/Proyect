@@ -416,9 +416,10 @@ El llamado ejercicio ligero es importante en la fase final del entrenamiento par
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
         android:background="@color/black"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
 
         <LinearLayout
             android:id="@+id/pieHome"
@@ -429,7 +430,7 @@ El llamado ejercicio ligero es importante en la fase final del entrenamiento par
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:src="@drawable/comienzo" />
 
             <Space
@@ -442,7 +443,7 @@ El llamado ejercicio ligero es importante en la fase final del entrenamiento par
                 android:gravity="center"
                 android:text="Home"
                 android:textColor="@color/white"
-                android:textSize="14sp">
+                android:textSize="12sp">
 
             </TextView>
 
@@ -457,7 +458,7 @@ El llamado ejercicio ligero es importante en la fase final del entrenamiento par
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:src="@drawable/cronograma" />
 
             <Space
@@ -468,9 +469,9 @@ El llamado ejercicio ligero es importante en la fase final del entrenamiento par
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:gravity="center"
-                android:text="Etapas"
+                android:text="Stages"
                 android:textColor="@color/white"
-                android:textSize="14sp"></TextView>
+                android:textSize="12sp"></TextView>
 
         </LinearLayout>
 
@@ -483,7 +484,7 @@ El llamado ejercicio ligero es importante en la fase final del entrenamiento par
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:src="@drawable/suplementaria" />
 
             <Space
@@ -494,16 +495,16 @@ El llamado ejercicio ligero es importante en la fase final del entrenamiento par
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:gravity="center"
-                android:text="Suplementos"
+                android:text="Supplement"
                 android:textColor="@color/white"
-                android:textSize="14sp">
+                android:textSize="12sp">
 
             </TextView>
 
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/pieApps"
+            android:id="@+id/pieApp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -511,7 +512,7 @@ El llamado ejercicio ligero es importante en la fase final del entrenamiento par
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:src="@drawable/aplicaciones" />
 
             <Space
@@ -524,7 +525,7 @@ El llamado ejercicio ligero es importante en la fase final del entrenamiento par
                 android:gravity="center"
                 android:text="Apps"
                 android:textColor="@color/white"
-                android:textSize="14sp">
+                android:textSize="12sp">
 
             </TextView>
 
@@ -539,7 +540,7 @@ El llamado ejercicio ligero es importante en la fase final del entrenamiento par
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:src="@drawable/informacion" />
 
             <Space
@@ -552,7 +553,7 @@ El llamado ejercicio ligero es importante en la fase final del entrenamiento par
                 android:gravity="center"
                 android:text="Info"
                 android:textColor="@color/white"
-                android:textSize="14sp">
+                android:textSize="12sp">
 
             </TextView>
 
@@ -567,7 +568,7 @@ El llamado ejercicio ligero es importante en la fase final del entrenamiento par
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:src="@drawable/entrenamiento" />
 
             <Space
@@ -578,9 +579,9 @@ El llamado ejercicio ligero es importante en la fase final del entrenamiento par
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:gravity="center"
-                android:text="Ejercicios"
+                android:text="Training"
                 android:textColor="@color/white"
-                android:textSize="14sp">
+                android:textSize="12sp">
 
             </TextView>
 
