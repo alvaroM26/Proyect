@@ -108,27 +108,27 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:paddingTop="15dp"
+                android:gravity="center"
                 android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/pieApple"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:layout_marginEnd="50dp"
+                    android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:paddingTop="10dp"
                     android:src="@drawable/androidstore"></ImageView>
 
                 <ImageView
                     android:id="@+id/pieAndroid"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:layout_marginRight="50dp"
+                    android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:paddingTop="10dp"
                     android:src="@drawable/applestore"></ImageView>
 
             </LinearLayout>
@@ -211,25 +211,27 @@
                     tools:ignore="RtlSymmetry"></TextView>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:paddingTop="15dp"
+                    android:gravity="center"
                     android:orientation="horizontal">
 
                     <ImageView
                         android:id="@+id/pieApple2"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginRight="50dp"
-                        android:paddingTop="10dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
                         android:src="@drawable/androidstore"></ImageView>
 
                     <ImageView
                         android:id="@+id/pieAndroid2"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginRight="50dp"
-                        android:paddingTop="10dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
                         android:src="@drawable/applestore"></ImageView>
 
                 </LinearLayout>
@@ -310,25 +312,27 @@
                         tools:ignore="RtlSymmetry"></TextView>
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:paddingTop="15dp"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
                         <ImageView
                             android:id="@+id/pieApple3"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:layout_marginEnd="50dp"
-                            android:paddingTop="10dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
                             android:src="@drawable/androidstore"></ImageView>
 
                         <ImageView
                             android:id="@+id/pieAndroid3"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:layout_marginRight="50dp"
-                            android:paddingTop="10dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
                             android:src="@drawable/applestore"></ImageView>
 
                     </LinearLayout>
